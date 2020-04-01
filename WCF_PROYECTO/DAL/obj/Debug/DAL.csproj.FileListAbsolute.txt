@@ -1,0 +1,5 @@
+E:\WCF_PROYECTO\DAL\bin\Debug\DAL.dll
+E:\WCF_PROYECTO\DAL\bin\Debug\DAL.pdb
+E:\WCF_PROYECTO\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\WCF_PROYECTO\DAL\obj\Debug\DAL.dll
+E:\WCF_PROYECTO\DAL\obj\Debug\DAL.pdb

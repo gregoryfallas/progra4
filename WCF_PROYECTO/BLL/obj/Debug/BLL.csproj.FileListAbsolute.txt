@@ -1,0 +1,7 @@
+E:\WCF_PROYECTO\BLL\bin\Debug\BLL.dll
+E:\WCF_PROYECTO\BLL\bin\Debug\BLL.pdb
+E:\WCF_PROYECTO\BLL\bin\Debug\DAL.dll
+E:\WCF_PROYECTO\BLL\bin\Debug\DAL.pdb
+E:\WCF_PROYECTO\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\WCF_PROYECTO\BLL\obj\Debug\BLL.dll
+E:\WCF_PROYECTO\BLL\obj\Debug\BLL.pdb

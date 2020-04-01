@@ -1,0 +1,10 @@
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_SVC.dll.config
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_SVC.dll
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_SVC.pdb
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_BLL.dll
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_DAL.dll
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_BLL.pdb
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Release\WCF_Proyecto_DAL.pdb
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Release\WCF_Proyecto_SVC.csprojResolveAssemblyReference.cache
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Release\WCF_Proyecto_SVC.dll
+D:\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Release\WCF_Proyecto_SVC.pdb
