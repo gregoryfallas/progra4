@@ -78,3 +78,15 @@ C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll.config
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csprojAssemblyReference.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CoreCompileInputs.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb
