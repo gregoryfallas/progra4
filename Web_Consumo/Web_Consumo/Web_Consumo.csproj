@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,6 +71,12 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="blog.html" />
+    <None Include="Connected Services\WCF\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF\configuration.svcinfo" />
+    <None Include="Connected Services\WCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="contact.html" />
     <Content Include="contact_process.php" />
     <Content Include="css\animate.css" />
@@ -86,6 +94,7 @@
     <Content Include="css\style.css" />
     <Content Include="css\theme-default.css" />
     <Content Include="css\themify-icons.css" />
+    <Content Include="empleados.aspx" />
     <Content Include="empleados.html" />
     <Content Include="elements.html" />
     <Content Include="fonts\fa-brands-400.svg" />
@@ -212,10 +221,12 @@
     <Content Include="img\works\2.png" />
     <Content Include="img\works\3.png" />
     <Content Include="img\works\4.png" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
     <Content Include="js\ajax-form.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
+    <Content Include="js\custom.js" />
     <Content Include="js\gijgo.min.js" />
     <Content Include="js\imagesloaded.pkgd.min.js" />
     <Content Include="js\isotope.pkgd.min.js" />
@@ -300,6 +311,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WCF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.aspx.cs">
+      <DependentUpon>empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="empleados.aspx.designer.cs">
+      <DependentUpon>empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -339,6 +370,22 @@
     <Content Include="obj\Debug\Web_Consumo.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\Web_Consumo.csprojAssemblyReference.cache" />
     <Content Include="obj\Release\Web_Consumo.csproj.CoreCompileInputs.cache" />
+    <None Include="Connected Services\WCF\BD.wsdl" />
+    <None Include="Connected Services\WCF\BD.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF\BD1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF\BD2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WCF\Web_Consumo.WCF.Ins_Mod_Del_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="scss\style.scss" />
     <Content Include="scss\theme-default.scss" />
@@ -374,6 +421,7 @@
     <Content Include="travel doc\fonts\fontawesome-webfont.ttf" />
     <Content Include="travel doc\fonts\fontawesome-webfont.woff" />
     <Content Include="travel doc\fonts\FontAwesome.otf" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -383,6 +431,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WCF\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

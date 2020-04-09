@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript"
+            src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.min.js"></script>
+
 </head>
 
 <body>
@@ -50,7 +53,7 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">home</a></li>
+                                            <li><a class="active" href="index.aspx">home</a></li>
                                             <li><a href="about.html">About</a></li>
                                             <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
                                             <li>
@@ -145,6 +148,9 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div>
+                    <input type="button" name="test" value="Test" onclick="llamarajax();" />
                 </div>
             </div>
         </div>
@@ -242,7 +248,43 @@
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
     <script>
+
+        $(document).ready(function () {
+            console.log("ready!");
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:4050/BD.svc/ListarDatos",
+                data: "{ 'sNombreSP': 'sp_Listar_Estados' } ",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: resultado(data),
+                error: errores
+            });
+        };
+
+        function llamarajax() {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:4050/BD.svc/ListarDatos",
+                data: "{ 'sNombreSP': 'sp_Listar_Estados' } ",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: resultado(data),
+                error: errores
+            });
+        }
+
+        function resultado(data) {
+            alert(data.d);
+        }
+
+        function errores(msg) {
+            alert('Error: ' + msg.responseText);
+        }
+
+
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {

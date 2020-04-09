@@ -204,3 +204,31 @@ C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.csproj.CopyComplete
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.dll
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\ApplicationInsights.config
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_Site.dll.config
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_Site.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_Site.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.Web.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.ApplicationInsights.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_SVC.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_BLL.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_DAL.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_SVC.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_SVC.dll.config
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.Web.xml
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\Microsoft.ApplicationInsights.xml
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_BLL.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\bin\WCF_Proyecto_DAL.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.csprojAssemblyReference.cache
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.csproj.CoreCompileInputs.cache
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.csproj.CopyComplete
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.dll
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_Site\obj\Debug\WCF_Proyecto_Site.pdb

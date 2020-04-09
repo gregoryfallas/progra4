@@ -342,10 +342,10 @@ mailChimp();
         // prise slider 
         
 
+    
 
 
 
 
 
-
-})(jQuery);	
+})(jQuery);
