@@ -5,3 +5,7 @@ D:\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Release\WCF_Proyecto_DAL.pdb
 D:\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.csprojResolveAssemblyReference.cache
 D:\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.dll
 D:\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.csprojAssemblyReference.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.csproj.CoreCompileInputs.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Release\WCF_Proyecto_BLL.pdb

@@ -2,3 +2,9 @@ D:\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.dll
 D:\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.pdb
 D:\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.dll
 D:\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.csprojAssemblyReference.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.csproj.CoreCompileInputs.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.pdb

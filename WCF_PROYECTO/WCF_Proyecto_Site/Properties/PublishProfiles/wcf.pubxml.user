@@ -7,6 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Users\Laboratorio\Desktop\WCF</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKzgq22HfMESRY7ql0uy7YQAAAAACAAAAAAAQZgAAAAEAACAAAAAsZPSho0rvCnj+bLrF48Y8oNln0KO6EdaxDktk4w6NZwAAAAAOgAAAAAIAACAAAAC+mnhlrsP44PORcwvgS2vo+KzhxNs4H9rc0QmgX6zWkCAAAAALv5SOwKKP58XI3ya63SuTj6HnwLLkBxSVNPNq30xxcEAAAADB0UEIYQ3OXAfq2/07Ikjbub1MIKX9LyJK+GXjmZul8ye9Ir8x7Gi/QbzCAc3XbiGsa/Eaozv6Lr4GDFC+YuGn</EncryptedPassword>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
