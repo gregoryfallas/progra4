@@ -62,3 +62,12 @@ C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.dll
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.pdb
 C:\Users\falla\OneDrive\Documentos\UAM\PrograIV\Ejemplo Clase\Ejemplo Clase\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csprojAssemblyReference.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_BLL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_BLL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_DAL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_DAL.pdb
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csprojAssemblyReference.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csproj.CoreCompileInputs.cache
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csproj.CopyComplete
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.dll
+C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.pdb
