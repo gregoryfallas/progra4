@@ -97,6 +97,8 @@
     <Content Include="empleados.aspx" />
     <Content Include="empleados.html" />
     <Content Include="elements.html" />
+    <Content Include="Estados.aspx" />
+    <Content Include="Estados.html" />
     <Content Include="fonts\fa-brands-400.svg" />
     <Content Include="fonts\fa-regular-400.svg" />
     <Content Include="fonts\fa-solid-900.svg" />
@@ -322,6 +324,13 @@
     </Compile>
     <Compile Include="empleados.aspx.designer.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estados.aspx.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estados.aspx.designer.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

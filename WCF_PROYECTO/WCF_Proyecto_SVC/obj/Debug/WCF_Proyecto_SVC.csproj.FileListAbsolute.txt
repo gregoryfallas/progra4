@@ -90,3 +90,15 @@ C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll.config
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csprojAssemblyReference.cache
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CoreCompileInputs.cache
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb

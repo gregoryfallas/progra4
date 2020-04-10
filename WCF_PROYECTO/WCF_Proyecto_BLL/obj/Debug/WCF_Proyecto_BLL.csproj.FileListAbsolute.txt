@@ -71,3 +71,12 @@ C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csproj.CopyComplete
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.dll
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_BLL.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_BLL.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_DAL.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\bin\Debug\WCF_Proyecto_DAL.pdb
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csprojAssemblyReference.cache
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csproj.CoreCompileInputs.cache
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.csproj.CopyComplete
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.dll
+D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_BLL\obj\Debug\WCF_Proyecto_BLL.pdb
