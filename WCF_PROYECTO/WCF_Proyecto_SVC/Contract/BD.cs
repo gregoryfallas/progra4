@@ -23,8 +23,8 @@ namespace WCF_Proyecto_SVC.Contract
             return dt;
         }
 
-        public DataTable ListarDatos(string sNombreSP, ref string sMsjError)
-        {
+        public DataTable ListarFiltrarDatos(string sNombreSP, DataTable DT_Parametros, ref string sMsjError)
+        {//public DataTable ListarFiltrarDatos(string sNombreSP, DataTable DT_Parametros, ref string sMsjError) Oscar Quiros
             Cls_BD_BLL Obj_BD_BLL = new Cls_BD_BLL();
             Cls_BD_DAL Obj_BD_DAL = new Cls_BD_DAL();
 
