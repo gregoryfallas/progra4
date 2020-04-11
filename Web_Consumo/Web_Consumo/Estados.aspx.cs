@@ -47,7 +47,7 @@ namespace Web_Consumo
             DGV_DATOS.DataSource = null;
             DGV_DATOS.DataSource = dt;
             DGV_DATOS.DataBind();
-
+           
         }
 
         protected void btn_FiltrarEstados_Click(object sender, EventArgs e)
