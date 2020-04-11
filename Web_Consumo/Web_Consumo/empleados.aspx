@@ -109,7 +109,8 @@
 
                 </div>
                     <asp:Label ID="labelTable" runat="server" Text="">Informacin de Empleados</asp:Label>
-                    <asp:DataGrid ID="TablaEmpleados" runat="server" CssClass="TablaEmpleados"></asp:DataGrid>
+                    <asp:DataGrid ID="TablaEmpleados" runat="server" CssClass="TablaEmpleados" Width="1000" AlternatingItemStyle-HorizontalAlign="Center"
+                        ></asp:DataGrid>
 
                   <div class="search_btn" id ="Conten_EmpleadosBtns">
                           
