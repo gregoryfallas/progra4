@@ -1,0 +1,6 @@
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.dll
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.pdb
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.dll
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.pdb

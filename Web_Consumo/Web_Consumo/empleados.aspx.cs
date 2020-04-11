@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using Web_Consumo.WCF;
 using System.Data;
 using System.Text;
+using BLL.Catalogo_BLL;
+using DAL.Catalogo_DAL;
 
 namespace Web_Consumo
 {
@@ -14,11 +16,22 @@ namespace Web_Consumo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            WCF.BDClient listarDatos = new BDClient();
-            String a = "";
 
-            DataTable ObjListar = listarDatos.ListarDatos("sp_Listar_Estados", ref a);
-            //GridView1.DataSource = ObjListar;
+            this.CargarDatos();
+
+        }
+
+
+        private void CargarDatos()
+        {
+
+            DAL.Catalogo_DAL.Cls_Empleados_DAL ObjDAL = new Cls_Empleados_DAL();
+            BLL.Catalogo_BLL.Cls_SP_Empleados_BLL ObjBLL = new Cls_SP_Empleados_BLL();
+
+
+
+            DataTable ObjListar = ObjBLL.ListarEmpleados(ref ObjDAL);
+            TablaEmpleados.DataSource = ObjListar;
             StringBuilder sb = new StringBuilder();
 
             sb.Append("<table class=\"table table-striped\">");

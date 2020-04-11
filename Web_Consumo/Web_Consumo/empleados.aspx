@@ -103,11 +103,26 @@
 
     <div class="destination_details_info">
         <div class="container">
-            <div class="row justify-content-center">
+          <form id="Conten_TablaEmpleados" runat="server">
+            <div class="row justify-content-center" >
                 <div class="col-lg-8 col-md-9">
-                    <asp:Label ID="labelTable" runat="server" Text=""></asp:Label>
+
                 </div>
+                    <asp:Label ID="labelTable" runat="server" Text="">Informacin de Empleados</asp:Label>
+                    <asp:DataGrid ID="TablaEmpleados" runat="server" CssClass="TablaEmpleados"></asp:DataGrid>
+
+                  <div class="search_btn" id ="Conten_EmpleadosBtns">
+                          
+                               <asp:Button class="boxed-btn4" ID="btnFiltrar" runat="server" Text="Filtrar"/>
+                               <asp:Button class="boxed-btn4" ID="btnModificar" runat="server" Text="Modificar"/>
+                               <asp:Button class="boxed-btn4" ID="btnEliminar" runat="server" Text="Eliminar"/>
+                 </div>
+
+
             </div>
+</form>
+
+
         </div>
     </div>
 

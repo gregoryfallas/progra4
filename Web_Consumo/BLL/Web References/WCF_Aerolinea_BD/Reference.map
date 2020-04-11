@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://aerolineas.servicios.mcotosvr.com/BD.svc?wsdl" filename="BD.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://aerolineas.servicios.mcotosvr.com/BD.svc?xsd=xsd2" filename="BD.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://aerolineas.servicios.mcotosvr.com/BD.svc?disco" filename="BD.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://aerolineas.servicios.mcotosvr.com/BD.svc?xsd=xsd1" filename="BD0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://aerolineas.servicios.mcotosvr.com/BD.svc?xsd=xsd0" filename="BD1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -6682,3 +6682,22 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*Estilo para Tabla empleados*/
+
+.TablaEmpleados{
+
+    margin: 25px,auto;
+   
+    
+
+
+}
+
+#Conten_EmpleadosBtns{
+
+    margin:15px,auto;
+    flex-direction:row;
+
+}
