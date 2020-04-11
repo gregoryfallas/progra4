@@ -12,6 +12,8 @@ namespace Web_Consumo
 {
     public partial class empleados : System.Web.UI.Page
     {
+      
+
         protected void Page_Load(object sender, EventArgs e)
         {
             WCF.BDClient listarDatos = new BDClient();
