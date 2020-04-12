@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BLL.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="BLL_com_mcotosvr_servicios_aerolineas_BD" Type="(Web Service URL)" Scope="Application">
+    <Setting Name="BLL_WCF_Aerolinea_BD_BD" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://aerolineas.servicios.mcotosvr.com/BD.svc</Value>
     </Setting>
   </Settings>
