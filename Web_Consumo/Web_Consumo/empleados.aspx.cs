@@ -53,7 +53,7 @@ namespace Web_Consumo
             sb.Append("</body>");
             sb.Append("</table>");
 
-            labelTable.Text = sb.ToString();
+            /*labelTable.Text = sb.ToString();*/
 
         }
     }
