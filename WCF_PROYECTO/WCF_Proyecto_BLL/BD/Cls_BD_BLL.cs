@@ -89,6 +89,10 @@ namespace WCF_Proyecto_BLL.BD
                             case "4":
                                 DBType = SqlDbType.Decimal;
                                 break;
+                            case "5":
+                                DBType = SqlDbType.Char;
+                                break;
+
                             default:
                                 break;
                         }
