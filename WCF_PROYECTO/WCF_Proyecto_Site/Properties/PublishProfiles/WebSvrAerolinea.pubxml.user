@@ -40,31 +40,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 16:10:23</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_BLL.dll">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_BLL.pdb">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_DAL.dll">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_DAL.pdb">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_Site.dll">
-      <publishTime>04/11/2020 20:13:31</publishTime>
+      <publishTime>04/12/2020 17:22:26</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_Site.pdb">
-      <publishTime>04/11/2020 20:13:31</publishTime>
+      <publishTime>04/12/2020 17:22:26</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_SVC.dll">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_SVC.dll.config">
-      <publishTime>04/10/2020 19:57:49</publishTime>
+      <publishTime>04/12/2020 16:23:05</publishTime>
     </File>
     <File Include="bin/WCF_Proyecto_SVC.pdb">
-      <publishTime>04/11/2020 20:13:30</publishTime>
+      <publishTime>04/12/2020 17:22:25</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>04/10/2020 16:10:23</publishTime>
@@ -76,7 +76,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 16:10:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/11/2020 20:14:52</publishTime>
+      <publishTime>04/12/2020 17:23:12</publishTime>
     </File>
   </ItemGroup>
 </Project>

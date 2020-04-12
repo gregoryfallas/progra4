@@ -37,9 +37,3 @@ C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.csproj.CoreCompileInputs.cache
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.dll
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.pdb
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Debug\WCF_Proyecto_DAL.dll
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Debug\WCF_Proyecto_DAL.pdb
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.csprojAssemblyReference.cache
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.csproj.CoreCompileInputs.cache
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.dll
-C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Debug\WCF_Proyecto_DAL.pdb

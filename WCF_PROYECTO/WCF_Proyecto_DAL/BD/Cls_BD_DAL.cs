@@ -10,141 +10,182 @@ namespace WCF_Proyecto_DAL.BD
 {
     public class Cls_BD_DAL
     {
-        #region VARIABLES PRIVADAS
 
-            private string _sMsjError, _sCadenaConexion, 
-                           _sValorScalar, _sNombreSP;
-
-            private SqlCommand _Obj_SqlCmd;
-            private SqlDataAdapter _Obj_SqlDap;
-            private SqlConnection _Obj_SqlCnx;
-
-            private DataSet _Ds;
-
-            private DataTable _DtParametros;
-
+        #region Variables
+        private string _sMensError; //Toma mensajes de error del TRY-CATCH cada vez que los métodos contactan con la BD
+        private string _sValScalar; //String que devuelve el SGBD con la posición o último ID de la tabla en BD
+        private string _sCadenaCNX; //String de configuración para conectarse a la BD -viene del App.config-
+        private string _sNombre_SP; //Nombre del Stored procedure -viene del App.config-
+        private string _sNombTabla; //Nombre de la tabla -viene del App.config-
+        private DataSet _dsDatos; //Recibe tablas con datos desde la BD
+        private DataTable _dtParametros; //Se usa para enviar parámetros de control a la BD (ejemplo: nombre, tipo, valor)
+        private SqlConnection _Obj_SQL_CNX; //Objeto de conexión a la BD
+        private SqlDataAdapter _Obj_SQL_DAP; //Objeto de tipo BD para ejecutar comandos de listar, filtrar y eliminar
+        private SqlCommand _Obj_SQL_CMD; //Objeto de tipo BD para ejecutar comandos de insertar, actualizar y borrar
         #endregion
 
-        #region CONSTRUCTORES O VARIABES PUBLICAS
-
-            public string sMsjError
+        #region Setters & Getters
+        /// <summary>
+        /// Variable: Contiene mensaje de error 
+        /// </summary>
+        public string sMensError
+        {
+            get
             {
-                get
-                {
-                    return _sMsjError;
-                }
-
-                set
-                {
-                    _sMsjError = value;
-                }
+                return _sMensError;
             }
 
-            public string sCadenaConexion
+            set
             {
-                get
-                {
-                    return _sCadenaConexion;
-                }
+                _sMensError = value;
+            }
+        }
 
-                set
-                {
-                    _sCadenaConexion = value;
-                }
+        /// <summary>
+        /// String desde el SGBD con la posición o último ID de la tabla en BD
+        /// </summary>
+        public string sValScalar
+        {
+            get
+            {
+                return _sValScalar;
             }
 
-            public string sValorScalar
+            set
             {
-                get
-                {
-                    return _sValorScalar;
-                }
+                _sValScalar = value;
+            }
+        }
 
-                set
-                {
-                    _sValorScalar = value;
-                }
+        /// <summary>
+        /// String de configuración para conectarse a la BD
+        /// </summary>
+        public string sCadenaCNX
+        {
+            get
+            {
+                return _sCadenaCNX;
             }
 
-            public SqlCommand ObjSqlCmd
+            set
             {
-                get
-                {
-                    return _Obj_SqlCmd;
-                }
+                _sCadenaCNX = value;
+            }
+        }
 
-                set
-                {
-                    _Obj_SqlCmd = value;
-                }
+        /// <summary>
+        /// String con el nombre del Stored procedure
+        /// </summary>
+        public string sNombre_SP
+        {
+            get
+            {
+                return _sNombre_SP;
             }
 
-            public SqlDataAdapter ObjSqlDap
+            set
             {
-                get
-                {
-                    return _Obj_SqlDap;
-                }
+                _sNombre_SP = value;
+            }
+        }
 
-                set
-                {
-                    _Obj_SqlDap = value;
-                }
+        /// <summary>
+        /// String con el nombre de la tabla
+        /// </summary>
+        public string sNombTabla
+        {
+            get
+            {
+                return _sNombTabla;
             }
 
-            public SqlConnection ObjSqlCnx
+            set
             {
-                get
-                {
-                    return _Obj_SqlCnx;
-                }
+                _sNombTabla = value;
+            }
+        }
 
-                set
-                {
-                    _Obj_SqlCnx = value;
-                }
+        /// <summary>
+        /// Variable para recibir resultados/datos desde la BD
+        /// </summary>
+        public DataSet dsDatos
+        {
+            get
+            {
+                return _dsDatos;
             }
 
-            public DataSet Ds
+            set
             {
-                get
-                {
-                    return _Ds;
-                }
+                _dsDatos = value;
+            }
+        }
 
-                set
-                {
-                    _Ds = value;
-                }
+        /// <summary>
+        /// String para enviar parámetros de control a la BD
+        /// </summary>
+        public DataTable dtParametros
+        {
+            get
+            {
+                return _dtParametros;
             }
 
-            public DataTable DtParametros
+            set
             {
-                get
-                {
-                    return _DtParametros;
-                }
+                _dtParametros = value;
+            }
+        }
 
-                set
-                {
-                    _DtParametros = value;
-                }
+        /// <summary>
+        /// Objeto de conexión a la BD
+        /// </summary>
+        public SqlConnection Obj_SQL_CNX
+        {
+            get
+            {
+                return _Obj_SQL_CNX;
             }
 
-            public string sNombreSP
+            set
             {
-                get
-                {
-                    return _sNombreSP;
-                }
+                _Obj_SQL_CNX = value;
+            }
+        }
 
-                set
-                {
-                    _sNombreSP = value;
-                }
+        /// <summary>
+        /// Objeto de tipo BD para ejecutar comandos de listar, filtrar y eliminar
+        /// </summary>
+        public SqlDataAdapter Obj_SQL_DAP
+        {
+            get
+            {
+                return _Obj_SQL_DAP;
             }
 
+            set
+            {
+                _Obj_SQL_DAP = value;
+            }
+        }
 
+        /// <summary>
+        /// Objeto de tipo BD para ejecutar comandos de insertar, actualizar y borrar
+        /// </summary>
+        public SqlCommand Obj_SQL_CMD
+        {
+            get
+            {
+                return _Obj_SQL_CMD;
+            }
+
+            set
+            {
+                _Obj_SQL_CMD = value;
+            }
+        }
         #endregion
+
+
     }
 }
