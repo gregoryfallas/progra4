@@ -29,6 +29,7 @@ namespace Web_Consumo
             //Asignacion de datos a DT
             DataTable ObjListar = ObjBLL.ListarEmpleados(ref ObjDAL);
             TablaEmpleados.DataSource = ObjListar;
+            
 
             //Formateo de Tabla
             labelTable.Text = ObjBLLMet.FormatearTabla(ObjListar);

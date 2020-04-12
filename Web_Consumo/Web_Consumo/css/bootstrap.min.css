@@ -1766,8 +1766,9 @@ pre code {
 }
 
 .table {
-    width: 100%;
-    max-width: 100%;
+    width: 65%;
+    max-width: 90%;
+    overflow-x:scroll;
     margin-bottom: 1rem;
     background-color: transparent
 }
@@ -9250,7 +9251,7 @@ a.text-dark:hover {
         min-width: 992px!important
     }
     .container {
-        min-width: 992px!important
+        min-width: 592px!important
     }
     .navbar {
         display: none

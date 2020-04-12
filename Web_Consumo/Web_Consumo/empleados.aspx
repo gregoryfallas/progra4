@@ -62,8 +62,9 @@
                                             <li>
                                                 <a href="#">Usuarios <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="destination_details.html">Empleados</a></li>
-                                                    <li><a href="elements.html">Clientes</a></li>
+                                                    <li><a href="###">Empleados</a></li>
+                                                    <li><a href="###">Clientes</a></li>
+                                                    <li><a href="###">Destinos</a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -108,14 +109,16 @@
                 <div class="col-lg-8 col-md-9">
 
                 </div>
-                    <asp:Label ID="labelTable" runat="server" Text="">Informacin de Empleados</asp:Label>
+                    <asp:Label ID="labelTable" runat="server" Text="">Informacion de Empleados</asp:Label>
                     <asp:DataGrid ID="TablaEmpleados" runat="server" CssClass="TablaEmpleados" Width="1000" AlternatingItemStyle-HorizontalAlign="Center"
                         ></asp:DataGrid>
 
                   <div class="search_btn" id ="Conten_EmpleadosBtns">
                           
                                <asp:Button class="boxed-btn4" ID="btnFiltrar" runat="server" Text="Filtrar"/>
+                               <asp:TextBox ID="TXT_Id_Empleado" runat="server" type="email"></asp:TextBox> 
                                <asp:Button class="boxed-btn4" ID="btnModificar" runat="server" Text="Modificar"/>
+                               <asp:TextBox ID="TXT_Modificar" runat="server" type="email" ></asp:TextBox> 
                                <asp:Button class="boxed-btn4" ID="btnEliminar" runat="server" Text="Eliminar"/>
                  </div>
 
@@ -134,7 +137,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Estados</h4>
+                    <h4 class="modal-title">Empleados</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -143,15 +146,58 @@
                     <form action="/" method="post">
                         <div>
                             <div class="input_field">
-                                <h4>ID ESTADO</h4>
-                                <input id="inputcolumn0" class="form-control" type="text" placeholder="ID ESTADO">
+                                <h4>ID DE EMPLADO</h4>
+                                <input id="inputcolumn0" class="form-control" type="text" placeholder="Empleados">
                             </div>
                             <br />
                             <div class="input_field">
-                                <h4>DESCRIPCION</h4>
-                                <input id="inputcolumn1" class="form-control" type="text" placeholder="DESCRIPCION">
+                                <h4>CEDULA</h4>
+                                <input id="inputcolumn1" class="form-control" type="text" placeholder="Identificacion">
+                            </div>
+                      
+                            <br />
+                            <div class="input_field">
+                                <h4>NOMBRE</h4>
+                                <input id="inputcolumn2" class="form-control" type="text" placeholder="Nombre">
+                            </div>
+                          
+                            <br />
+                            <div class="input_field">
+                                <h4>APELLIDO</h4>
+                                <input id="inputcolumn3" class="form-control" type="text" placeholder="Apellidos">
                             </div>
                             <br />
+                             <div class="input_field">
+                                <h4>DIRECCION</h4>
+                                <input id="inputcolumn4" class="form-control" type="text" placeholder="Direccion Exacta">
+                            </div>
+                            <br />
+                             <div class="input_field">
+                                <h4>EDAD</h4>
+                                <input id="inputcolumn5" class="form-control" type="text" placeholder="Edad">
+                            </div>
+                            <br />
+                              <div class="input_field">
+                                <h4>TELEFONO CASA</h4>
+                                <input id="inputcolumn6" class="form-control" type="text" placeholder="Tel residencia">
+                            </div>
+                            <br />
+                              <div class="input_field">
+                                <h4>OTRO TELEFONO</h4>
+                                <input id="inputcolumn7" class="form-control" type="text" placeholder="Telefono referencia">
+                            </div>
+                            <br />
+                              <div class="input_field">
+                                <h4>CELULAR</h4>
+                                <input id="inputcolumn8" class="form-control" type="text" placeholder="Numero de Movil">
+                            </div>
+                            <br />
+                              <div class="input_field">
+                                <h4>SALARIO</h4>
+                                <input id="inputcolumn9" class="form-control" type="text" placeholder="Remuneracion">
+                            </div>
+                            <br />
+
                         </div>
                     </form>
                 </div>
