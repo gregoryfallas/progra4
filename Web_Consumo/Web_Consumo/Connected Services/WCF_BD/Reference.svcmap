@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="32a31b8b-7325-4e2e-841e-5369d6f7468e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="e248b01f-6c0d-40b5-af7b-ed632246a3ca" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="fb9e8d11-eedc-4cf8-8c27-5871f9e24745" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="ac3698a9-513b-4918-a803-90cd2abf4f6c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd2" />
+    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="505fdb09-66a9-4e79-a6e7-5dd4813be984" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="bcb7efca-98b7-4b32-9bac-25aacc8b016b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

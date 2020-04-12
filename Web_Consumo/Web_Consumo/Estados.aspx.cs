@@ -30,16 +30,16 @@ namespace Web_Consumo
             #endregion
 
             if (txt_filtroEstados.Text == string.Empty)
-            {
+            {//ESTE LISTA LA INFORMACION DE LA TABLA
                 dtParametros = null;
-                sNombSP = "SP_LISTAR_ESTADOS";
+                sNombSP = "SP_Listar_Estados";
             }
             else
-            {
+            {   //ESTE PROCESO  REALIZA EL FILTRADO
                 dtParametros = Obj_WCF_BD.CrearDTParametros();
-                dtParametros.Rows.Add("@Nombre", "0", txt_filtroEstados.Text.Trim());
-                sNombSP = "SP_FILTRAR_ESTADOS";
-                // sNombSP = "SCH_GENERAL.SP_FILTRAR_ESTADOS";            
+                dtParametros.Rows.Add("@filtro", "2", txt_filtroEstados.Text.Trim());
+                sNombSP = "SP_Filtrar_Estados";
+         
             }
 
             dt = Obj_WCF_BD.ListarFiltrarDatos(sNombSP, dtParametros, ref sMsjError);

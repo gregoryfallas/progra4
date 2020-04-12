@@ -1,4 +1,0 @@
-D:\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.dll
-D:\WCF_PROYECTO\WCF_Proyecto_DAL\bin\Release\WCF_Proyecto_DAL.pdb
-D:\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.dll
-D:\WCF_PROYECTO\WCF_Proyecto_DAL\obj\Release\WCF_Proyecto_DAL.pdb
