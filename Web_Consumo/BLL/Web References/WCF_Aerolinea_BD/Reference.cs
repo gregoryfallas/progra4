@@ -40,7 +40,7 @@ namespace BLL.WCF_Aerolinea_BD {
         
         /// <remarks/>
         public BD() {
-            this.Url = global::BLL.Properties.Settings.Default.BLL_com_mcotosvr_servicios_aerolineas_BD;
+            this.Url = global::BLL.Properties.Settings.Default.BLL_WCF_Aerolinea_BD_BD;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
