@@ -35,3 +35,13 @@ C:\Users\Daniel\source\repos\gregoryfallas\progra4\WCF_PROYECTO\BLL_Aeropuerto\o
 C:\Users\Daniel\source\repos\gregoryfallas\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.csproj.CopyComplete
 C:\Users\Daniel\source\repos\gregoryfallas\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.dll
 C:\Users\Daniel\source\repos\gregoryfallas\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.pdb
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\bin\Debug\BLL_Aeropuerto.dll.config
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\bin\Debug\BLL_Aeropuerto.dll
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\bin\Debug\BLL_Aeropuerto.pdb
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\bin\Debug\DAL_Aeropuerto.dll
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\bin\Debug\DAL_Aeropuerto.pdb
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.csprojAssemblyReference.cache
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.csproj.CoreCompileInputs.cache
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.csproj.CopyComplete
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.dll
+C:\Users\adrie\Source\Repos\progra4\WCF_PROYECTO\BLL_Aeropuerto\obj\Debug\BLL_Aeropuerto.pdb
