@@ -2,6 +2,7 @@
 using System.Data;
 using DAL.Catalogo_DAL;
 using BLL.WCF_Aerolinea_BD;
+using BLL.WCF_BD;
 
 
 namespace BLL.Catalogo_BLL
@@ -14,17 +15,18 @@ namespace BLL.Catalogo_BLL
             DataTable ds = new DataTable();
             string _sMensajeError = "";
             objDAL.SStoreProcedure = "SP_Listar_Empleados";
-           WCF_Aerolinea_BD.BD Cliente = new BD();
-
+           WCF_BD.BDClient Cliente = new BDClient();
+            DataTable parametros = new DataTable();
+            parametros = null;
 
             try
             {
-                
-                ds = Cliente.ListarDatos(objDAL.SStoreProcedure, ref _sMensajeError);
+
+                ds = Cliente.ListarFiltrarDatos(objDAL.SStoreProcedure, parametros, ref _sMensajeError);
             }
             finally
             {
-               Cliente.Dispose();
+               Cliente.Close();
             }
 
 
