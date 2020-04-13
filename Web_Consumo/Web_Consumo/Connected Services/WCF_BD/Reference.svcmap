@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a8bdb46-d110-4059-acfe-fba16465b28c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="32a31b8b-7325-4e2e-841e-5369d6f7468e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:58339/BD_Aeropuerto.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="BD_Aeropuerto.xsd" MetadataType="Schema" ID="1b52f8ae-4d71-4d12-b25d-fee775fdea42" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd2" />
-    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="6e754102-ba60-4d90-bf16-6c77708803db" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?wsdl" />
-    <MetadataFile FileName="BD_Aeropuerto1.xsd" MetadataType="Schema" ID="566b02da-a2e0-4783-b3b6-ec470196ec5d" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd1" />
-    <MetadataFile FileName="BD_Aeropuerto2.xsd" MetadataType="Schema" ID="40ff01cc-5ba3-47df-a3e8-0b9b05936929" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="e248b01f-6c0d-40b5-af7b-ed632246a3ca" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="fb9e8d11-eedc-4cf8-8c27-5871f9e24745" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="ac3698a9-513b-4918-a803-90cd2abf4f6c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd2" />
+    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="505fdb09-66a9-4e79-a6e7-5dd4813be984" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="bcb7efca-98b7-4b32-9bac-25aacc8b016b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SVC_Aeropuerto/Contracts/BD/?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

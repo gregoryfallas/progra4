@@ -67,7 +67,7 @@ namespace SVC_Aeropuerto.Contracts
         /// <param name="DT_Parametros">Datatable con parametros</param>
         /// <param name="sMsjError">Mensaje de error</param>
         /// <returns>String con resultado o error</returns>
-        public String Ins_Mod_Eli_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError)
+        public string Ins_Mod_Eli_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError)
         {
             //Instancias de clase
             DAL_Aeropuerto.DB.cls_DB_DAL Obj_BD_DAL = new DAL_Aeropuerto.DB.cls_DB_DAL();
