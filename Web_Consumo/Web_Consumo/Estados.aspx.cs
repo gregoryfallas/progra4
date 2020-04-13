@@ -37,7 +37,7 @@ namespace Web_Consumo
             else
             {   //ESTE PROCESO  REALIZA EL FILTRADO
                 dtParametros = Obj_WCF_BD.CrearDTParametros();
-                dtParametros.Rows.Add("@filtro", "2", txt_filtroEstados.Text.Trim());
+                dtParametros.Rows.Add("@filtro", "1", txt_filtroEstados.Text.Trim());
                 sNombSP = "SP_Filtrar_Estados";
          
             }
@@ -59,7 +59,7 @@ namespace Web_Consumo
         {
             CargarDatos();
         }
-
+        //CLICK AL BOTON INSERTAR
         protected void btn_Insertar_Click(object sender, EventArgs e)
         {//
             #region VARIABLES LOCALES
@@ -89,6 +89,69 @@ namespace Web_Consumo
             txt_ID_Estados.Text = string.Empty;
             txt_Nombre_Estado.Text = string.Empty;
 
+            CargarDatos();
+        }
+        //CLICK AL BOTON MODIFICAR
+        protected void btn_Modificar_Click(object sender, EventArgs e)
+        {
+            #region VARIABLES LOCALES
+
+            DataTable dtParametros = new DataTable();
+            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+
+            string sNombSP = string.Empty;
+            string sMsjError = string.Empty;
+
+            #endregion
+
+            dtParametros = Obj_WCF_BD.CrearDTParametros();
+            dtParametros.Rows.Add("@IdEstado", "3", txt_ID_Estados.Text.Trim());
+            dtParametros.Rows.Add("@Descripcion", "1", txt_Nombre_Estado.Text.Trim());
+            sNombSP = "SP_Modificar_Estados";
+
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+
+            //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
+            if (sMsjError != string.Empty)
+            {   //DEFINE EL MENSAJE A MOSTRAR
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Se presento un error a la hora de modificar el estado.');", true);
+            }
+
+            txt_filtroEstados.Text = string.Empty;
+            txt_ID_Estados.Text = string.Empty;
+            txt_Nombre_Estado.Text = string.Empty;
+
+            CargarDatos();
+        }
+        //CLICK AL BOTON ELIMINAR
+        protected void btn_EliminarEstados_Click(object sender, EventArgs e)
+        {
+            #region VARIABLES LOCALES
+
+            DataTable dtParametros = new DataTable();
+            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+
+
+            string sNombSP = string.Empty;
+            string sMsjError = string.Empty;
+            string message = string.Empty;
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+            #endregion
+
+            dtParametros = Obj_WCF_BD.CrearDTParametros();
+            dtParametros.Rows.Add("@IdEstado", "0", txt_ID_Estados.Text.Trim());
+            sNombSP = "SP_Borrar_Estados";
+
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+            //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
+            if (sMsjError != string.Empty)
+            {   //DEFINE EL MENSAJE A MOSTRAR
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Se presento un error a la hora de eliminar el estado.');", true);
+                //ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "alert", "alert('msg');", true);
+            }
+
+            txt_ID_Estados.Text = string.Empty;
             CargarDatos();
         }
     }

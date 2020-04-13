@@ -128,8 +128,8 @@
                    <br />
                    <br />
                    <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" /> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" /> &nbsp;
-                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR"/>&nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" /> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click"/>&nbsp;
                </div>        
         </div>
     </form>
