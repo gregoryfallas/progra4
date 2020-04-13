@@ -108,20 +108,28 @@
                 <form id="form1" runat="server">
         <div>
               <asp:Label ID="Label1" runat="server" Text="Filtro : "></asp:Label>
-              <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px" OnTextChanged="txt_filtroEstados_TextChanged"></asp:TextBox>  
+              <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px" OnTextChanged="txt_filtroEstados_TextChanged" CssClass="btGrisNegrita"></asp:TextBox>  
               <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click"/>
-              <asp:Button ID="btn_EliminarEstados" runat="server" Text="Eliminar"/>
+              
                <div>
-                   <p>
-
-
-                   </p>
+                   <br />
+                   <br />
+                   <p></p>
                    <asp:GridView ID="DGV_DATOS" runat="server"></asp:GridView>
-                   <p>
-
-
-                   </p>
-
+                   <p></p>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : "></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : "></asp:Label>
+                   <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" /> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" /> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR"/>&nbsp;
                </div>        
         </div>
     </form>

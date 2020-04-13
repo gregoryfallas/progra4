@@ -59,5 +59,37 @@ namespace Web_Consumo
         {
             CargarDatos();
         }
+
+        protected void btn_Insertar_Click(object sender, EventArgs e)
+        {
+            #region VARIABLES LOCALES
+
+            DataTable dtParametros = new DataTable();
+            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+
+            string sNombSP = string.Empty;
+            string sMsjError = string.Empty;
+
+            #endregion
+
+            dtParametros = Obj_WCF_BD.CrearDTParametros();
+            dtParametros.Rows.Add("@IdEstado", "3", txt_ID_Estados.Text.Trim());
+            dtParametros.Rows.Add("@Descripcion", "1", txt_Nombre_Estado.Text.Trim());
+            sNombSP = "SP_Insertar_Estados";
+
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+
+            //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
+            if (sMsjError != string.Empty)
+            {   //DEFINE EL MENSAJE A MOSTRAR
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Se presento un error a la hora de insertar el estado.');", true);
+            }
+
+            txt_filtroEstados.Text = string.Empty;
+            txt_ID_Estados.Text = string.Empty;
+            txt_Nombre_Estado.Text = string.Empty;
+
+            CargarDatos();
+        }
     }
 }

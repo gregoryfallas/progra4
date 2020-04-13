@@ -89,6 +89,7 @@
     <Content Include="contact_process.php" />
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\btGrisNegrita.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\flaticon.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -319,7 +320,9 @@
     <Content Include="travel doc\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="travel_destination.html" />
     <Content Include="Vuelos.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\WCF\Reference.cs">
