@@ -85,13 +85,13 @@ namespace Web_Consumo {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inp_CODAREA;
         
         /// <summary>
-        /// Control inp_IDESTADO.
+        /// Control slc_IDESTAD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IDESTADO;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_IDESTAD;
         
         /// <summary>
         /// Control btn_Editar.
@@ -157,13 +157,13 @@ namespace Web_Consumo {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGCODAREA;
         
         /// <summary>
-        /// Control inp_AGIDESTADO.
+        /// Control slc_IDESTAD_AG.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGIDESTADO;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_IDESTAD_AG;
         
         /// <summary>
         /// Control btn_Agregar.

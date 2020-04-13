@@ -166,9 +166,10 @@
                                     <input runat="server" id="inp_CODAREA" class="form-control" type="text" placeholder="CODIGO AREA PAIS">
                                 </div>
                                 <br />
-                                <div class="input_field">
+                               <div class="input_field">
                                     <h4>ID ESTADO</h4>
-                                    <input runat="server" id="inp_IDESTADO" class="form-control" type="text" placeholder="ID ESTADO">
+                                    <select runat="server" id="slc_IDESTAD" class="form-control" >
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +252,9 @@
                                 <br />
                                 <div class="input_field">
                                     <h4>ID ESTADO</h4>
-                                    <input runat="server" id="inp_AGIDESTADO" class="form-control" type="text" placeholder="ID ESTADO">
+                                    <select runat="server" id="slc_IDESTAD_AG" class="form-control" >
+                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                    </select>
                                 </div>
                                 <br />
                                 

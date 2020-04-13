@@ -14,13 +14,14 @@ namespace Web_Consumo
         protected void Page_Load(object sender, EventArgs e)
         {
             RecargarPagina('L');
+            LlenarSelectEstado();
 
         }
         protected void btn_Editar_Click(object sender, EventArgs e)
         {
 
 
-            if (inp_IDESTADO.Value != "" && inp_NOMPAIS.Value != "" && inp_CODPAIS.Value != "" && inp_CODAREA.Value != "" && inp_IDESTADO.Value != "")
+            if (slc_IDESTAD.ToString() != "0" && inp_NOMPAIS.Value != "" && inp_CODPAIS.Value != "" && inp_CODAREA.Value != "" && slc_IDESTAD.Value != "0")
             {
                 WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
                 String sMensajeError = "";
@@ -32,7 +33,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@NombrePais", "1", inp_NOMPAIS.Value.Trim());
                 dtParametros.Rows.Add("@CodigoISOPais", "3", inp_CODPAIS.Value.Trim());
                 dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_CODAREA.Value.Trim());
-                dtParametros.Rows.Add("@IdEstado", "3", inp_IDESTADO.Value.Trim());
+                dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD.Value);
 
                 listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false, dtParametros, ref sMensajeError);
 
@@ -85,7 +86,7 @@ namespace Web_Consumo
         protected void btn_Agregar_Click(object sender, EventArgs e)
         {
 
-            if (inp_AGNOMPAIS.Value != "" && inp_AGCODPAIS.Value != "" && inp_AGCODAREA.Value != "" && inp_AGIDESTADO.Value != "")
+            if (inp_AGNOMPAIS.Value != "" && inp_AGCODPAIS.Value != "" && inp_AGCODAREA.Value != "" && slc_IDESTAD_AG.ToString() != "0")
             {
                 WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
                 String sMensajeError = "";
@@ -96,7 +97,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@NombrePais", "1", inp_AGNOMPAIS.Value.Trim());
                 dtParametros.Rows.Add("@CodigoISOPais", "3", inp_AGCODPAIS.Value.Trim());
                 dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_AGCODAREA.Value.Trim());
-                dtParametros.Rows.Add("@IdEstado", "3", inp_AGIDESTADO.Value.Trim());
+                dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD_AG.Value);
 
                 listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Paises", true, dtParametros, ref sMensajeError);
 
@@ -196,6 +197,27 @@ namespace Web_Consumo
             else
             {
                 RecargarPagina('F');
+            }
+        }
+        private void LlenarSelectEstado()
+        {
+            WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+            String sMensajeError = "";
+
+            DataTable ObjListar = listarDatos.ListarFiltrarDatos("dbo.SP_Listar_Estados", null, ref sMensajeError);
+
+            if (sMensajeError != string.Empty)
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('OCURRIO UN ERROR AL CARGAR LOS DATOS DE LOS SELECTS');", true);
+            }
+            else
+            {
+                foreach (DataRow row in ObjListar.Rows)
+                {
+                    //AGREGAMOS LA LISTA DE DATOS AL SELECT, EL PRIMER PARAMETRO ES EL TEXTO Y EL SEGUNDO ES EL VALUE
+                    slc_IDESTAD.Items.Add(new ListItem(row.ItemArray[1].ToString(), row.ItemArray[0].ToString()));
+                    slc_IDESTAD_AG.Items.Add(new ListItem(row.ItemArray[1].ToString(), row.ItemArray[0].ToString()));
+                }
             }
         }
     }
