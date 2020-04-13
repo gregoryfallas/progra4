@@ -59,11 +59,23 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
-                                            <li><a href="#">Tablas <i class="ti-angle-down"></i></a>
+                                            <li><a class="" href="Vuelos.aspx">Vuelos</a></li>
+                                            <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                        <li><a href="aerolineas.aspx">Aerolineas</a></li>
+                                                        <li><a href="destinos.html">Destinos</a></li>
+                                                        <li><a href="Paises.aspx">Paises</a></li>
+                                                        <li><a href="CategoriasVuelos.aspx">Categorias Vuelos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Administracion <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="empleados.aspx">Empleados</a></li>
-                                                        <li><a href="elements.html">Clientes</a></li>
+                                                        <li><a href="tiposAviones.html">Tipos Aviones</a></li>
+                                                        <li><a href="categoriasVuelos.html">Categorias Vuelos</a></li>
+                                                        <li><a href="tiposClientes.aspx">Tipos Clientes</a></li>
+                                                        <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
+                                                        <li><a href="usuarios.aspx">Usuarios</a></li>
                                                         <li><a href="Estados.aspx">Estados</a></li>
                                                 </ul>
                                             </li>
