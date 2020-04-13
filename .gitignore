@@ -1,1 +1,5 @@
 .vs
+/WCF_PROYECTO/BLL_Aeropuerto/obj/Release/BLL_Aeropuerto.csproj.CoreCompileInputs.cache
+/WCF_PROYECTO/DAL_Aeropuerto/obj/Release/DAL_Aeropuerto.csproj.CoreCompileInputs.cache
+/WCF_PROYECTO/SITE_Aeropuerto/obj/Release/SITE_Aeropuerto.csproj.CoreCompileInputs.cache
+/WCF_PROYECTO/SVC_Aeropuerto/obj/Release/SVC_Aeropuerto.csproj.CoreCompileInputs.cache

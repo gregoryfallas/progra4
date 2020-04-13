@@ -6682,3 +6682,18 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.style_disabled{
+    pointer-events:none;
+    background-color:lightgray;
+}
+
+.tituloH{
+    width:100%;
+    text-align:center;
+    padding-bottom:1em;
+}
+
+.optNone {
+    pointer-events: none;
+}
