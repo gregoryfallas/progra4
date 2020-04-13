@@ -49,6 +49,15 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Button btn_FiltrarEstados;
         
         /// <summary>
+        /// btn_Refrescar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Refrescar;
+        
+        /// <summary>
         /// DGV_DATOS control.
         /// </summary>
         /// <remarks>

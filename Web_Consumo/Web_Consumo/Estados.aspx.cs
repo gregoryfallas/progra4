@@ -154,5 +154,10 @@ namespace Web_Consumo
             txt_ID_Estados.Text = string.Empty;
             CargarDatos();
         }
+
+        protected void btn_Refrescar_Click(object sender, EventArgs e)
+        {
+            CargarDatos();
+        }
     }
 }
