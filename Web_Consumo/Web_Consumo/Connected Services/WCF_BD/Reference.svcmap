@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1f5417ef-ed88-4368-b456-de539937401e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5370e8c4-50a2-49d2-9dc0-c61206c2fa8e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:58339/BD_Aeropuerto.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="BD_Aeropuerto.xsd" MetadataType="Schema" ID="66f7ed56-aafd-43b0-a0bd-da025d4ed227" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd2" />
-    <MetadataFile FileName="BD_Aeropuerto1.xsd" MetadataType="Schema" ID="f3f36acc-3908-49b6-81c4-c07aa1a77c7c" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd0" />
-    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="c48e1564-6982-4ec0-ac85-29b39a26a461" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?wsdl" />
-    <MetadataFile FileName="BD_Aeropuerto2.xsd" MetadataType="Schema" ID="c324aab7-92c8-4b1e-9c3d-10d766b1272d" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd1" />
-    <MetadataFile FileName="BD_Aeropuerto.disco" MetadataType="Disco" ID="49c568a1-d50e-43bc-8f77-938a99a4ccdc" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?disco" />
+    <MetadataFile FileName="BD_Aeropuerto.xsd" MetadataType="Schema" ID="de25509b-d927-4487-ad98-abfb8444e327" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd2" />
+    <MetadataFile FileName="BD_Aeropuerto1.xsd" MetadataType="Schema" ID="fcd92fff-95b8-4765-8852-711bd8691779" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd0" />
+    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="4cfb8ad1-ff2c-45ea-8ec5-21d8079df124" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?wsdl" />
+    <MetadataFile FileName="BD_Aeropuerto2.xsd" MetadataType="Schema" ID="5692aee3-b5d7-4e5b-809a-17b5061f4e50" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?xsd=xsd1" />
+    <MetadataFile FileName="BD_Aeropuerto.disco" MetadataType="Disco" ID="b680efde-b297-4282-9f90-580882aaeb91" SourceId="1" SourceUrl="http://localhost:58339/BD_Aeropuerto.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

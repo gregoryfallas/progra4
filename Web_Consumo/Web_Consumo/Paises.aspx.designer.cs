@@ -13,58 +13,22 @@ namespace Web_Consumo {
     public partial class Paises {
         
         /// <summary>
-        /// Control txt_buscar.
+        /// Control MyForm.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_buscar;
+        protected global::System.Web.UI.HtmlControls.HtmlForm MyForm;
         
         /// <summary>
-        /// Control TXT_ID_PAIS.
+        /// Control inp_Filtrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText TXT_ID_PAIS;
-        
-        /// <summary>
-        /// Control TXT_NOMBRE_PAIS.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText TXT_NOMBRE_PAIS;
-        
-        /// <summary>
-        /// Control TXT_COD.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText TXT_COD;
-        
-        /// <summary>
-        /// Control TXT_COD_AREA.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText TXT_COD_AREA;
-        
-        /// <summary>
-        /// Control TXT_ID_ESTADO.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText TXT_ID_ESTADO;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Filtrar;
         
         /// <summary>
         /// Control btn_Filtrar.
@@ -76,39 +40,138 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Button btn_Filtrar;
         
         /// <summary>
-        /// Control BTN_INSERT.
+        /// Control labelTable.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_INSERT;
+        protected global::System.Web.UI.WebControls.Label labelTable;
         
         /// <summary>
-        /// Control BTN_MODIFICAR.
+        /// Control inp_IDPAIS.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BTN_MODIFICAR;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IDPAIS;
         
         /// <summary>
-        /// Control btn_Eliminar.
+        /// Control inp_NOMPAIS.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Eliminar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_NOMPAIS;
         
         /// <summary>
-        /// Control DGV_DATOS.
+        /// Control inp_CODPAIS.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView DGV_DATOS;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_CODPAIS;
+        
+        /// <summary>
+        /// Control inp_CODAREA.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_CODAREA;
+        
+        /// <summary>
+        /// Control inp_IDESTADO.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IDESTADO;
+        
+        /// <summary>
+        /// Control btn_Editar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Editar;
+        
+        /// <summary>
+        /// Control inp_ELIMIDPAIS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ELIMIDPAIS;
+        
+        /// <summary>
+        /// Control inp_ELIMNOMPAIS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ELIMNOMPAIS;
+        
+        /// <summary>
+        /// Control btn_EliminarRegist.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_EliminarRegist;
+        
+        /// <summary>
+        /// Control inp_AGNOMPAIS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGNOMPAIS;
+        
+        /// <summary>
+        /// Control inp_AGCODPAIS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGCODPAIS;
+        
+        /// <summary>
+        /// Control inp_AGCODAREA.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGCODAREA;
+        
+        /// <summary>
+        /// Control inp_AGIDESTADO.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_AGIDESTADO;
+        
+        /// <summary>
+        /// Control btn_Agregar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Agregar;
     }
 }

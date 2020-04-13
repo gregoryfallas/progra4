@@ -77,6 +77,28 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\WCF_BD\BD.wsdl" />
+    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF_BD\BD_Aeropuerto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF_BD\BD_Aeropuerto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.Ins_Mod_Eli_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.ListarFiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WCF_BD_old\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF_BD_old\configuration.svcinfo" />
+    <None Include="Connected Services\WCF_BD_old\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
     <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
     <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
@@ -104,7 +126,6 @@
     <Content Include="empleados.aspx" />
     <Content Include="empleados.html" />
     <Content Include="elements.html" />
-    <Content Include="Empleados_1.aspx" />
     <Content Include="fonts\fa-brands-400.svg" />
     <Content Include="fonts\fa-regular-400.svg" />
     <Content Include="fonts\fa-solid-900.svg" />
@@ -255,6 +276,7 @@
     <Content Include="js\range.js" />
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="js\Tablas\TiposEmpleados.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="js\waypoints.min.js" />
@@ -330,19 +352,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\WCF_BD_old\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="empleados.aspx.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="empleados.aspx.designer.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Empleados_1.aspx.cs">
-      <DependentUpon>Empleados_1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Empleados_1.aspx.designer.cs">
-      <DependentUpon>Empleados_1.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -414,20 +434,20 @@
     <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarDatosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\WCF_BD\BD.wsdl" />
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.xsd">
+    <None Include="Connected Services\WCF_BD_old\BD.wsdl" />
+    <None Include="Connected Services\WCF_BD_old\BD_Aeropuerto.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto1.xsd">
+    <None Include="Connected Services\WCF_BD_old\BD_Aeropuerto1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto2.xsd">
+    <None Include="Connected Services\WCF_BD_old\BD_Aeropuerto2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.Ins_Mod_Eli_DatosResponse.datasource">
+    <Content Include="Connected Services\WCF_BD_old\Web_Consumo.WCF_BD_old.Ins_Mod_Eli_DatosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.ListarFiltrarDatosResponse.datasource">
+    <Content Include="Connected Services\WCF_BD_old\Web_Consumo.WCF_BD_old.ListarFiltrarDatosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="packages.config" />
@@ -482,6 +502,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WCF\" />
     <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
+    <WCFMetadataStorage Include="Connected Services\WCF_BD_old\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
