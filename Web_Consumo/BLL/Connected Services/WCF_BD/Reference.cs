@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Consumo.WCF {
+namespace BLL.WCF_BD {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WCF.IBD")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WCF_BD.IBD")]
     public interface IBD {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/CrearDTParametros", ReplyAction="http://tempuri.org/IBD/CrearDTParametrosResponse")]
@@ -21,65 +21,69 @@ namespace Web_Consumo.WCF {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/CrearDTParametros", ReplyAction="http://tempuri.org/IBD/CrearDTParametrosResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> CrearDTParametrosAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatos", ReplyAction="http://tempuri.org/IBD/ListarDatosResponse")]
-        Web_Consumo.WCF.ListarDatosResponse ListarDatos(Web_Consumo.WCF.ListarDatosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarFiltrarDatos", ReplyAction="http://tempuri.org/IBD/ListarFiltrarDatosResponse")]
+        BLL.WCF_BD.ListarFiltrarDatosResponse ListarFiltrarDatos(BLL.WCF_BD.ListarFiltrarDatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatos", ReplyAction="http://tempuri.org/IBD/ListarDatosResponse")]
-        System.Threading.Tasks.Task<Web_Consumo.WCF.ListarDatosResponse> ListarDatosAsync(Web_Consumo.WCF.ListarDatosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarFiltrarDatos", ReplyAction="http://tempuri.org/IBD/ListarFiltrarDatosResponse")]
+        System.Threading.Tasks.Task<BLL.WCF_BD.ListarFiltrarDatosResponse> ListarFiltrarDatosAsync(BLL.WCF_BD.ListarFiltrarDatosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/Ins_Mod_Del_Datos", ReplyAction="http://tempuri.org/IBD/Ins_Mod_Del_DatosResponse")]
-        Web_Consumo.WCF.Ins_Mod_Del_DatosResponse Ins_Mod_Del_Datos(Web_Consumo.WCF.Ins_Mod_Del_DatosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/Ins_Mod_Eli_Datos", ReplyAction="http://tempuri.org/IBD/Ins_Mod_Eli_DatosResponse")]
+        BLL.WCF_BD.Ins_Mod_Eli_DatosResponse Ins_Mod_Eli_Datos(BLL.WCF_BD.Ins_Mod_Eli_DatosRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/Ins_Mod_Del_Datos", ReplyAction="http://tempuri.org/IBD/Ins_Mod_Del_DatosResponse")]
-        System.Threading.Tasks.Task<Web_Consumo.WCF.Ins_Mod_Del_DatosResponse> Ins_Mod_Del_DatosAsync(Web_Consumo.WCF.Ins_Mod_Del_DatosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/Ins_Mod_Eli_Datos", ReplyAction="http://tempuri.org/IBD/Ins_Mod_Eli_DatosResponse")]
+        System.Threading.Tasks.Task<BLL.WCF_BD.Ins_Mod_Eli_DatosResponse> Ins_Mod_Eli_DatosAsync(BLL.WCF_BD.Ins_Mod_Eli_DatosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ListarDatos", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ListarDatosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ListarFiltrarDatos", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ListarFiltrarDatosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         public string sNombreSP;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
+        public System.Data.DataTable DT_Parametros;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
         public string sMsjError;
         
-        public ListarDatosRequest() {
+        public ListarFiltrarDatosRequest() {
         }
         
-        public ListarDatosRequest(string sNombreSP, string sMsjError) {
+        public ListarFiltrarDatosRequest(string sNombreSP, System.Data.DataTable DT_Parametros, string sMsjError) {
             this.sNombreSP = sNombreSP;
+            this.DT_Parametros = DT_Parametros;
             this.sMsjError = sMsjError;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ListarDatosResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ListarDatosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ListarFiltrarDatosResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ListarFiltrarDatosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public System.Data.DataTable ListarDatosResult;
+        public System.Data.DataTable ListarFiltrarDatosResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string sMsjError;
         
-        public ListarDatosResponse() {
+        public ListarFiltrarDatosResponse() {
         }
         
-        public ListarDatosResponse(System.Data.DataTable ListarDatosResult, string sMsjError) {
-            this.ListarDatosResult = ListarDatosResult;
+        public ListarFiltrarDatosResponse(System.Data.DataTable ListarFiltrarDatosResult, string sMsjError) {
+            this.ListarFiltrarDatosResult = ListarFiltrarDatosResult;
             this.sMsjError = sMsjError;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Ins_Mod_Del_Datos", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class Ins_Mod_Del_DatosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Ins_Mod_Eli_Datos", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class Ins_Mod_Eli_DatosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         public string sNombreSP;
@@ -93,10 +97,10 @@ namespace Web_Consumo.WCF {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=3)]
         public string sMsjError;
         
-        public Ins_Mod_Del_DatosRequest() {
+        public Ins_Mod_Eli_DatosRequest() {
         }
         
-        public Ins_Mod_Del_DatosRequest(string sNombreSP, bool bBandera, System.Data.DataTable DT_Parametros, string sMsjError) {
+        public Ins_Mod_Eli_DatosRequest(string sNombreSP, bool bBandera, System.Data.DataTable DT_Parametros, string sMsjError) {
             this.sNombreSP = sNombreSP;
             this.bBandera = bBandera;
             this.DT_Parametros = DT_Parametros;
@@ -106,31 +110,31 @@ namespace Web_Consumo.WCF {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="Ins_Mod_Del_DatosResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class Ins_Mod_Del_DatosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="Ins_Mod_Eli_DatosResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class Ins_Mod_Eli_DatosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string Ins_Mod_Del_DatosResult;
+        public string Ins_Mod_Eli_DatosResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string sMsjError;
         
-        public Ins_Mod_Del_DatosResponse() {
+        public Ins_Mod_Eli_DatosResponse() {
         }
         
-        public Ins_Mod_Del_DatosResponse(string Ins_Mod_Del_DatosResult, string sMsjError) {
-            this.Ins_Mod_Del_DatosResult = Ins_Mod_Del_DatosResult;
+        public Ins_Mod_Eli_DatosResponse(string Ins_Mod_Eli_DatosResult, string sMsjError) {
+            this.Ins_Mod_Eli_DatosResult = Ins_Mod_Eli_DatosResult;
             this.sMsjError = sMsjError;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IBDChannel : Web_Consumo.WCF.IBD, System.ServiceModel.IClientChannel {
+    public interface IBDChannel : BLL.WCF_BD.IBD, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class BDClient : System.ServiceModel.ClientBase<Web_Consumo.WCF.IBD>, Web_Consumo.WCF.IBD {
+    public partial class BDClient : System.ServiceModel.ClientBase<BLL.WCF_BD.IBD>, BLL.WCF_BD.IBD {
         
         public BDClient() {
         }
@@ -160,41 +164,42 @@ namespace Web_Consumo.WCF {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Web_Consumo.WCF.ListarDatosResponse Web_Consumo.WCF.IBD.ListarDatos(Web_Consumo.WCF.ListarDatosRequest request) {
-            return base.Channel.ListarDatos(request);
+        BLL.WCF_BD.ListarFiltrarDatosResponse BLL.WCF_BD.IBD.ListarFiltrarDatos(BLL.WCF_BD.ListarFiltrarDatosRequest request) {
+            return base.Channel.ListarFiltrarDatos(request);
         }
         
-        public System.Data.DataTable ListarDatos(string sNombreSP, ref string sMsjError) {
-            Web_Consumo.WCF.ListarDatosRequest inValue = new Web_Consumo.WCF.ListarDatosRequest();
+        public System.Data.DataTable ListarFiltrarDatos(string sNombreSP, System.Data.DataTable DT_Parametros, ref string sMsjError) {
+            BLL.WCF_BD.ListarFiltrarDatosRequest inValue = new BLL.WCF_BD.ListarFiltrarDatosRequest();
             inValue.sNombreSP = sNombreSP;
+            inValue.DT_Parametros = DT_Parametros;
             inValue.sMsjError = sMsjError;
-            Web_Consumo.WCF.ListarDatosResponse retVal = ((Web_Consumo.WCF.IBD)(this)).ListarDatos(inValue);
+            BLL.WCF_BD.ListarFiltrarDatosResponse retVal = ((BLL.WCF_BD.IBD)(this)).ListarFiltrarDatos(inValue);
             sMsjError = retVal.sMsjError;
-            return retVal.ListarDatosResult;
+            return retVal.ListarFiltrarDatosResult;
         }
         
-        public System.Threading.Tasks.Task<Web_Consumo.WCF.ListarDatosResponse> ListarDatosAsync(Web_Consumo.WCF.ListarDatosRequest request) {
-            return base.Channel.ListarDatosAsync(request);
+        public System.Threading.Tasks.Task<BLL.WCF_BD.ListarFiltrarDatosResponse> ListarFiltrarDatosAsync(BLL.WCF_BD.ListarFiltrarDatosRequest request) {
+            return base.Channel.ListarFiltrarDatosAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Web_Consumo.WCF.Ins_Mod_Del_DatosResponse Web_Consumo.WCF.IBD.Ins_Mod_Del_Datos(Web_Consumo.WCF.Ins_Mod_Del_DatosRequest request) {
-            return base.Channel.Ins_Mod_Del_Datos(request);
+        BLL.WCF_BD.Ins_Mod_Eli_DatosResponse BLL.WCF_BD.IBD.Ins_Mod_Eli_Datos(BLL.WCF_BD.Ins_Mod_Eli_DatosRequest request) {
+            return base.Channel.Ins_Mod_Eli_Datos(request);
         }
         
-        public string Ins_Mod_Del_Datos(string sNombreSP, bool bBandera, System.Data.DataTable DT_Parametros, ref string sMsjError) {
-            Web_Consumo.WCF.Ins_Mod_Del_DatosRequest inValue = new Web_Consumo.WCF.Ins_Mod_Del_DatosRequest();
+        public string Ins_Mod_Eli_Datos(string sNombreSP, bool bBandera, System.Data.DataTable DT_Parametros, ref string sMsjError) {
+            BLL.WCF_BD.Ins_Mod_Eli_DatosRequest inValue = new BLL.WCF_BD.Ins_Mod_Eli_DatosRequest();
             inValue.sNombreSP = sNombreSP;
             inValue.bBandera = bBandera;
             inValue.DT_Parametros = DT_Parametros;
             inValue.sMsjError = sMsjError;
-            Web_Consumo.WCF.Ins_Mod_Del_DatosResponse retVal = ((Web_Consumo.WCF.IBD)(this)).Ins_Mod_Del_Datos(inValue);
+            BLL.WCF_BD.Ins_Mod_Eli_DatosResponse retVal = ((BLL.WCF_BD.IBD)(this)).Ins_Mod_Eli_Datos(inValue);
             sMsjError = retVal.sMsjError;
-            return retVal.Ins_Mod_Del_DatosResult;
+            return retVal.Ins_Mod_Eli_DatosResult;
         }
         
-        public System.Threading.Tasks.Task<Web_Consumo.WCF.Ins_Mod_Del_DatosResponse> Ins_Mod_Del_DatosAsync(Web_Consumo.WCF.Ins_Mod_Del_DatosRequest request) {
-            return base.Channel.Ins_Mod_Del_DatosAsync(request);
+        public System.Threading.Tasks.Task<BLL.WCF_BD.Ins_Mod_Eli_DatosResponse> Ins_Mod_Eli_DatosAsync(BLL.WCF_BD.Ins_Mod_Eli_DatosRequest request) {
+            return base.Channel.Ins_Mod_Eli_DatosAsync(request);
         }
     }
 }
