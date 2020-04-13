@@ -6683,17 +6683,29 @@ h6 {
 
 /*# sourceMappingURL=style.css.map */
 
-.style_disabled{
-    pointer-events:none;
-    background-color:lightgray;
+.style_disabled {
+    pointer-events: none;
+    background-color: lightgray;
 }
 
-.tituloH{
-    width:100%;
-    text-align:center;
-    padding-bottom:1em;
+.tituloH {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 .optNone {
     pointer-events: none;
 }
+
+/*Estilo para Tabla empleados*/
+
+.TablaEmpleados {
+    margin: 25px,auto;
+}
+
+#Conten_EmpleadosBtns {
+    margin: 15px,auto;
+    flex-direction: row;
+}
+/*# sourceMappingURL=style.css.map */

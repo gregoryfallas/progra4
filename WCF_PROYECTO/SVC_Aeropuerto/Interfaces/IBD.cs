@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.ServiceModel;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
 using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 
-namespace SVC_Aeropuerto.Interfaces
-{
+namespace WCF_Proyecto_SVC.Interface
+{        
     [ServiceContract]
-    interface IBD
+    public interface IBD
     {
         [OperationContract]
         DataTable CrearDTParametros();
@@ -19,5 +19,6 @@ namespace SVC_Aeropuerto.Interfaces
 
         [OperationContract]
         String Ins_Mod_Eli_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError);
+
     }
 }

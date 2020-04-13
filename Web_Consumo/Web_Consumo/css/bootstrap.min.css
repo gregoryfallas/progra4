@@ -1423,7 +1423,9 @@ pre code {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
-        max-width: 66.666667%
+        max-width: 66.666667%;
+        align-content:center;
+        
     }
     .col-lg-9 {
         -webkit-box-flex: 0;
@@ -1764,8 +1766,9 @@ pre code {
 }
 
 .table {
-    width: 100%;
-    max-width: 100%;
+    width: 65%;
+    max-width: 90%;
+    overflow-x:scroll;
     margin-bottom: 1rem;
     background-color: transparent
 }
@@ -9248,7 +9251,7 @@ a.text-dark:hover {
         min-width: 992px!important
     }
     .container {
-        min-width: 992px!important
+        min-width: 592px!important
     }
     .navbar {
         display: none
