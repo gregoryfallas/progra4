@@ -27,13 +27,18 @@ namespace Web_Consumo
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
+                int idPais = Convert.ToInt32(inp_IDPAIS.Value.ToString());
+                string nomPais = inp_NOMPAIS.Value.ToString();
+                string codIsoPais = inp_CODPAIS.Value.ToString();
+                string codArea = inp_CODAREA.Value.ToString();
+                char cEstado = Convert.ToChar(slc_IDESTAD.Value.ToString());
 
                 dtParametros = listarDatos.CrearDTParametros();
-                dtParametros.Rows.Add("@IdPais", "2", inp_IDPAIS.Value.Trim());
-                dtParametros.Rows.Add("@NombrePais", "1", inp_NOMPAIS.Value.Trim());
-                dtParametros.Rows.Add("@CodigoISOPais", "3", inp_CODPAIS.Value.Trim());
-                dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_CODAREA.Value.Trim());
-                dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD.Value);
+                dtParametros.Rows.Add("@IdPais", "2", idPais);
+                dtParametros.Rows.Add("@NombrePais", "1", nomPais);
+                dtParametros.Rows.Add("@CodigoISOPais", "3", codIsoPais);
+                dtParametros.Rows.Add("@CodigoAreaPais", "3", codArea);
+                dtParametros.Rows.Add("@IdEstado", "3", cEstado);
 
                 listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false, dtParametros, ref sMensajeError);
 
@@ -61,9 +66,10 @@ namespace Web_Consumo
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
+                int idPais = Convert.ToInt32(inp_ELIMIDPAIS.Value.ToString());
 
                 dtParametros = listarDatos.CrearDTParametros();
-                dtParametros.Rows.Add("@IdPais", "2", inp_ELIMIDPAIS.Value.Trim());
+                dtParametros.Rows.Add("@IdPais", "2", idPais);
 
                 listarDatos.Ins_Mod_Eli_Datos("dbo.SP_Borrar_Paises", false, dtParametros, ref sMensajeError);
 
@@ -92,12 +98,16 @@ namespace Web_Consumo
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
+                string nomPais = inp_AGNOMPAIS.Value.ToString();
+                char codIsoPais = Convert.ToChar(inp_AGCODPAIS.Value.ToString());
+                char codArea = Convert.ToChar(inp_AGCODAREA.Value.ToString());
+                char cEstado = Convert.ToChar(slc_IDESTAD_AG.Value.ToString());
 
                 dtParametros = listarDatos.CrearDTParametros();
-                dtParametros.Rows.Add("@NombrePais", "1", inp_AGNOMPAIS.Value.Trim());
-                dtParametros.Rows.Add("@CodigoISOPais", "3", inp_AGCODPAIS.Value.Trim());
-                dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_AGCODAREA.Value.Trim());
-                dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD_AG.Value);
+                dtParametros.Rows.Add("@NombrePais", "1", nomPais);
+                dtParametros.Rows.Add("@CodigoISOPais", "3", codIsoPais);
+                dtParametros.Rows.Add("@CodigoAreaPais", "3", codArea);
+                dtParametros.Rows.Add("@IdEstado", "3", cEstado);
 
                 listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Paises", true, dtParametros, ref sMensajeError);
 
@@ -134,7 +144,7 @@ namespace Web_Consumo
             else
             {
                 dtParametros = null;
-                ObjListar = listarDatos.ListarFiltrarDatos("SP_Filtrar_Paises", dtParametros, ref sMensajeError);
+                ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Paises", dtParametros, ref sMensajeError);
             }
 
             if (sMensajeError != string.Empty)

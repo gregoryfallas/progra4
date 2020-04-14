@@ -329,7 +329,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/Tablas/TiposEmpleados.js"></script>
+    <script src="js/Tablas/Paises.js"></script>
 
     <!--contact js-->
     <script src="js/contact.js"></script>

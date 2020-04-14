@@ -250,6 +250,7 @@
     <Content Include="js\range.js" />
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="js\Tablas\Paises.js" />
     <Content Include="js\Tablas\TiposEmpleados.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
