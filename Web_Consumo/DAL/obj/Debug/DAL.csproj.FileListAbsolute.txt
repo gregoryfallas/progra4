@@ -1,9 +1,3 @@
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.dll
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.pdb
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.dll
-C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.pdb
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.dll
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\DAL.pdb
 C:\Users\MoisesCoto\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
@@ -16,3 +10,9 @@ C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.dll
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.dll
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.pdb
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.dll
+C:\Users\Administrador\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb

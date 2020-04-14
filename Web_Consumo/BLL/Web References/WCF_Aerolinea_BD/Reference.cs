@@ -24,7 +24,7 @@ namespace BLL.WCF_Aerolinea_BD {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IBD", Namespace="http://tempuri.org/")]
@@ -32,9 +32,9 @@ namespace BLL.WCF_Aerolinea_BD {
         
         private System.Threading.SendOrPostCallback CrearDTParametrosOperationCompleted;
         
-        private System.Threading.SendOrPostCallback ListarDatosOperationCompleted;
+        private System.Threading.SendOrPostCallback ListarFiltrarDatosOperationCompleted;
         
-        private System.Threading.SendOrPostCallback Ins_Mod_Del_DatosOperationCompleted;
+        private System.Threading.SendOrPostCallback Ins_Mod_Eli_DatosOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -78,10 +78,10 @@ namespace BLL.WCF_Aerolinea_BD {
         public event CrearDTParametrosCompletedEventHandler CrearDTParametrosCompleted;
         
         /// <remarks/>
-        public event ListarDatosCompletedEventHandler ListarDatosCompleted;
+        public event ListarFiltrarDatosCompletedEventHandler ListarFiltrarDatosCompleted;
         
         /// <remarks/>
-        public event Ins_Mod_Del_DatosCompletedEventHandler Ins_Mod_Del_DatosCompleted;
+        public event Ins_Mod_Eli_DatosCompletedEventHandler Ins_Mod_Eli_DatosCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IBD/CrearDTParametros", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -112,43 +112,45 @@ namespace BLL.WCF_Aerolinea_BD {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IBD/ListarDatos", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IBD/ListarFiltrarDatos", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Data.DataTable ListarDatos([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sNombreSP, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ref string sMsjError) {
-            object[] results = this.Invoke("ListarDatos", new object[] {
+        public System.Data.DataTable ListarFiltrarDatos([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sNombreSP, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] System.Data.DataTable DT_Parametros, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ref string sMsjError) {
+            object[] results = this.Invoke("ListarFiltrarDatos", new object[] {
                         sNombreSP,
+                        DT_Parametros,
                         sMsjError});
             sMsjError = ((string)(results[1]));
             return ((System.Data.DataTable)(results[0]));
         }
         
         /// <remarks/>
-        public void ListarDatosAsync(string sNombreSP, string sMsjError) {
-            this.ListarDatosAsync(sNombreSP, sMsjError, null);
+        public void ListarFiltrarDatosAsync(string sNombreSP, System.Data.DataTable DT_Parametros, string sMsjError) {
+            this.ListarFiltrarDatosAsync(sNombreSP, DT_Parametros, sMsjError, null);
         }
         
         /// <remarks/>
-        public void ListarDatosAsync(string sNombreSP, string sMsjError, object userState) {
-            if ((this.ListarDatosOperationCompleted == null)) {
-                this.ListarDatosOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarDatosOperationCompleted);
+        public void ListarFiltrarDatosAsync(string sNombreSP, System.Data.DataTable DT_Parametros, string sMsjError, object userState) {
+            if ((this.ListarFiltrarDatosOperationCompleted == null)) {
+                this.ListarFiltrarDatosOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarFiltrarDatosOperationCompleted);
             }
-            this.InvokeAsync("ListarDatos", new object[] {
+            this.InvokeAsync("ListarFiltrarDatos", new object[] {
                         sNombreSP,
-                        sMsjError}, this.ListarDatosOperationCompleted, userState);
+                        DT_Parametros,
+                        sMsjError}, this.ListarFiltrarDatosOperationCompleted, userState);
         }
         
-        private void OnListarDatosOperationCompleted(object arg) {
-            if ((this.ListarDatosCompleted != null)) {
+        private void OnListarFiltrarDatosOperationCompleted(object arg) {
+            if ((this.ListarFiltrarDatosCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ListarDatosCompleted(this, new ListarDatosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.ListarFiltrarDatosCompleted(this, new ListarFiltrarDatosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IBD/Ins_Mod_Del_Datos", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IBD/Ins_Mod_Eli_Datos", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Ins_Mod_Del_Datos([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sNombreSP, bool bBandera, [System.Xml.Serialization.XmlIgnoreAttribute()] bool bBanderaSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] System.Data.DataTable DT_Parametros, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ref string sMsjError) {
-            object[] results = this.Invoke("Ins_Mod_Del_Datos", new object[] {
+        public string Ins_Mod_Eli_Datos([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sNombreSP, bool bBandera, [System.Xml.Serialization.XmlIgnoreAttribute()] bool bBanderaSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] System.Data.DataTable DT_Parametros, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ref string sMsjError) {
+            object[] results = this.Invoke("Ins_Mod_Eli_Datos", new object[] {
                         sNombreSP,
                         bBandera,
                         bBanderaSpecified,
@@ -159,27 +161,27 @@ namespace BLL.WCF_Aerolinea_BD {
         }
         
         /// <remarks/>
-        public void Ins_Mod_Del_DatosAsync(string sNombreSP, bool bBandera, bool bBanderaSpecified, System.Data.DataTable DT_Parametros, string sMsjError) {
-            this.Ins_Mod_Del_DatosAsync(sNombreSP, bBandera, bBanderaSpecified, DT_Parametros, sMsjError, null);
+        public void Ins_Mod_Eli_DatosAsync(string sNombreSP, bool bBandera, bool bBanderaSpecified, System.Data.DataTable DT_Parametros, string sMsjError) {
+            this.Ins_Mod_Eli_DatosAsync(sNombreSP, bBandera, bBanderaSpecified, DT_Parametros, sMsjError, null);
         }
         
         /// <remarks/>
-        public void Ins_Mod_Del_DatosAsync(string sNombreSP, bool bBandera, bool bBanderaSpecified, System.Data.DataTable DT_Parametros, string sMsjError, object userState) {
-            if ((this.Ins_Mod_Del_DatosOperationCompleted == null)) {
-                this.Ins_Mod_Del_DatosOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIns_Mod_Del_DatosOperationCompleted);
+        public void Ins_Mod_Eli_DatosAsync(string sNombreSP, bool bBandera, bool bBanderaSpecified, System.Data.DataTable DT_Parametros, string sMsjError, object userState) {
+            if ((this.Ins_Mod_Eli_DatosOperationCompleted == null)) {
+                this.Ins_Mod_Eli_DatosOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIns_Mod_Eli_DatosOperationCompleted);
             }
-            this.InvokeAsync("Ins_Mod_Del_Datos", new object[] {
+            this.InvokeAsync("Ins_Mod_Eli_Datos", new object[] {
                         sNombreSP,
                         bBandera,
                         bBanderaSpecified,
                         DT_Parametros,
-                        sMsjError}, this.Ins_Mod_Del_DatosOperationCompleted, userState);
+                        sMsjError}, this.Ins_Mod_Eli_DatosOperationCompleted, userState);
         }
         
-        private void OnIns_Mod_Del_DatosOperationCompleted(object arg) {
-            if ((this.Ins_Mod_Del_DatosCompleted != null)) {
+        private void OnIns_Mod_Eli_DatosOperationCompleted(object arg) {
+            if ((this.Ins_Mod_Eli_DatosCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Ins_Mod_Del_DatosCompleted(this, new Ins_Mod_Del_DatosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.Ins_Mod_Eli_DatosCompleted(this, new Ins_Mod_Eli_DatosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -203,11 +205,11 @@ namespace BLL.WCF_Aerolinea_BD {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
     public delegate void CrearDTParametrosCompletedEventHandler(object sender, CrearDTParametrosCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrearDTParametrosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -229,18 +231,18 @@ namespace BLL.WCF_Aerolinea_BD {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
-    public delegate void ListarDatosCompletedEventHandler(object sender, ListarDatosCompletedEventArgs e);
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
+    public delegate void ListarFiltrarDatosCompletedEventHandler(object sender, ListarFiltrarDatosCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ListarDatosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class ListarFiltrarDatosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        internal ListarDatosCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        internal ListarFiltrarDatosCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
@@ -263,18 +265,18 @@ namespace BLL.WCF_Aerolinea_BD {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
-    public delegate void Ins_Mod_Del_DatosCompletedEventHandler(object sender, Ins_Mod_Del_DatosCompletedEventArgs e);
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
+    public delegate void Ins_Mod_Eli_DatosCompletedEventHandler(object sender, Ins_Mod_Eli_DatosCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.3190.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Ins_Mod_Del_DatosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class Ins_Mod_Eli_DatosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        internal Ins_Mod_Del_DatosCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        internal Ins_Mod_Eli_DatosCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
