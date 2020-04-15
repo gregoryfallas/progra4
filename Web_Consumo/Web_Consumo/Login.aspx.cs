@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Web_Consumo
 {
@@ -35,9 +36,9 @@ namespace Web_Consumo
 
             dt = Obj_WCF_BD.ListarFiltrarDatos(sNombSP, dtParametros, ref sMsjError);
 
-            DGV_DATOS.DataSource = null;
+           /* DGV_DATOS.DataSource = null;
             DGV_DATOS.DataSource = dt;
-            DGV_DATOS.DataBind();
+            DGV_DATOS.DataBind(); */
 
             if(dt.Rows.Count == 0)
             {

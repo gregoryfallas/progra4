@@ -9,7 +9,7 @@
     <link href=".\css\login.css" rel="stylesheet" />
 </head>
 <body>
-        <div class="loginbox">
+        <div class="loginbox" runat="server">
             <img src=".\img\destination\7.png" alt="Login" class="user" />
             <h2> Inicio de Sesion </h2>
             <form runat="server">
