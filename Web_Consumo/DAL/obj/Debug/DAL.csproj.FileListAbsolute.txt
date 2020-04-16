@@ -22,3 +22,9 @@ C:\Users\esteb\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cac
 C:\Users\esteb\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\esteb\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.dll
 C:\Users\esteb\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.dll
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.pdb
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.dll
+C:\Users\e.chavarria\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb

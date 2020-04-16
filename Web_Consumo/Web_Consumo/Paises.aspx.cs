@@ -40,7 +40,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@CodigoAreaPais", "3", codArea);
                 dtParametros.Rows.Add("@IdEstado", "3", cEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false, dtParametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_Paises", false, dtParametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -71,7 +71,7 @@ namespace Web_Consumo
                 dtParametros = listarDatos.CrearDTParametros();
                 dtParametros.Rows.Add("@IdPais", "2", idPais);
 
-                listarDatos.Ins_Mod_Eli_Datos("dbo.SP_Borrar_Paises", false, dtParametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_Paises", false, dtParametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -99,8 +99,8 @@ namespace Web_Consumo
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
                 string nomPais = inp_AGNOMPAIS.Value.ToString();
-                char codIsoPais = Convert.ToChar(inp_AGCODPAIS.Value.ToString());
-                char codArea = Convert.ToChar(inp_AGCODAREA.Value.ToString());
+                string codIsoPais = inp_AGCODPAIS.Value.ToString();
+                string codArea = inp_AGCODAREA.Value.ToString();
                 char cEstado = Convert.ToChar(slc_IDESTAD_AG.Value.ToString());
 
                 dtParametros = listarDatos.CrearDTParametros();

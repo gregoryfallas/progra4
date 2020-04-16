@@ -214,7 +214,7 @@
 
                         <!-- Modal footer -->
                         <div class="modal-footer">                  
-                            <asp:Button runat="server" Text="Eliminar Registro"  ID="btn_EliminarRegist" OnClick="btn_Eliminar_Click" class="btn btn-primary"/>
+                            <asp:Button runat="server" Text="Eliminar Registro" ID="btn_EliminarRegist" OnClick="btn_Eliminar_Click" class="btn btn-primary"/>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                         </div>
                 </div>

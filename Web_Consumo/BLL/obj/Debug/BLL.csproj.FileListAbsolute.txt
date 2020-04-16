@@ -38,3 +38,13 @@ C:\Users\esteb\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.ca
 C:\Users\esteb\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\esteb\progra4\Web_Consumo\BLL\obj\Debug\BLL.dll
 C:\Users\esteb\progra4\Web_Consumo\BLL\obj\Debug\BLL.pdb
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\bin\Debug\BLL.dll.config
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\bin\Debug\BLL.dll
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\bin\Debug\BLL.pdb
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\bin\Debug\ClassLibrary2.dll
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\bin\Debug\ClassLibrary2.pdb
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\obj\Debug\BLL.dll
+C:\Users\e.chavarria\progra4\Web_Consumo\BLL\obj\Debug\BLL.pdb
