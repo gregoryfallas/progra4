@@ -98,7 +98,10 @@
         </div>
     </header>
     <!-- header-end -->
-
+    <br />
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="LISTA_VUELO" runat="server" Text="VUELOS ACTUALES" style="text-align:center" Font-Size="X-Large" CssClass="StrongText" BackColor="#cc99ff"></asp:Label>
     <div class="destination_details_info">
         <div class="container">
             <div class="row justify-content-center">
@@ -106,14 +109,14 @@
                 </div>
                 <form id="form1" runat="server">
         <div>
-              <asp:Label ID="lbl_filtar_Vuelos" runat="server" Text="Filtro : "></asp:Label>
+              <asp:Label ID="lbl_filtar_Vuelos" runat="server" Text="Filtro : " CssClass="btGrisNegrita"></asp:Label>
               <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="477px"  CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
-              <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Filtrar" /><br><br />
+              <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Filtrar" class="boxed-btn4"/><br><br />
                <div>
                    <br />
                    <br />
                    <p></p>
-                   <asp:GridView ID="DGV_DATOS" runat="server"></asp:GridView>
+                   <asp:GridView ID="DGV_DATOSV" runat="server" CssClass="align-items-sm-center"></asp:GridView>
                    <p></p>
                </div>        
         </div>

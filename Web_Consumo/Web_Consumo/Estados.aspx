@@ -109,13 +109,13 @@
         <div>
               <asp:Label ID="Label1" runat="server" Text="Filtro : "></asp:Label>
               <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px" OnTextChanged="txt_filtroEstados_TextChanged" CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
-              <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click"/><br><br />
-              <asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>
+              <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click" class="boxed-btn4"/><br><br />
+              <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
                    <br />
                    <p></p>
-                   <asp:GridView ID="DGV_DATOS" runat="server"></asp:GridView>
+                   <asp:GridView ID="DGV_DATOS" runat="server" ></asp:GridView>
                    <p></p>
                    <br />
                    <br />
@@ -127,9 +127,9 @@
                    <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" /> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" /> &nbsp;
-                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click"/>&nbsp;
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click" class="boxed-btn4"/>&nbsp;
                </div>        
         </div>
     </form>

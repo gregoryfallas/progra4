@@ -262,6 +262,7 @@
     <Content Include="TiposEmpleados.aspx" />
     <Content Include="travel doc\css\font-awesome.min.css" />
     <Content Include="travel doc\css\main.css" />
+    <Content Include="travel doc\css\MiLabel.css" />
     <Content Include="travel doc\css\normalize.min.css" />
     <Content Include="travel doc\fonts\fontawesome-webfont.svg" />
     <Content Include="travel doc\img\logo.png" />

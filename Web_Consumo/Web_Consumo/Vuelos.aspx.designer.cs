@@ -13,6 +13,15 @@ namespace Web_Consumo {
     public partial class Vuelos {
         
         /// <summary>
+        /// LISTA_VUELO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LISTA_VUELO;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -49,12 +58,12 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Button btn_FiltrarVuelos;
         
         /// <summary>
-        /// DGV_DATOS control.
+        /// DGV_DATOSV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView DGV_DATOS;
+        protected global::System.Web.UI.WebControls.GridView DGV_DATOSV;
     }
 }
