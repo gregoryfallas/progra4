@@ -19,19 +19,19 @@ namespace Web_Consumo
         }
         protected void btn_Editar_Click(object sender, EventArgs e)
         {
+            int idPais = Convert.ToInt32(inp_IDPAIS.Value.ToString());
+            string nomPais = inp_NOMPAIS.Value.ToString();
+            string codIsoPais = inp_CODPAIS.Value.ToString();
+            string codArea = inp_CODAREA.Value.ToString();
+            char cEstado = Convert.ToChar(slc_IDESTAD.Value.ToString());
 
-
-            if (slc_IDESTAD.ToString() != "0" && inp_NOMPAIS.Value != "" && inp_CODPAIS.Value != "" && inp_CODAREA.Value != "" && slc_IDESTAD.Value != "0")
+            if (idPais != '0' && nomPais != "" && codIsoPais != "" && codArea != "" && cEstado != '0')
             {
                 WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
-                int idPais = Convert.ToInt32(inp_IDPAIS.Value.ToString());
-                string nomPais = inp_NOMPAIS.Value.ToString();
-                string codIsoPais = inp_CODPAIS.Value.ToString();
-                string codArea = inp_CODAREA.Value.ToString();
-                char cEstado = Convert.ToChar(slc_IDESTAD.Value.ToString());
+                
 
                 dtParametros = listarDatos.CrearDTParametros();
                 dtParametros.Rows.Add("@IdPais", "2", idPais);
@@ -59,15 +59,15 @@ namespace Web_Consumo
         }
         protected void btn_Eliminar_Click(object sender, EventArgs e)
         {
+            int idPais = Convert.ToInt32(inp_ELIMIDPAIS.Value.ToString());
 
-            if (inp_ELIMIDPAIS.Value != "" && inp_ELIMNOMPAIS.Value != "")
+            if (idPais != '0')
             {
                 WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
-                int idPais = Convert.ToInt32(inp_ELIMIDPAIS.Value.ToString());
-
+                
                 dtParametros = listarDatos.CrearDTParametros();
                 dtParametros.Rows.Add("@IdPais", "2", idPais);
 
@@ -177,7 +177,7 @@ namespace Web_Consumo
                         sb.Append("<td>" + row[column.ColumnName].ToString() + "</td>");
                     }
                     sb.Append("<td>");
-                    sb.Append("<button type=\"button\" class=\"btn btn-primary\" onclick=\"EDITAR(" + row.ItemArray[0] + ",'" + row.ItemArray[1] + "','" + row.ItemArray[2] + "')\" >");
+                    sb.Append("<button type=\"button\" class=\"btn btn-primary\" onclick=\"EDITAR(" + row.ItemArray[0] + ",'" + row.ItemArray[1] + "','" + row.ItemArray[2] + "','" + row.ItemArray[3] + "','" + row.ItemArray[4] + "')\" >");
                     sb.Append("<i class=\"fas fa-edit\"> </i></button>");
                     sb.Append("</td>");
 

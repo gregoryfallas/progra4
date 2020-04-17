@@ -20,8 +20,8 @@ function EDITAR(vId, vNOM, vCOD, vAREA, vEstado) {
     $("#inp_IDPAIS").val(vId);
     $("#inp_NOMPAIS").val(vNOM);
     $("#inp_CODPAIS").val(vCOD);
-    $("#inp_AGCODAREA").val(vAREA);
-    $("#slc_IDESTAD_AG").val(vEstado);
+    $("#inp_CODAREA").val(vAREA);
+    $("#slc_IDESTAD").val(vEstado);
 
     //ABRIR EL MODAL
     $("#ModalEditar").modal();
@@ -31,7 +31,7 @@ function EDITAR(vId, vNOM, vCOD, vAREA, vEstado) {
 function ELIMINAR_MD(vID, vNOM) {
     $("#inp_ELIMIDPAIS").val(vID);
     $("#inp_ELIMNOMPAIS").val(vNOM);
-    $("#ModalEliminar").modal("0");
+    $("#ModalEliminar").modal();
 }
 
 function AGREGAR_MD() {
