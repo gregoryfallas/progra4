@@ -12,7 +12,7 @@ namespace Web_Consumo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CargarDatos();
+            
         }
 
         private void CargarDatos()
@@ -35,10 +35,6 @@ namespace Web_Consumo
             sNombSP = "SP_Filtrar_Login";
 
             dt = Obj_WCF_BD.ListarFiltrarDatos(sNombSP, dtParametros, ref sMsjError);
-
-           /* DGV_DATOS.DataSource = null;
-            DGV_DATOS.DataSource = dt;
-            DGV_DATOS.DataBind(); */
 
             if(dt.Rows.Count == 0)
             {
