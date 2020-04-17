@@ -229,6 +229,7 @@
     <Content Include="index.aspx" />
     <Content Include="index.html" />
     <Content Include="js\ajax-form.js" />
+    <Content Include="js\Tablas\Aviones.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
     <Content Include="js\custom.js" />
