@@ -21,3 +21,9 @@ D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aero
 D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.csproj.CoreCompileInputs.cache
 D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.dll
 D:\PROGRA 4\gregoryfallas\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.pdb
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\bin\Debug\DAL_Aeropuerto.dll
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\bin\Debug\DAL_Aeropuerto.pdb
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.csprojAssemblyReference.cache
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.csproj.CoreCompileInputs.cache
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.dll
+C:\Users\e.chavarria\progra4\WCF_PROYECTO\DAL_Aeropuerto\obj\Debug\DAL_Aeropuerto.pdb
