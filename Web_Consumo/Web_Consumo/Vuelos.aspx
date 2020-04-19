@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -100,8 +101,6 @@
     <!-- header-end -->
     <br />
     <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="LISTA_VUELO" runat="server" Text="VUELOS ACTUALES" style="text-align:center" Font-Size="X-Large" CssClass="StrongText" BackColor="#cc99ff"></asp:Label>
     <div class="destination_details_info">
         <div class="container">
             <div class="row justify-content-center">
@@ -109,15 +108,65 @@
                 </div>
                 <form id="form1" runat="server">
         <div>
-              <asp:Label ID="lbl_filtar_Vuelos" runat="server" Text="Filtro : " CssClass="btGrisNegrita"></asp:Label>
+              <asp:Label ID="lbl_filtar_Vuelos" runat="server" Text="ID del Vuelos : " CssClass="btGrisNegrita" Font-Bold="true"></asp:Label>
               <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="477px"  CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
-              <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Filtrar" class="boxed-btn4"/><br><br />
+              <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Buscar" class="boxed-btn4" OnClick="btn_FiltrarVuelos_Click"/><br><br />
                <div>
                    <br />
                    <br />
                    <p></p>
-                   <asp:GridView ID="DGV_DATOSV" runat="server" CssClass="align-items-sm-center"></asp:GridView>
+                   <asp:GridView ID="DGV_DATOSV" runat="server" CssClass="align-items-sm-center" style="text-align:center" BorderStyle="None" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                       <AlternatingRowStyle BackColor="#DCDCDC" />
+                       <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                       <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                       <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                       <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                       <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                       <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                       <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                       <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                       <SortedDescendingHeaderStyle BackColor="#000065" />
+                   </asp:GridView>
                    <p></p>
+                   <br />
+                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID_Vuelos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Destinos" runat="server" Text="ID_Destinos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Destinos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
+                   &nbsp;&nbsp;&nbsp;&nbsp;
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Aerolinea" runat="server" Text="ID_Aerolinea :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Aerolinea" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Avion" runat="server" Text="ID_Avion :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Avion" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_FechaHoraSalida" runat="server" Text="Fecha-Hora de Salida :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_FechaHoraSalida" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_FechaHoraLlegada" runat="server" Text="Fecha-Hora de Llegada :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_FechaHoraLlegada" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Estado" runat="server" Text="ID_Estado :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Estado" runat="server" Width="180px" BorderStyle="Solid"></asp:TextBox>
+                   &nbsp;<br />
+                   <br />
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR"  class="boxed-btn4" OnClick="btn_Insertar_Click"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR"  class="boxed-btn4" OnClick="btn_Modificar_Click"/> &nbsp;
+                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
                </div>        
         </div>
     </form>

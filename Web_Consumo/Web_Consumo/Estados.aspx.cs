@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using System.Text;
 
 namespace Web_Consumo
 {
@@ -23,6 +24,7 @@ namespace Web_Consumo
             DataTable dt = new DataTable();
             DataTable dtParametros = new DataTable();
             WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+
 
             string sNombSP = string.Empty;
             string sMsjError = string.Empty;
@@ -44,9 +46,12 @@ namespace Web_Consumo
 
             dt = Obj_WCF_BD.ListarFiltrarDatos(sNombSP, dtParametros, ref sMsjError);
 
+     
+
             DGV_DATOS.DataSource = null;
             DGV_DATOS.DataSource = dt;
             DGV_DATOS.DataBind();
+
            
         }
 

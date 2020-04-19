@@ -107,23 +107,35 @@
                 </div>
                 <form id="form1" runat="server">
         <div>
-              <asp:Label ID="Label1" runat="server" Text="Filtro : "></asp:Label>
+              <asp:Label ID="Label1" runat="server" Text="Descripción : " Font-Bold="true"></asp:Label>
               <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px" OnTextChanged="txt_filtroEstados_TextChanged" CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
               <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click" class="boxed-btn4"/><br><br />
+
               <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
                    <br />
                    <p></p>
-                   <asp:GridView ID="DGV_DATOS" runat="server" ></asp:GridView>
+                   <asp:GridView ID="DGV_DATOS" runat="server" display="block" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                       <AlternatingRowStyle BackColor="#DCDCDC" />
+                       <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                       <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                       <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                       <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                       <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                       <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                       <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                       <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                       <SortedDescendingHeaderStyle BackColor="#000065" />
+                   </asp:GridView>
                    <p></p>
                    <br />
                    <br />
-                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : "></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : "></asp:Label>
+                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : " Font-Bold="true"></asp:Label>
                    <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />

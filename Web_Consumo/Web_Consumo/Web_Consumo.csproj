@@ -86,6 +86,7 @@
     <Content Include="css\flaticon.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\gijgo.css" />
+    <Content Include="css\gridViewPaginacion.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\nice-select.css" />
@@ -110,6 +111,7 @@
     <Content Include="fonts\themify.svg" />
     <Content Include="img\about\1.png" />
     <Content Include="img\about\2.png" />
+    <Content Include="img\actualizar.png" />
     <Content Include="img\banner\banner.png" />
     <Content Include="img\banner\banner2.png" />
     <Content Include="img\banner\banner3.png" />
@@ -264,6 +266,7 @@
     <Content Include="travel doc\css\main.css" />
     <Content Include="travel doc\css\MiLabel.css" />
     <Content Include="travel doc\css\normalize.min.css" />
+    <Content Include="travel doc\css\txtbox.css" />
     <Content Include="travel doc\fonts\fontawesome-webfont.svg" />
     <Content Include="travel doc\img\logo.png" />
     <Content Include="travel doc\index.html" />
