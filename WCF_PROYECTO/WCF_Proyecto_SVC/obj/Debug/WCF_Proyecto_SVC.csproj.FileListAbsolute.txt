@@ -90,3 +90,15 @@ C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll.config
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.dll
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_SVC.pdb
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.dll
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.dll
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_BLL.pdb
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\bin\Debug\WCF_Proyecto_DAL.pdb
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csprojAssemblyReference.cache
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CoreCompileInputs.cache
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.csproj.CopyComplete
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.dll
+G:\UAM\Progra IV\GIT\progra4\WCF_PROYECTO\WCF_Proyecto_SVC\obj\Debug\WCF_Proyecto_SVC.pdb

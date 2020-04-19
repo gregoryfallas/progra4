@@ -15,9 +15,10 @@ namespace Web_Consumo
         protected void Page_Load(object sender, EventArgs e)
         {
             WCF.BDClient listarDatos = new BDClient();
+            DataTable dtParametros = new DataTable();
             String a = "";
 
-            DataTable ObjListar = listarDatos.ListarDatos("sp_Listar_Estados", ref a);
+            DataTable ObjListar = listarDatos.ListarFiltrarDatos("sp_Listar_Estados", dtParametros, ref a);
             //GridView1.DataSource = ObjListar;
             StringBuilder sb = new StringBuilder();
 

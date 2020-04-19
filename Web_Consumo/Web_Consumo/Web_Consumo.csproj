@@ -77,6 +77,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarFiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="contact.html" />
     <Content Include="contact_process.php" />
     <Content Include="css\animate.css" />
@@ -87,6 +90,7 @@
     <Content Include="css\gijgo.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\magnific-popup.css" />
+    <Content Include="css\MyStyles.css" />
     <Content Include="css\nice-select.css" />
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\slick.css" />
@@ -254,6 +258,7 @@
     <Content Include="main.html" />
     <Content Include="readme.txt" />
     <Content Include="single-blog.html" />
+    <Content Include="TiposAviones.aspx" />
     <Content Include="travel doc\css\font-awesome.min.css" />
     <Content Include="travel doc\css\main.css" />
     <Content Include="travel doc\css\normalize.min.css" />
@@ -335,6 +340,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiposAviones.aspx.cs">
+      <DependentUpon>TiposAviones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TiposAviones.aspx.designer.cs">
+      <DependentUpon>TiposAviones.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.map" />
@@ -381,9 +393,6 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Connected Services\WCF\Web_Consumo.WCF.Ins_Mod_Del_DatosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarDatosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="packages.config" />

@@ -1,13 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Web_Consumo.index1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TiposAviones.aspx.cs" Inherits="Web_Consumo.TiposAviones" %>
 
 <!DOCTYPE html>
 
-<html class="no-js" lang="zxx">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Travelo</title>
+    <title>Tipos de Aviones</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
+    <link href="css/MyStyles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -28,16 +29,11 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-
-
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
-
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    
 
     <!-- header-start -->
     <header>
@@ -75,7 +71,7 @@
                                             <li><a href="contact.html">Contact</a></li>
                                             <li><a href="#">Administrador <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                        <li><a href="TiposAviones.aspx">Tipos de Aviones</a></li>
+                                                        <li><a href="">Tipos de Aviones</a></li>
                                                         <li><a href="">Tipos de Clientes</a></li>                                                        
                                                 </ul>
                                             </li>
@@ -107,26 +103,107 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Aerolinea</h3>
-                                <p>La ajencia de confianza para sus viajes</p>
-                                <a href="#" class="boxed-btn3">Iniciar Sesion</a>
-                            </div>
-                        </div>
-                    </div>
+    <form id="frmData" runat="server">
+    <div id="divTitle" runat="server">
+        <b><h1 id="title" style=" text-align:center; padding:5px; background-color:midnightblue; color:white">TIPOS DE AVIONES</h1></b>
+    </div>
+    <div id="divSubTitle" runat="server" style="padding:5px">
+        <h2></h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" style="padding:5px">
+            <div id="divFiltro" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblFiltro" runat="server" Text="FILTRO" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="txtFiltro" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divEliminar" style="padding:5px" class="row">
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                    <asp:Button ID="btnBuscar" CssClass="myactionButton" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" ToolTip="Buscar un tipo de Avión" />
+                    <asp:Button ID="bntEliminar" CssClass="myactionButton" runat="server" Text="ELIMINAR" OnClick="bntEliminar_Click" ToolTip="Eliminar un tipo de Avión" />
+                </div>
+            </div><br /><br />
+            <div id="divID" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblID" runat="server" Text="ID Tipo" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="txtID" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divNombre" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblNombre" runat="server" Text="Nombre" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divDesc" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblDesc" runat="server" Text="Descripción" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="txtDesc" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divPasaj" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblPasaj" runat="server" Text="Pasajeros" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="txtPasaj" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divPeso" style="padding:5px" class="row">
+                <div class="col-6">
+                    <p class="myparr_right"><asp:Label ID="lblPeso" runat="server" Text="Peso" CssClass="mylabel"></asp:Label></p>
+                </div>
+                <div class="col-6">
+                    <p class="myparr_left"><asp:TextBox ID="TxtPeso" runat="server"></asp:TextBox></p>
+                </div>
+            </div>
+            <div id="divControles" style="padding:5px" class="row">
+                <div class="col-6">                  
+                </div>
+                <div class="col-6">
+                    <asp:Button ID="btnAgr" CssClass="myactionButton" runat="server" Text="AGREGAR" OnClick="btnAgr_Click" ToolTip="Agregar tipo de Avión" />
+                    <asp:Button ID="btnMod" CssClass="myactionButton" runat="server" Text="MODIFICAR" OnClick="btnMod_Click" ToolTip="Modificar tipo de Avión" />
                 </div>
             </div>
         </div>
+        <div id="divTabla" class="col-lg-8" style="padding:5px">
+            <asp:GridView ID="dgvTiposAviones" runat="server" CellPadding="4" ForeColor="#333333" GridLines="Horizontal" HorizontalAlign="Left" BorderStyle="Groove">
+                <AlternatingRowStyle BackColor="White" />
+                <EditRowStyle BackColor="#2461BF" HorizontalAlign="Center" VerticalAlign="Middle" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="False" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" />
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+            </asp:GridView>            
+        </div>
     </div>
-    <!-- slider_area_end -->
-         
+    <div id="div1" runat="server" style="padding:10px">
+        <h2></h2>
+    </div>
+
+        
+ 
+    
+
+    </form>
+    
+    <!-- footer-start -->
     <footer class="footer">
         <div class="footer_top">
             <div class="copy-right_text">
@@ -146,65 +223,7 @@
             </div>
         </div>
     </footer>
+    <!-- header-end -->
 
-
-  <!-- Modal -->
-  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="serch_form">
-            <input type="text" placeholder="Search" >
-            <button type="submit">search</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- link that opens popup -->
-<!--     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script> -->
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/slick.min.js"></script>
-   
-
-    
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-
-    <script src="js/main.js"></script>
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-    </script>
 </body>
-
 </html>

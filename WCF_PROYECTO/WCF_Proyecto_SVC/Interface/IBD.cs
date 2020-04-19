@@ -16,8 +16,8 @@ namespace WCF_Proyecto_SVC.Interface
 
 
         [OperationContract]
-        DataTable ListarDatos(string sNombreSP, ref string sMsjError);
-                       
+        DataTable ListarFiltrarDatos(string sNombreSP, DataTable DT_Parametros, ref string sMsjError);
+
 
         [OperationContract]
         string Ins_Mod_Del_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError);

@@ -17,7 +17,7 @@ namespace WCF_Proyecto_BLL.BD
         {            
             try
             {
-                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Sql_aut"].ToString());
+                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Win_aut"].ToString());
 
                 if (Obj_BD_DAL.ObjSqlCnx.State == ConnectionState.Closed)
                 {
@@ -27,6 +27,40 @@ namespace WCF_Proyecto_BLL.BD
                 Obj_BD_DAL.ObjSqlDap = new SqlDataAdapter(Obj_BD_DAL.sNombreSP, Obj_BD_DAL.ObjSqlCnx);
 
                 Obj_BD_DAL.ObjSqlDap.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                #region DEFINICIÓN DE PARAMETROS
+
+                if ((Obj_BD_DAL.DtParametros != null) && (Obj_BD_DAL.DtParametros.Rows.Count >= 1))
+                {
+                    SqlDbType DBType = SqlDbType.VarChar;
+
+                    foreach (DataRow DR in Obj_BD_DAL.DtParametros.Rows)
+                    {
+                        switch (DR[1].ToString())
+                        {
+                            case "1":
+                                DBType = SqlDbType.NVarChar;
+                                break;
+                            case "2":
+                                DBType = SqlDbType.Int;
+                                break;
+                            case "3":
+                                DBType = SqlDbType.DateTime;
+                                break;
+                            case "4":
+                                DBType = SqlDbType.Decimal;
+                                break;
+                            case "5":
+                                DBType = SqlDbType.Char;
+                                break;
+                            default:
+                                break;
+                        }
+                        Obj_BD_DAL.ObjSqlDap.SelectCommand.Parameters.Add(DR[0].ToString(), DBType).Value = DR[2].ToString();
+                    }
+                }
+
+                #endregion
 
                 Obj_BD_DAL.Ds = new DataSet();
 
@@ -58,7 +92,7 @@ namespace WCF_Proyecto_BLL.BD
         {
             try
             {
-                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Sql_aut"].ToString());
+                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Win_aut"].ToString());
 
                 if (Obj_BD_DAL.ObjSqlCnx.State == ConnectionState.Closed)
                 {
@@ -66,6 +100,8 @@ namespace WCF_Proyecto_BLL.BD
                 }
 
                 Obj_BD_DAL.ObjSqlCmd = new SqlCommand(Obj_BD_DAL.sNombreSP, Obj_BD_DAL.ObjSqlCnx);
+
+                Obj_BD_DAL.ObjSqlCmd.CommandType = CommandType.StoredProcedure;
 
                 #region DEFINICIÓN DE PARAMETROS
 
@@ -89,6 +125,9 @@ namespace WCF_Proyecto_BLL.BD
                             case "4":
                                 DBType = SqlDbType.Decimal;
                                 break;
+                            case "5":
+                                DBType = SqlDbType.Char;
+                                break;
                             default:
                                 break;
                         }
@@ -98,8 +137,6 @@ namespace WCF_Proyecto_BLL.BD
                 }
 
                 #endregion
-
-                Obj_BD_DAL.ObjSqlCmd.CommandType = CommandType.StoredProcedure;
 
                 Obj_BD_DAL.Ds = new DataSet();
 
@@ -130,7 +167,7 @@ namespace WCF_Proyecto_BLL.BD
         {
             try
             {
-                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Sql_aut"].ToString());
+                Obj_BD_DAL.ObjSqlCnx = new SqlConnection(ConfigurationManager.ConnectionStrings["Win_aut"].ToString());
 
                 if (Obj_BD_DAL.ObjSqlCnx.State == ConnectionState.Closed)
                 {
@@ -160,6 +197,9 @@ namespace WCF_Proyecto_BLL.BD
                                 break;
                             case "4":
                                 DBType = SqlDbType.Decimal;
+                                break;
+                            case "5":
+                                DBType = SqlDbType.Char;
                                 break;
                             default:
                                 break;
