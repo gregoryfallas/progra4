@@ -99,6 +99,8 @@
     <Content Include="empleados.aspx" />
     <Content Include="empleados.html" />
     <Content Include="elements.html" />
+    <Content Include="Estados-Eliminar.aspx" />
+    <Content Include="Estados-Eliminar1.aspx" />
     <Content Include="Estados.aspx" />
     <Content Include="Estados.html" />
     <Content Include="fonts\fa-brands-400.svg" />
@@ -322,6 +324,7 @@
     <Content Include="ventanas\Aviones.aspx" />
     <Content Include="ventanas\Empleados.aspx" />
     <Content Include="ventanas\Tipos Aviones.aspx" />
+    <Content Include="Vuelos-Eliminar.aspx" />
     <Content Include="Vuelos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -337,6 +340,20 @@
     </Compile>
     <Compile Include="empleados.aspx.designer.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estados-Eliminar.aspx.cs">
+      <DependentUpon>Estados-Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estados-Eliminar.aspx.designer.cs">
+      <DependentUpon>Estados-Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estados-Eliminar1.aspx.cs">
+      <DependentUpon>Estados-Eliminar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estados-Eliminar1.aspx.designer.cs">
+      <DependentUpon>Estados-Eliminar1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Estados.aspx.cs">
       <DependentUpon>Estados.aspx</DependentUpon>
@@ -398,6 +415,13 @@
     </Compile>
     <Compile Include="ventanas\Tipos Aviones.aspx.designer.cs">
       <DependentUpon>Tipos Aviones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vuelos-Eliminar.aspx.cs">
+      <DependentUpon>Vuelos-Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vuelos-Eliminar.aspx.designer.cs">
+      <DependentUpon>Vuelos-Eliminar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vuelos.aspx.cs">
       <DependentUpon>Vuelos.aspx</DependentUpon>

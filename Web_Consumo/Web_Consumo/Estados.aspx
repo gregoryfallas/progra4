@@ -57,8 +57,14 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
+                                            <li>
+                                                <a href="#">Estados <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="Estados.aspx">Visualizar Estados</a></li>
+                                                    <li><a href="Estados-Eliminar1.aspx">Eliminar Estados</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="" href="travel_destination.html">Vuelos</a></li>
                                             <li>
                                                 <a href="#">Usuarios <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">

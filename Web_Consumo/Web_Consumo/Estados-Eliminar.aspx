@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Vuelos.aspx.cs" Inherits="Web_Consumo.Vuelos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Estados-Eliminar.aspx.cs" Inherits="Web_Consumo.Estados_Eliminar" %>
+
 <!DOCTYPE html>
 
 <html class="no-js" lang="zxx">
@@ -34,7 +35,6 @@
 </head>
 
 <body>
-    
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -57,14 +57,14 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
-                                            <li><a href="about.html">About</a></li>
                                             <li>
-                                                <a href="#">Vuelos <i class="ti-angle-down"></i></a>
+                                                <a href="#">Estados8549658 <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="vuelos.aspx">Vuelos Disponibleseeeee</a></li>
-                                                    <li><a href="vuelos-eliminar.aspx">Eliminar Vuelos</a></li>
+                                                    <li><a href="Estados.aspx">Vuelos Disponibleseffffeeee</a></li>
+                                                    <li><a href="Estados-Eliminar.aspx">Eliminar eSTADO</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a class="" href="travel_destination.html">Vuelos</a></li>
                                             <li>
                                                 <a href="#">Usuarios <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
@@ -105,8 +105,7 @@
         </div>
     </header>
     <!-- header-end -->
-    <br />
-    <br />
+
     <div class="destination_details_info">
         <div class="container">
             <div class="row justify-content-center">
@@ -114,14 +113,16 @@
                 </div>
                 <form id="form1" runat="server">
         <div>
-              <asp:Label ID="lbl_filtar_Vuelos" runat="server" Text="ID del Vuelos : " CssClass="btGrisNegrita" Font-Bold="true"></asp:Label>
-              <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="477px"  CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
-              <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Buscar" class="boxed-btn4" OnClick="btn_FiltrarVuelos_Click"/><br><br />
+              <asp:Label ID="Label1" runat="server" Text="Descripción : " Font-Bold="true"></asp:Label>
+              <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px"></asp:TextBox>  <br><br />
+              <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click" class="boxed-btn4"/><br><br />
+
+              <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
                    <br />
                    <p></p>
-                   <asp:GridView ID="DGV_DATOSV" runat="server" CssClass="align-items-sm-center" style="text-align:center" BorderStyle="None" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                   <asp:GridView ID="DGV_DATOS" runat="server" display="block" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                        <AlternatingRowStyle BackColor="#DCDCDC" />
                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -135,44 +136,18 @@
                    </asp:GridView>
                    <p></p>
                    <br />
-                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID_Vuelos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
+                   <br />
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Label ID="lb_ID_Destinos" runat="server" Text="ID_Destinos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Destinos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   &nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : " Font-Bold="true"></asp:Label>
+                   <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Label ID="lb_ID_Aerolinea" runat="server" Text="ID_Aerolinea :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Aerolinea" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Avion" runat="server" Text="ID_Avion :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Avion" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_FechaHoraSalida" runat="server" Text="Fecha-Hora de Salida :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_FechaHoraSalida" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_FechaHoraLlegada" runat="server" Text="Fecha-Hora de Llegada :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_FechaHoraLlegada" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Estado" runat="server" Text="ID_Estado :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Estado" runat="server" Width="180px" BorderStyle="Solid"></asp:TextBox>
-                   &nbsp;<br />
-                   <br />
-                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR"  class="boxed-btn4" OnClick="btn_Insertar_Click"/> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR"  class="boxed-btn4" OnClick="btn_Modificar_Click"/> &nbsp;
-                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click" class="boxed-btn4"/>&nbsp;
                </div>        
         </div>
     </form>
