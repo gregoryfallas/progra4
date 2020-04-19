@@ -259,6 +259,7 @@
     <Content Include="readme.txt" />
     <Content Include="single-blog.html" />
     <Content Include="TiposAviones.aspx" />
+    <Content Include="TiposClientes.aspx" />
     <Content Include="travel doc\css\font-awesome.min.css" />
     <Content Include="travel doc\css\main.css" />
     <Content Include="travel doc\css\normalize.min.css" />
@@ -346,6 +347,13 @@
     </Compile>
     <Compile Include="TiposAviones.aspx.designer.cs">
       <DependentUpon>TiposAviones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TiposClientes.aspx.cs">
+      <DependentUpon>TiposClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TiposClientes.aspx.designer.cs">
+      <DependentUpon>TiposClientes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
