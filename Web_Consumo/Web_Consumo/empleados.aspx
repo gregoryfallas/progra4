@@ -129,6 +129,9 @@
                             <div class="col-lg-4 col-md-4">
                                 <button type="button" class="btn btn-success float-right" onclick="AGREGAR_MD()">AGREGAR ITEM</button>
                             </div>
+                            <div class="col-lg-4 col-md-4">
+                                <button type="button" class="btn btn-success float-right" onclick="EDITAR_MD()">EDITAR ITEM</button>
+                            </div>
                         </div>
                         <br />
                         <asp:Label ID="labelTable" runat="server" Text=""></asp:Label>
@@ -247,13 +250,16 @@
                          <div class="modal-body">
                             <div>
                                 <div class="input_field">
-                                    <h4>ESTA SEGURO DE ELIMINAR ESTE EMPLEADO?</h4>
+                                    <h4>ESTA SEGURO DE ELIMINAR<br /> ESTE EMPLEADO?</h4>
                                     <div class="row">
                                         <div class="col-3">
-                                            <input runat="server" id="inp_IDTIP_ELIM" class="form-control style_disabled" type="text">
+                                            <input runat="server" id="inp_ID_Emp_Elim" class="form-control style_disabled" type="text">
                                         </div>
-                                        <div class="col-9">
-                                                <input runat="server" id="inp_DESCR_ELIM" class="form-control style_disabled" type="text">
+                                        <div class="col-4">
+                                                <input runat="server" id="inp_Nomb_Emp_Elim" class="form-control style_disabled" type="text">
+                                        </div>
+                                        <div class="col-5">
+                                                <input runat="server" id="inp_Apell_Elim" class="form-control style_disabled" type="text">
                                         </div>
                                     </div>    
                                 </div>
@@ -340,21 +346,21 @@
                                 <div class="input_field">
                                     <h4>ID_TIPO_EMPLEADO</h4>
                                     <select runat="server" id="Slc_IdTipoEmpleadoAG" class="form-control" >
-                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                        <option value="0" selected disabled aria-autocomplete="none" >2</option>
                                     </select>
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>ID_AEROLINEA</h4>
                                     <select runat="server" id="Slc_IdAerolineaAG" class="form-control" >
-                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                        <option value="0" selected disabled aria-autocomplete="none" >4</option>
                                     </select>
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>ID ESTADO</h4>
                                     <select runat="server" id="slc_IdEstado_AG" class="form-control" >
-                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                        <option value="0" selected disabled aria-autocomplete="none" >A</option>
                                     </select>
                                 </div>
 
@@ -433,7 +439,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/Tablas/TiposEmpleados.js"></script>
+    <script src="js/Tablas/Empleados.js"></script>
 
     <!--contact js-->
     <script src="js/contact.js"></script>

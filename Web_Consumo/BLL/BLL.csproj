@@ -54,7 +54,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Web References\WCF_Aerolinea_BD\Reference.cs">
+    <Compile Include="Web References\WCF_BD\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -70,17 +70,17 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\WCF_Aerolinea_BD\BD.wsdl" />
-    <None Include="Web References\WCF_Aerolinea_BD\BD.xsd">
+    <None Include="Web References\WCF_BD\BD.wsdl" />
+    <None Include="Web References\WCF_BD\BD_Aeropuerto.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WCF_Aerolinea_BD\BD0.xsd">
+    <None Include="Web References\WCF_BD\BD_Aeropuerto0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WCF_Aerolinea_BD\BD1.xsd">
+    <None Include="Web References\WCF_BD\BD_Aeropuerto1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WCF_Aerolinea_BD\Reference.map">
+    <None Include="Web References\WCF_BD\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -95,20 +95,20 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://192.168.0.50/BD.svc">
+    <WebReferenceUrl Include="http://localhost/BD_Aeropuerto.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\WCF_Aerolinea_BD\</RelPath>
-      <UpdateFromURL>http://192.168.0.50/BD.svc</UpdateFromURL>
+      <RelPath>Web References\WCF_BD\</RelPath>
+      <UpdateFromURL>http://localhost/BD_Aeropuerto.svc</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>BLL_WCF_Aerolinea_BD_BD</CachedSettingsPropName>
+      <CachedSettingsPropName>BLL_WCF_BD_BD</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\WCF_Aerolinea_BD\BD.disco" />
+    <None Include="Web References\WCF_BD\BD_Aeropuerto.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

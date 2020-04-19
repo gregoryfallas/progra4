@@ -22,7 +22,9 @@ namespace Web_Consumo
 
             DataTable dt = new DataTable();
             DataTable dtParametros = new DataTable();
-            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+         
+           
+            BLL.WCF_BD.BD Obj_WCF_BD = new BLL.WCF_BD.BD();
 
             string sNombSP = string.Empty;
             string sMsjError = string.Empty;
@@ -65,7 +67,8 @@ namespace Web_Consumo
             #region VARIABLES LOCALES
 
             DataTable dtParametros = new DataTable();
-            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+
+            BLL.WCF_BD.BD Obj_WCF_BD = new BLL.WCF_BD.BD();
 
             string sNombSP = string.Empty;
             string sMsjError = string.Empty;
@@ -77,7 +80,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@Descripcion", "1", txt_Nombre_Estado.Text.Trim());
             sNombSP = "SP_Insertar_Estados";
 
-            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false,false, dtParametros, ref sMsjError);
 
             //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
             if (sMsjError != string.Empty)
@@ -97,7 +100,7 @@ namespace Web_Consumo
             #region VARIABLES LOCALES
 
             DataTable dtParametros = new DataTable();
-            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD Obj_WCF_BD = new BLL.WCF_BD.BD();
 
             string sNombSP = string.Empty;
             string sMsjError = string.Empty;
@@ -109,7 +112,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@Descripcion", "1", txt_Nombre_Estado.Text.Trim());
             sNombSP = "SP_Modificar_Estados";
 
-            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, false, dtParametros, ref sMsjError);
 
             //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
             if (sMsjError != string.Empty)
@@ -129,7 +132,7 @@ namespace Web_Consumo
             #region VARIABLES LOCALES
 
             DataTable dtParametros = new DataTable();
-            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD Obj_WCF_BD = new BLL.WCF_BD.BD();
 
 
             string sNombSP = string.Empty;
@@ -143,7 +146,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdEstado", "0", txt_ID_Estados.Text.Trim());
             sNombSP = "SP_Borrar_Estados";
 
-            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false,false, dtParametros, ref sMsjError);
             //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
             if (sMsjError != string.Empty)
             {   //DEFINE EL MENSAJE A MOSTRAR

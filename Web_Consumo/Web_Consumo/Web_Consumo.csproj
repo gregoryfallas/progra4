@@ -71,13 +71,6 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="blog.html" />
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
-    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
-    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
-    <None Include="Connected Services\WCF_BD\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="contact.html" />
     <Content Include="contact_process.php" />
     <Content Include="css\animate.css" />
@@ -250,6 +243,7 @@
     <Content Include="js\range.js" />
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="js\Tablas\Empleados.js" />
     <Content Include="js\Tablas\TiposEmpleados.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
@@ -322,11 +316,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\WCF_BD\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="empleados.aspx.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -437,22 +426,6 @@
     <Content Include="obj\Debug\Web_Consumo.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\Web_Consumo.csprojAssemblyReference.cache" />
     <Content Include="obj\Release\Web_Consumo.csproj.CoreCompileInputs.cache" />
-    <None Include="Connected Services\WCF_BD\BD.wsdl" />
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.Ins_Mod_Eli_DatosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WCF_BD\Web_Consumo.WCF_BD.ListarFiltrarDatosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <Content Include="scss\style.scss" />
     <Content Include="scss\theme-default.scss" />
@@ -511,9 +484,6 @@
       <Project>{55e24e7c-20a4-490a-84fc-5594be02073a}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

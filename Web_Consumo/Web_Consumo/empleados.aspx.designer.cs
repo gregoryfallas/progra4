@@ -175,22 +175,31 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Button btn_Editar;
         
         /// <summary>
-        /// inp_IDTIP_ELIM control.
+        /// inp_ID_Emp_Elim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IDTIP_ELIM;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ID_Emp_Elim;
         
         /// <summary>
-        /// inp_DESCR_ELIM control.
+        /// inp_Nomb_Emp_Elim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_DESCR_ELIM;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nomb_Emp_Elim;
+        
+        /// <summary>
+        /// inp_Apell_Elim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apell_Elim;
         
         /// <summary>
         /// btn_EliminarRegist control.

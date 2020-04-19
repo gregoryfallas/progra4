@@ -26,10 +26,10 @@ namespace BLL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.0.50/BD.svc")]
-        public string BLL_WCF_Aerolinea_BD_BD {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/BD_Aeropuerto.svc")]
+        public string BLL_WCF_BD_BD {
             get {
-                return ((string)(this["BLL_WCF_Aerolinea_BD_BD"]));
+                return ((string)(this["BLL_WCF_BD_BD"]));
             }
         }
     }

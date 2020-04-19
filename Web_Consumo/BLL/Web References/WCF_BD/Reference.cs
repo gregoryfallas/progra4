@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace BLL.WCF_Aerolinea_BD {
+namespace BLL.WCF_BD {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -40,7 +40,7 @@ namespace BLL.WCF_Aerolinea_BD {
         
         /// <remarks/>
         public BD() {
-            this.Url = global::BLL.Properties.Settings.Default.BLL_WCF_Aerolinea_BD_BD;
+            this.Url = global::BLL.Properties.Settings.Default.BLL_WCF_BD_BD;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

@@ -1,6 +1,6 @@
 ﻿using System.Data;
 using System.Text;
-using BLL.WCF_Aerolinea_BD;
+using BLL.WCF_BD;
 
 namespace BLL.Metodos
 {
@@ -71,12 +71,16 @@ namespace BLL.Metodos
                     sb.Append("<td>" + row[column.ColumnName].ToString() + "</td>");
                 }
                 sb.Append("<td>");
-                sb.Append("<button type=\"button\" class=\"btn btn-primary\" onclick=\"EDITAR(" + row.ItemArray[0] + ",'" + row.ItemArray[1] + "','" + row.ItemArray[2] + "')\" >");
+                sb.Append("<button type=\"button\" class=\"btn btn-primary\" onclick=\"EDITAR_MD('" + row.ItemArray[0] + "','" + row.ItemArray[1] + "','" + row.ItemArray[2] + "'," +
+                                                                                               "'" + row.ItemArray[3] + "','" + row.ItemArray[4] + "','" + row.ItemArray[5] + "'," +
+                                                                                               "'" + row.ItemArray[6] + "','" + row.ItemArray[7] + "','" + row.ItemArray[8] + "'," +
+                                                                                               "'" + row.ItemArray[9] + "','" + row.ItemArray[10] + "','" + row.ItemArray[11] + "'," +
+                                                                                               "'" + row.ItemArray[12] + "')\" >");
                 sb.Append("<i class=\"fas fa-edit\"> </i></button>");
                 sb.Append("</td>");
 
                 sb.Append("<td>");
-                sb.Append("<button type=\"button\" class=\"btn btn-danger\" onclick=\"ELIMINAR_MD(" + row.ItemArray[0] + ",'" + row.ItemArray[1] + "')\" >");
+                sb.Append("<button type=\"button\" class=\"btn btn-danger\" onclick=\"ELIMINAR_MD('" + row.ItemArray[0] + "','" + row.ItemArray[1] + "','" + row.ItemArray[2] + "')\" >");
                 sb.Append("<i class=\"fas fa-trash\"> </i></button>");
                 sb.Append("</td>");
 
@@ -99,7 +103,7 @@ namespace BLL.Metodos
             }
             finally
             {
-                Cliente.Dispose();         
+                       
             }
 
 

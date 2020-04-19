@@ -23,7 +23,7 @@ namespace Web_Consumo
 
             if (slc_IDESTAD.ToString() != "0" && inp_NOMPAIS.Value != "" && inp_CODPAIS.Value != "" && inp_CODAREA.Value != "" && slc_IDESTAD.Value != "0")
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -35,7 +35,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_CODAREA.Value.Trim());
                 dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD.Value);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false, dtParametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false,false, dtParametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -57,7 +57,7 @@ namespace Web_Consumo
 
             if (inp_ELIMIDPAIS.Value != "" && inp_ELIMNOMPAIS.Value != "")
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -65,7 +65,7 @@ namespace Web_Consumo
                 dtParametros = listarDatos.CrearDTParametros();
                 dtParametros.Rows.Add("@IdPais", "2", inp_ELIMIDPAIS.Value.Trim());
 
-                listarDatos.Ins_Mod_Eli_Datos("dbo.SP_Borrar_Paises", false, dtParametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("dbo.SP_Borrar_Paises", false, false, dtParametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -88,7 +88,7 @@ namespace Web_Consumo
 
             if (inp_AGNOMPAIS.Value != "" && inp_AGCODPAIS.Value != "" && inp_AGCODAREA.Value != "" && slc_IDESTAD_AG.ToString() != "0")
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable dtParametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -99,7 +99,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@CodigoAreaPais", "3", inp_AGCODAREA.Value.Trim());
                 dtParametros.Rows.Add("@IdEstado", "3", slc_IDESTAD_AG.Value);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Paises", true, dtParametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Paises", true, true, dtParametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -119,7 +119,7 @@ namespace Web_Consumo
         }
         private void RecargarPagina(char tipo)
         {
-            WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
             String sMensajeError = "";
             DataTable dtParametros = new DataTable();
             DataTable ObjListar = new DataTable();
@@ -201,7 +201,7 @@ namespace Web_Consumo
         }
         private void LlenarSelectEstado()
         {
-            WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("dbo.SP_Listar_Estados", null, ref sMensajeError);

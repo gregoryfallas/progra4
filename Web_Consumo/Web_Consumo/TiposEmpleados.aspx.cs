@@ -25,7 +25,8 @@ namespace Web_Consumo
 
             if (sId != "" && sDesc != "" && cEstado != '0')
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -35,7 +36,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@DescTipo", "1", sDesc);
                 parametros.Rows.Add("@IdEstado", "3", cEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false , parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false,false , parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -59,7 +60,8 @@ namespace Web_Consumo
 
             if (idTipoEmp != "" && sDesc != "")
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -67,7 +69,7 @@ namespace Web_Consumo
                 parametros = listarDatos.CrearDTParametros();
                 parametros.Rows.Add("@IdTipoEmpleado", "2", idTipoEmp);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_TiposEmpleados", false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_TiposEmpleados", false, false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -107,7 +109,7 @@ namespace Web_Consumo
 
             if (sDesc != "" && cEstado != '0')
             {
-                WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -116,7 +118,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@DescTipo", "1", sDesc);
                 parametros.Rows.Add("@IdEstado", "3", cEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_TiposEmpleados", true , parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_TiposEmpleados", true,true , parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -138,7 +140,7 @@ namespace Web_Consumo
         #region METODOS PRIVADOS
         private void RecargarPagina(char tipo)
         {
-            WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
             String sMensajeError = "";
             DataTable parametros = new DataTable();
             DataTable ObjListar = new DataTable();
@@ -208,7 +210,7 @@ namespace Web_Consumo
 
         private void LlenarSelectEstado()
         {
-            WCF_BD.BDClient listarDatos = new WCF_BD.BDClient();
+            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Estados", null, ref sMensajeError);
