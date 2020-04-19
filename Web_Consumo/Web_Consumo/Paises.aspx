@@ -166,22 +166,23 @@
                                 <br />
                                 <div class="input_field">
                                     <h4>NOMBRE PAÍS</h4>
-                                    <input runat="server" id="inp_NOMPAIS" class="form-control" type="text" placeholder="PAÍS">
+                                    <input pattern="[A-Za-z ]{1,85}" title="Solo debe ingresar letras"  runat="server" id="inp_NOMPAIS" class="form-control" type="text" placeholder="PAÍS">
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>CODIGO PAÍS</h4>
-                                    <input runat="server" id="inp_CODPAIS" class="form-control" type="text" placeholder="CODIGO ">
+                                    <input pattern="[A-Za-z ]{1,4}" title="Solo letras, máximo 4"  runat="server" id="inp_CODPAIS" class="form-control" type="text" placeholder="CODIGO ">
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>CODIGO AREA PAÍS</h4>
-                                    <input runat="server" id="inp_CODAREA" class="form-control" type="text" placeholder="CODIGO AREA ">
+                                    <input pattern="[0-9 ]{1,5}" title="Solo numero, máximo 5"  runat="server" id="inp_CODAREA" class="form-control" type="text" placeholder="CODIGO AREA" >
                                 </div>
                                 <br />
                                <div class="input_field">
                                     <h4>ID ESTADO PAÍS</h4>
                                     <select runat="server" id="slc_IDESTAD" class="form-control" >
+                                        
                                     </select>
                                 </div>
                             </div>
@@ -250,22 +251,22 @@
                             <div>
                                 <div class="input_field">
                                     <h4>NOMBRE PAÍS</h4>
-                                    <input runat="server" id="inp_AGNOMPAIS" class="form-control" type="text" placeholder="NOMBRE ">
+                                    <input pattern="[A-Za-z ]{1,85}" title="Solo debe ingresar letras"  runat="server" id="inp_AGNOMPAIS" class="form-control" type="text" placeholder="NOMBRE ">
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>CODIGO PAÍS</h4>
-                                    <input runat="server" id="inp_AGCODPAIS" class="form-control" type="text" placeholder="CODIGO ">
+                                    <input pattern="[A-Za-z ]{1,4}" title="Solo letras, máximo 4" runat="server" id="inp_AGCODPAIS" class="form-control" type="text" placeholder="CODIGO ">
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>CODIGO AREA PAÍS</h4>
-                                    <input runat="server" id="inp_AGCODAREA" class="form-control" type="text" placeholder="CODIGO AREA ">
+                                    <input pattern="[0-9 ]{1,5}" title="Solo numero, máximo 5" runat="server" id="inp_AGCODAREA" class="form-control" type="text" placeholder="CODIGO AREA ">
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>ID ESTADO</h4>
-                                    <select runat="server" id="slc_IDESTAD_AG" class="form-control" >
+                                    <select required runat="server" id="slc_IDESTAD_AG" class="form-control">
                                         <option value="0" selected disabled>SELECCIONAR</option>
                                     </select>
                                 </div>
