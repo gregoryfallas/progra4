@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="Aerolinea.aspx" />
+    <Content Include="Aviones.aspx" />
     <Content Include="blog.html" />
     <Content Include="Index.aspx" />
     <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
@@ -227,6 +229,7 @@
     <Content Include="img\works\4.png" />
     <Content Include="index.html" />
     <Content Include="js\ajax-form.js" />
+    <Content Include="js\Tablas\Aviones.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
     <Content Include="js\custom.js" />
@@ -326,6 +329,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aerolinea.aspx.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aerolinea.aspx.designer.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aviones.aspx.cs">
+      <DependentUpon>Aviones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aviones.aspx.designer.cs">
+      <DependentUpon>Aviones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WCF_BD\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
