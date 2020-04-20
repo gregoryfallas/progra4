@@ -22,15 +22,5 @@ namespace BLL.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://aerolineas.servicios.mcotosvr.com/BD.svc")]
-        public string BLL_WCF_Aerolinea_BD_BD {
-            get {
-                return ((string)(this["BLL_WCF_Aerolinea_BD_BD"]));
-            }
-        }
     }
 }

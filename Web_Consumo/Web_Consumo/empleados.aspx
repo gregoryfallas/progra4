@@ -5,7 +5,7 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Travelo</title>
     <meta name="description" content="">
@@ -31,225 +31,373 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript"
             src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.min.js"></script>
-
 </head>
+
 
 <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+
+     <form id="MyForm" method="post" runat="server">
+        <!-- header-start -->
+        <header>
+            <div class="header-area ">
+                <div id="sticky-header" class="main-header-area">
+                    <div class="container-fluid">
+                        <div class="header_bottom_border">
+                            <div class="row align-items-center">
+                                <div class="col-xl-2 col-lg-2">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a class="active" href="index.aspx">home</a></li>
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a class="" href="travel_destination.html">Vuelos</a></li>
+                                                <li>
+                                                    <a href="#">Tablas <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="destination_details.html">Empleados</a></li>
+                                                        <li><a href="elements.html">Clientes</a></li>
+                                                        <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">blog <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">blog</a></li>
+                                                        <li><a href="single-blog.html">single-blog</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                    <div class="social_wrap d-flex align-items-center justify-content-end">
+                                        <div class="main-menu  d-none d-lg-block">
+                                            <input type="text" name="search" placeholder="Search..">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="seach_icon">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
+                                        <i class="fa fa-search"></i>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a class="active" href="index.aspx">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
-                                            <li>
-                                                <a href="#">Usuarios <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="###">Empleados</a></li>
-                                                    <li><a href="###">Clientes</a></li>
-                                                    <li><a href="###">Destinos</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Administrador <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                        <li><a href="TiposAviones.aspx">Tipos de Aviones</a></li>
-                                                        <li><a href="TiposClientes.aspx">Tipos de Clientes</a></li>                                                        
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                                <div class="social_wrap d-flex align-items-center justify-content-end">
-                                    <div class="main-menu  d-none d-lg-block">
-                                        <input type="text" name="search" placeholder="Search..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+
+        <div class="destination_details_info">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-9">
+                         <h2 class="tituloH">LISTA EMPLEADOS</h2>
+                        <div class="row">                           
+                            <div class="col-lg-8 col-md-8">
+                                 <div class="row">
+                                    <div class="col-lg-8 col-md-8">
+                                         <input runat="server" id="inp_Filtrar" class="form-control" type="text" placeholder="FILTRAR DATOS">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                          <asp:Button runat="server" Text="FILTRAR"  ID="btn_Filtrar" OnClick="btn_Filtrar_Click" class="btn btn-primary"/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="seach_icon">
-                                <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
-                                    <i class="fa fa-search"></i>
-                                </a>
+                            <div class="col-lg-4 col-md-4">
+                                <button type="button" class="btn btn-success float-right" onclick="AGREGAR_EMPLEADOS_MD()">AGREGAR ITEM</button>
                             </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                        <br />
+                        <asp:Label ID="labelTable" runat="server" Text=""></asp:Label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                
+        <!-- MODAL PARA EDITAR DATOS-->
+        <div class="modal fade" id="ModalEditar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">EDITAR EMPLEADOS</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                                 <div>
+                                <div class="input_field">
+                                    <h4>ID EMPLEADO</h4>
+                                    <input runat="server" id="inp_ID_Empleado_ED" class="form-control style_disabled" type="text" placeholder="ID_EMPLEADO">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>CEDULA</h4>
+                                    <input runat="server" id="inp_Cedula_ED" class="form-control" type="text" placeholder="CEDULA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>NOMBRE</h4>
+                                   <input runat="server" id="inp_Nombre_ED" class="form-control" type="text" placeholder="NOMBRE">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>APELLIDOS</h4>
+                                   <input runat="server" id="inp_Apellidos_ED" class="form-control" type="text" placeholder="APELLIDOS">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>DIRECCION</h4>
+                                   <input runat="server" id="inp_Direccion_ED" class="form-control" type="text" placeholder="DIRECCION">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>EDAD</h4>
+                                   <input runat="server" id="inp_Edad_ED" class="form-control" type="text" placeholder="EDAD">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>TEL CASA</h4>
+                                   <input runat="server" id="inp_TelCasa_ED" class="form-control" type="text" placeholder="TELEFONO CASA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>TEL REFERENCIA</h4>
+                                   <input runat="server" id="inp_TelReferencia_ED" class="form-control" type="text" placeholder="TELEFONO DE REFERENCIA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>CELULAR</h4>
+                                   <input runat="server" id="inp_Celular_ED" class="form-control" type="text" placeholder="NUM CELULAR">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>SALARIO</h4>
+                                   <input runat="server" id="inp_Salario_ED" class="form-control" type="text" placeholder="SALARIO">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID_TIPO_EMPLEADO</h4>
+                                    <select runat="server" id="slc_ID_Tipo_Empleado_ED" class="form-control" > </select>
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID_AEROLINEA</h4>
+                                    <select runat="server" id="slc_ID_Aerolinea_ED" class="form-control" > </select>
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID_ESTADO</h4>
+                                    <select runat="server" id="slc_ID_Estado_ED" class="form-control" > </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">                  
+                            <asp:Button runat="server" Text="Guardar Cambios"  ID="btn_Editar" OnClick="btn_Editar_Click" class="btn btn-primary"/>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PARA ELIMINAR DATOS-->
+        <div class="modal fade" id="ModalEliminar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">ELIMINAR EMPLEADO</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div>
+                                <div class="input_field">
+                                    <h4>DESEAS ELIMINAR ESTE EMPLEADO?</h4>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <input runat="server" id="inp_ID_Empleado_Elim" class="form-control style_disabled" type="text">
+                                        </div>
+                                        <div class="col-9">
+                                                <input runat="server" id="inp_Nombre_Elim" class="form-control style_disabled" type="text">
+                                        </div>
+                                        <div class="col-9">
+                                                <input runat="server" id="inp_Apellidos_Elim" class="form-control style_disabled" type="text">
+                                        </div>
+                                    </div>    
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">                  
+                            <asp:Button runat="server" Text="Eliminar Registro"  ID="btn_Eliminar_Empleado" OnClick="btn_Eliminar_Click" class="btn btn-primary"/>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PARA AGREGAR DATOS-->
+        <div class="modal fade" id="ModalAgregar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">AGREGAR TIPO EMPLEADO</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div>
+                                <div class="input_field">
+                                    <h4>ID EMPLEADO</h4>
+                                    <input runat="server" id="inp_IdEmpleado_AG" class="form-control" type="text" placeholder="ID_EMPLEADO">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>CEDULA</h4>
+                                    <input runat="server" id="inp_Cedula_AG" class="form-control" type="text" placeholder="CEDULA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>NOMBRE</h4>
+                                   <input runat="server" id="inp_Nombre_AG" class="form-control" type="text" placeholder="NOMBRE">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>APELLIDOS</h4>
+                                   <input runat="server" id="inp_Apellidos_AG" class="form-control" type="text" placeholder="APELLIDOS">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>DIRECCION</h4>
+                                   <input runat="server" id="inp_Direccion_AG" class="form-control" type="text" placeholder="DIRECCION">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>EDAD</h4>
+                                   <input runat="server" id="inp_Edad_AG" class="form-control" type="text" placeholder="EDAD">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>TEL CASA</h4>
+                                   <input runat="server" id="inp_TelCasa_AG" class="form-control" type="text" placeholder="TELEFONO CASA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>TEL REFERENCIA</h4>
+                                   <input runat="server" id="inp_TelRef_AG" class="form-control" type="text" placeholder="TELEFONO DE REFERENCIA">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>CELULAR</h4>
+                                   <input runat="server" id="inp_Celular_AG" class="form-control" type="text" placeholder="NUM CELULAR">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>SALARIO</h4>
+                                   <input runat="server" id="inp_Salario_AG" class="form-control" type="text" placeholder="SALARIO">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID_TIPO_EMPLEADO</h4>
+                                    <select runat="server" id="slc_IdTipoEmpleado_AG" class="form-control" >
+                                        <option value="0" selected disabled aria-autocomplete="none" >2</option>
+                                    </select>
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID_AEROLINEA</h4>
+                                    <select runat="server" id="slc_IdAerolinea_AG" class="form-control" >
+                                        <option value="0" selected disabled aria-autocomplete="none" >4</option>
+                                    </select>
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID ESTADO</h4>
+                                    <select runat="server" id="slc_IdEstado_AG" class="form-control" >
+                                        <option value="0" selected disabled aria-autocomplete="none" >A</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">                  
+                            <asp:Button runat="server" Text="Agregar Item"  ID="btn_Agregar" OnClick="btn_Agregar_Click" class="btn btn-primary"/>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+                
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="copy-right_text">
+                    <div class="container">
+                        <div class="footer_border"></div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <p class="copy_right text-center">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- header-end -->
+        </footer>
 
-    <div class="destination_details_info">
-        <div class="container">
-          <form id="Conten_TablaEmpleados" runat="server">
-            <div class="row justify-content-center" >
-                <div class="col-lg-8 col-md-9">
-
-                </div>
-                    <asp:Label ID="labelTable" runat="server" Text="">Informacion de Empleados</asp:Label>
-                    <asp:DataGrid ID="TablaEmpleados" runat="server" CssClass="TablaEmpleados" Width="1000" AlternatingItemStyle-HorizontalAlign="Center"
-                        ></asp:DataGrid>
-
-                  <div class="search_btn" id ="Conten_EmpleadosBtns">
-                          
-                               <asp:Button class="boxed-btn4" ID="btnFiltrar" runat="server" Text="Filtrar"/>
-                               <asp:TextBox ID="TXT_Id_Empleado" runat="server" type="email"></asp:TextBox> 
-                               <asp:Button class="boxed-btn4" ID="btnModificar" runat="server" Text="Modificar"/>
-                               <asp:TextBox ID="TXT_Modificar" runat="server" type="email" ></asp:TextBox> 
-                               <asp:Button class="boxed-btn4" ID="btnEliminar" runat="server" Text="Eliminar"/>
-                 </div>
-
-
-            </div>
-</form>
-
-
-        </div>
-    </div>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Empleados</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="/" method="post">
-                        <div>
-                            <div class="input_field">
-                                <h4>ID DE EMPLADO</h4>
-                                <input id="inputcolumn0" class="form-control" type="text" placeholder="Empleados">
-                            </div>
-                            <br />
-                            <div class="input_field">
-                                <h4>CEDULA</h4>
-                                <input id="inputcolumn1" class="form-control" type="text" placeholder="Identificacion">
-                            </div>
-                      
-                            <br />
-                            <div class="input_field">
-                                <h4>NOMBRE</h4>
-                                <input id="inputcolumn2" class="form-control" type="text" placeholder="Nombre">
-                            </div>
-                          
-                            <br />
-                            <div class="input_field">
-                                <h4>APELLIDO</h4>
-                                <input id="inputcolumn3" class="form-control" type="text" placeholder="Apellidos">
-                            </div>
-                            <br />
-                             <div class="input_field">
-                                <h4>DIRECCION</h4>
-                                <input id="inputcolumn4" class="form-control" type="text" placeholder="Direccion Exacta">
-                            </div>
-                            <br />
-                             <div class="input_field">
-                                <h4>EDAD</h4>
-                                <input id="inputcolumn5" class="form-control" type="text" placeholder="Edad">
-                            </div>
-                            <br />
-                              <div class="input_field">
-                                <h4>TELEFONO CASA</h4>
-                                <input id="inputcolumn6" class="form-control" type="text" placeholder="Tel residencia">
-                            </div>
-                            <br />
-                              <div class="input_field">
-                                <h4>OTRO TELEFONO</h4>
-                                <input id="inputcolumn7" class="form-control" type="text" placeholder="Telefono referencia">
-                            </div>
-                            <br />
-                              <div class="input_field">
-                                <h4>CELULAR</h4>
-                                <input id="inputcolumn8" class="form-control" type="text" placeholder="Numero de Movil">
-                            </div>
-                            <br />
-                              <div class="input_field">
-                                <h4>SALARIO</h4>
-                                <input id="inputcolumn9" class="form-control" type="text" placeholder="Remuneracion">
-                            </div>
-                            <br />
-
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="footer_border"></div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
+        <!-- Modal -->
+        <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="serch_form">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">search</button>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="serch_form">
-                    <input type="text" placeholder="Search">
-                    <button type="submit">search</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- link that opens popup -->
-    <!--
+        <!-- link that opens popup -->
+ 
+    </form>
+     <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
@@ -274,8 +422,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
-
-
+    <script src="js/Tablas/Empleados.js"></script>
     <!--contact js-->
     <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -295,6 +442,9 @@
             }
         });
     </script>
-</body>
+
+
+
+   </body>
 
 </html>
