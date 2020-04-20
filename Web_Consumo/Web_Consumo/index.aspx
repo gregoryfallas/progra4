@@ -48,7 +48,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index.aspx">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -59,11 +59,24 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
-                                            <li><a href="#">Usuarios <i class="ti-angle-down"></i></a>
+                                            <li><a class="" href="Vuelos.aspx">Vuelos</a></li>
+                                            <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                        <li><a href="aerolineas.aspx">Aerolineas</a></li>
+                                                        <li><a href="destinos.html">Destinos</a></li>
+                                                        <li><a href="Paises.aspx">Paises</a></li>
+                                                        <li><a href="CategoriasVuelos.aspx">Categorias Vuelos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Administracion <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="empleados.aspx">Empleados</a></li>
-                                                        <li><a href="elements.html">Clientes</a></li>
+                                                        <li><a href="tiposAviones.html">Tipos Aviones</a></li>
+                                                        <li><a href="categoriasVuelos.html">Categorias Vuelos</a></li>
+                                                        <li><a href="tiposClientes.aspx">Tipos Clientes</a></li>
+                                                        <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
+                                                        <li><a href="Usuarios.aspx">Usuarios</a></li>
+                                                        <li><a href="Estados.aspx">Estados</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">blog <i class="ti-angle-down"></i></a>
@@ -73,12 +86,6 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Administrador <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                        <li><a href="TiposAviones.aspx">Tipos de Aviones</a></li>
-                                                        <li><a href="TiposClientes.aspx">Tipos de Clientes</a></li>                                                        
-                                                </ul>
-                                            </li>
                                         </ul>
                                     </nav>
                                 </div>

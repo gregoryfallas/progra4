@@ -9,6 +9,11 @@ $(document).ready(function () {
 
     $("#inp_DESCRIP_AG").val("");
     $("#slc_IDESTAD_AG").val("0");
+
+
+    $("#inp_USER_ELIM").val("");
+    $("#slc_IDEMPLE_ED").val("0");
+    $("#slc_IDESTAD_ED").val("0");
 });
 
 function EDITAR(vId, vDesc, vEstado) {
@@ -30,4 +35,21 @@ function ELIMINAR_MD(vId, vDesc) {
 
 function AGREGAR_MD() {
     $("#ModalAgregar").modal();
+}
+
+
+function ELIMINAR_USER_MD(user) {
+    $("#inp_USER_ELIM").val(user);
+    $("#ModalEliminar").modal();
+}
+
+function EDITAR_USER(user, pass, emp, est) {
+    //ASIGNO LOS VALORES A LOS INPUT
+    $("#inp_USER_ED").val(user);
+    $("#inp_PASS_ED").val(pass);
+    $("#slc_IDEMPLE_ED").val(emp);
+    $("#slc_IDESTAD_ED").val(est);
+
+    //ABRIR EL MODAL
+    $("#ModalEditar").modal();
 }
