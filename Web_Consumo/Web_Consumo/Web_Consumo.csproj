@@ -89,16 +89,15 @@
     <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarFiltrarDatosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
-    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
-    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
-    <None Include="Connected Services\WCF_BD\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <None Include="Connected Services\WCF\configuration91.svcinfo" />
     <None Include="Connected Services\WCF\configuration.svcinfo" />
     <None Include="Connected Services\WCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
+    <None Include="Connected Services\WCF_BD\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -291,6 +290,7 @@
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="js\waypoints.min.js" />
     <Content Include="js\wow.min.js" />
+    <Content Include="Login.aspx" />
     <Content Include="main.html" />
     <Content Include="Paises.aspx" />
     <Content Include="readme.txt" />
@@ -421,7 +421,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -433,6 +439,13 @@
       <DependentUpon>Paises.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="tbl_Destinos.aspx.cs">
       <DependentUpon>tbl_Destinos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -576,6 +589,7 @@
     <Content Include="travel doc\fonts\fontawesome-webfont.woff" />
     <Content Include="travel doc\fonts\FontAwesome.otf" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

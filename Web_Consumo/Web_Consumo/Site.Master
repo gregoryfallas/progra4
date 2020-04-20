@@ -29,7 +29,7 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">Inicio</a></li>
                                             <li><a href="about.html">Sobre nosotros</a></li>
-                                            <li><a class="" href="travel_destination.html">Destinos</a></l/li>
+                                            <li><a class="" href="travel_destination.html">Destinos</a></li>
                                             <li><a href="contact.html">Contacto</a></li>
                                         </ul>
                                     </nav>
