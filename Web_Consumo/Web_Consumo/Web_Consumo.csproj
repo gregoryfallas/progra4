@@ -250,7 +250,7 @@
     <Content Include="js\range.js" />
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
-    <Content Include="js\Tablas\TiposEmpleados.js" />
+    <Content Include="js\Tablas\General.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="js\waypoints.min.js" />
@@ -314,6 +314,7 @@
     <Content Include="travel doc\syntax-highlighter\styles\shThemeMidnight.css" />
     <Content Include="travel doc\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="travel_destination.html" />
+    <Content Include="Usuarios.aspx" />
     <Content Include="ventanas\Aerolineas.aspx" />
     <Content Include="ventanas\Aviones.aspx" />
     <Content Include="ventanas\Empleados.aspx" />
@@ -366,6 +367,13 @@
     </Compile>
     <Compile Include="TiposEmpleados.aspx.designer.cs">
       <DependentUpon>TiposEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="ventanas\Aerolineas.aspx.cs">
       <DependentUpon>Aerolineas.aspx</DependentUpon>

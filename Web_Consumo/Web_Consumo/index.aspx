@@ -48,7 +48,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index.aspx">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -75,7 +75,7 @@
                                                         <li><a href="categoriasVuelos.html">Categorias Vuelos</a></li>
                                                         <li><a href="tiposClientes.aspx">Tipos Clientes</a></li>
                                                         <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
-                                                        <li><a href="usuarios.aspx">Usuarios</a></li>
+                                                        <li><a href="Usuarios.aspx">Usuarios</a></li>
                                                         <li><a href="Estados.aspx">Estados</a></li>
                                                 </ul>
                                             </li>

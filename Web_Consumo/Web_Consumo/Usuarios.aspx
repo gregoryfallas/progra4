@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TiposEmpleados.aspx.cs" Inherits="Web_Consumo.TiposEmpleados" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="Web_Consumo.Usuarios" %>
 
 <!DOCTYPE html>
 
@@ -91,11 +91,6 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-<%--                                <div class="social_wrap d-flex align-items-center justify-content-end">
-                                    <div  class="main-menu  d-none d-lg-block">
-                                        <a class="active" href="index.html">Iniciar Sesion</a>
-                                    </div>
-                                </div>--%>
                             </div>
                             <div class="seach_icon">
                                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
@@ -118,7 +113,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-9">
-                         <h2 class="tituloH">TIPOS EMPLEADOS</h2>
+                         <h2 class="tituloH">USUARIOS</h2>
                         <div class="row">                           
                             <div class="col-lg-8 col-md-8">
                                  <div class="row">
@@ -149,26 +144,34 @@
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title">TIPOS EMPLEADOS</h4>
+                            <h4 class="modal-title">USUARIO</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
                         <!-- Modal body -->
-                        <div class="modal-body">
+                        <div class="modal-body" style="width:100%">
                             <div>
                                 <div class="input_field">
-                                    <h4>ID TIPO EMPLEADO</h4>
-                                    <input runat="server" id="inp_IDTIPOEMP" class="form-control style_disabled" type="text" placeholder="ID TIPO EMPLEADO">
+                                    <h4>USERNAME</h4>
+                                     <input runat="server" id="inp_USER_ED" class="form-control style_disabled" type="text" placeholder="USERNAME" maxlength="15">
                                 </div>
                                 <br />
                                 <div class="input_field">
-                                    <h4>DESCRIPCION</h4>
-                                    <input runat="server" id="inp_DESCRIP" class="form-control" type="text" placeholder="DESCRIPCION">
+                                    <h4>PASSWORD</h4>
+                                    <input runat="server" id="inp_PASS_ED" class="form-control" type="text" placeholder="PASSWORD" maxlength="8">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID EMPLEADO</h4>
+                                    <select runat="server" id="slc_IDEMPLE_ED" class="form-control" >
+                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                    </select>
                                 </div>
                                 <br />
                                 <div class="input_field">
                                     <h4>ID ESTADO</h4>
-                                    <select runat="server" id="slc_IDESTAD" class="form-control" >
+                                    <select runat="server" id="slc_IDESTAD_ED" class="form-control" >
+                                        <option value="0" selected disabled>SELECCIONAR</option>
                                     </select>
                                 </div>
                             </div>
@@ -190,7 +193,7 @@
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title">ELIMINAR TIPO EMPLEADO</h4>
+                            <h4 class="modal-title">ELIMINAR USUARIO</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
@@ -198,13 +201,10 @@
                         <div class="modal-body">
                             <div>
                                 <div class="input_field">
-                                    <h4>DESEAS ELIMINAR ESTE TIPO EMPLEADO?</h4>
+                                    <h4>DESEAS ELIMINAR ESTE USUARIO?</h4>
                                     <div class="row">
-                                        <div class="col-3">
-                                            <input runat="server" id="inp_IDTIP_ELIM" class="form-control style_disabled" type="text">
-                                        </div>
-                                        <div class="col-9">
-                                                <input runat="server" id="inp_DESCR_ELIM" class="form-control style_disabled" type="text">
+                                        <div class="col-12">
+                                            <input runat="server" id="inp_USER_ELIM" class="form-control style_disabled" type="text">
                                         </div>
                                     </div>    
                                 </div>
@@ -228,7 +228,7 @@
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title">AGREGAR TIPO EMPLEADO</h4>
+                            <h4 class="modal-title">AGREGAR USUARIO</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
@@ -236,8 +236,20 @@
                         <div class="modal-body">
                             <div>
                                 <div class="input_field">
-                                    <h4>DESCRIPCION</h4>
-                                    <input runat="server" id="inp_DESCRIP_AG" class="form-control" type="text" placeholder="DESCRIPCION">
+                                    <h4>USERNAME</h4>
+                                     <input runat="server" id="inp_USER_AG" class="form-control" type="text" placeholder="USERNAME" maxlength="15">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>PASSWORD</h4>
+                                    <input runat="server" id="inp_PASS_AG" class="form-control" type="text" placeholder="PASSWORD" maxlength="8">
+                                </div>
+                                <br />
+                                <div class="input_field">
+                                    <h4>ID EMPLEADO</h4>
+                                    <select runat="server" id="slc_IDEMPLE_AG" class="form-control" >
+                                        <option value="0" selected disabled>SELECCIONAR</option>
+                                    </select>
                                 </div>
                                 <br />
                                 <div class="input_field">
@@ -326,7 +338,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
     
-<%--    <script src="js/main.js"></script>--%>
+    <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
     
     <script>
@@ -341,5 +353,3 @@
 </body>
 
 </html>
-
-
