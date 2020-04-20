@@ -3,7 +3,7 @@ using System.Data;
 using System.Text;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using BLL.WCF_BD;
+using Web_Consumo.WCF_BD;
 
 namespace Web_Consumo
 {
@@ -30,7 +30,7 @@ namespace Web_Consumo
                 != ""&& iId_PaisSalida !=0&& iId_PaisLlegada!=0 && cEstado!='0')
             {
 
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -45,7 +45,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@IdEstado", "3", cEstado);
 
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_Destinos", false, false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_Destinos", false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -71,7 +71,7 @@ namespace Web_Consumo
             if (sId_Destino != "" && sNombreDestino != "")
             {
 
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -79,7 +79,7 @@ namespace Web_Consumo
                 parametros = listarDatos.CrearDTParametros();
                 parametros.Rows.Add("@IdDestino", "1",sId_Destino);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_Destinos", false, false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_Destinos", false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -110,7 +110,7 @@ namespace Web_Consumo
             if (sId_Destino != "" && iIdAerolinea != 0 && sNombDestino
                 != ""&&iPaisSalida!=0 && iPaisLLegada !=0 && cIDEstado !=' ')
             {
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -123,7 +123,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@PaisLlegada", "2", iPaisLLegada);
                 parametros.Rows.Add("@IdEstado", "3", cIDEstado);
 
-                    listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Destinos", true, true, parametros, ref sMensajeError);
+                    listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Destinos",true, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -166,7 +166,7 @@ namespace Web_Consumo
         {
             //Declaracion de objetos
 
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
             DataTable parametros = new DataTable();
             DataTable ObjListar = new DataTable();
@@ -237,7 +237,7 @@ namespace Web_Consumo
 
         private void  CargarIdAerolinea_slc()
         {
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Aerolineas", null, ref sMensajeError);
@@ -262,7 +262,7 @@ namespace Web_Consumo
 
         private void CargarId_Paises_slc()
         {
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Paises", null, ref sMensajeError);
@@ -289,7 +289,7 @@ namespace Web_Consumo
         private void CargarId_Estado_slc()
         {
 
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Estados", null, ref sMensajeError);

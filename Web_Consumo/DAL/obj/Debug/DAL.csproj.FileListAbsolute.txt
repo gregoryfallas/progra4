@@ -12,6 +12,7 @@ C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\Clas
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb
 C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.dll
 C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\bin\Debug\ClassLibrary2.pdb
+C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.dll
 C:\Users\Administrador\source\repos\gregoryfallas\progra4\Web_Consumo\DAL\obj\Debug\ClassLibrary2.pdb

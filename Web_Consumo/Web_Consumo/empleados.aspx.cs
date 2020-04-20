@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Data;
-using BLL.Catalogo_BLL;
 using DAL.Catalogo_DAL;
 using System.Text;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using BLL.WCF_BD;
+using Web_Consumo.WCF_BD;
 
 namespace Web_Consumo
 {
@@ -47,8 +46,7 @@ namespace Web_Consumo
                   && objDal.DSalario != 0 && objDal.IIdTipoEmpleado != 0 && objDal.IIdAerolinea != 0
                   && objDal.CIdEstado != '0')
             {
-
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = listarDatos.CrearDTParametros();
                 DataTable ObjListar = new DataTable();
@@ -67,7 +65,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@idAerolinea", "2", objDal.IIdAerolinea);
                 parametros.Rows.Add("@IdEstado", "3", objDal.CIdEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_Empleados", false, false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_Empleados",false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -94,7 +92,7 @@ namespace Web_Consumo
             if (sIdEmpleado != "" && sNombre != "" && sApellido != "")
             {
 
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -102,7 +100,7 @@ namespace Web_Consumo
                 parametros = listarDatos.CrearDTParametros();
                 parametros.Rows.Add("@IdEmpleado", "1", sIdEmpleado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_Empleados", false, false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Borrar_Empleados", false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -124,7 +122,7 @@ namespace Web_Consumo
         protected void btn_Agregar_Click(object sender, EventArgs e)
         {
             Cls_Empleados_DAL objDal = new Cls_Empleados_DAL();
-            Cls_SP_Empleados_BLL objBLL = new Cls_SP_Empleados_BLL();
+         
 
             string SIdEmpleado = inp_IdEmpleado_AG.Value.ToString();
             string SCedula = inp_Cedula_AG.Value.ToString();
@@ -147,7 +145,7 @@ namespace Web_Consumo
                 && CIdEstado != '0')
             {
 
-                BD listarDatos = new BD();
+                BDClient listarDatos = new BDClient();
                 String sMensajeError = "";
                 DataTable parametros = listarDatos.CrearDTParametros();
               
@@ -166,7 +164,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@idAerolinea", "2", IIdAerolinea);
                 parametros.Rows.Add("@IdEstado", "3",CIdEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Empleados", false, false, parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_Empleados", false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -205,7 +203,7 @@ namespace Web_Consumo
         private void CargarDatos(char tipo)
         {
             //Declaracion de objetos
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
             DataTable parametros = new DataTable();
             DataTable ObjListar = new DataTable();
@@ -291,7 +289,7 @@ namespace Web_Consumo
         private void CargarSelecEstados()
         {
 
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Estados", null, ref sMensajeError);
@@ -317,7 +315,7 @@ namespace Web_Consumo
         private void CargarSelectTipoEmpleado()
         {
 
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_TiposEmpleados", null, ref sMensajeError);
@@ -343,7 +341,7 @@ namespace Web_Consumo
 
         private void CargarSelectIdAerolinea()
         {
-            BD listarDatos = new BD();
+            BDClient listarDatos = new BDClient();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Aerolineas", null, ref sMensajeError);

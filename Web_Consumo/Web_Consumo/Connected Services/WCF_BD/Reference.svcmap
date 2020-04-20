@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="adea19b7-acf7-46b6-9cac-567e0080d6bc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/BD_Aeropuerto.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BD_Aeropuerto.xsd" MetadataType="Schema" ID="52084dc4-4caf-4c5e-b469-53025a62a546" SourceId="1" SourceUrl="http://localhost/BD_Aeropuerto.svc?xsd=xsd0" />
+    <MetadataFile FileName="BD_Aeropuerto1.xsd" MetadataType="Schema" ID="03e90e8f-27c3-46da-8a72-4fdd869f5abd" SourceId="1" SourceUrl="http://localhost/BD_Aeropuerto.svc?xsd=xsd1" />
+    <MetadataFile FileName="BD_Aeropuerto2.xsd" MetadataType="Schema" ID="eb68abd9-ffa8-4063-aa64-3cb9da113255" SourceId="1" SourceUrl="http://localhost/BD_Aeropuerto.svc?xsd=xsd2" />
+    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="82f41461-3f28-4ff4-855a-179cdeea60ae" SourceId="1" SourceUrl="http://localhost/BD_Aeropuerto.svc?wsdl" />
+    <MetadataFile FileName="BD_Aeropuerto.disco" MetadataType="Disco" ID="397bd819-eff5-418a-bb4f-b066d6e3277b" SourceId="1" SourceUrl="http://localhost/BD_Aeropuerto.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
