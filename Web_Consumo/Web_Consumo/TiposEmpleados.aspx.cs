@@ -6,6 +6,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL.WCF_BD;
 
 namespace Web_Consumo
 {
@@ -26,7 +27,7 @@ namespace Web_Consumo
             if (sId != "" && sDesc != "" && cEstado != '0')
             {
 
-                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
+                BD listarDatos = new BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -36,7 +37,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@DescTipo", "1", sDesc);
                 parametros.Rows.Add("@IdEstado", "3", cEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados", false,false , parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Modificar_TiposEmpleados" ,false , false, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -61,7 +62,7 @@ namespace Web_Consumo
             if (idTipoEmp != "" && sDesc != "")
             {
 
-                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
+                BD listarDatos = new BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -109,7 +110,7 @@ namespace Web_Consumo
 
             if (sDesc != "" && cEstado != '0')
             {
-                BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
+                BD listarDatos = new BD();
                 String sMensajeError = "";
                 DataTable parametros = new DataTable();
                 DataTable ObjListar = new DataTable();
@@ -118,7 +119,7 @@ namespace Web_Consumo
                 parametros.Rows.Add("@DescTipo", "1", sDesc);
                 parametros.Rows.Add("@IdEstado", "3", cEstado);
 
-                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_TiposEmpleados", true,true , parametros, ref sMensajeError);
+                listarDatos.Ins_Mod_Eli_Datos("SP_Insertar_TiposEmpleados",true ,true, parametros, ref sMensajeError);
 
                 if (sMensajeError != string.Empty)
                 {
@@ -140,7 +141,7 @@ namespace Web_Consumo
         #region METODOS PRIVADOS
         private void RecargarPagina(char tipo)
         {
-            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
+            BD listarDatos = new BD();
             String sMensajeError = "";
             DataTable parametros = new DataTable();
             DataTable ObjListar = new DataTable();
@@ -210,7 +211,7 @@ namespace Web_Consumo
 
         private void LlenarSelectEstado()
         {
-            BLL.WCF_BD.BD listarDatos = new BLL.WCF_BD.BD();
+            BD listarDatos = new BD();
             String sMensajeError = "";
 
             DataTable ObjListar = listarDatos.ListarFiltrarDatos("SP_Listar_Estados", null, ref sMensajeError);

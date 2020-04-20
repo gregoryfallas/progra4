@@ -63,7 +63,7 @@
                                             <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="aerolineas.aspx">Aerolineas</a></li>
-                                                        <li><a href="destinos.html">Destinos</a></li>
+                                                        <li><a href="tbl_Destinos.aspx">Destinos</a></li>
                                                         <li><a href="Paises.aspx">Paises</a></li>
                                                         <li><a href="CategoriasVuelos.aspx">Categorias Vuelos</a></li>
                                                 </ul>

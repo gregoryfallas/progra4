@@ -49,121 +49,121 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Label labelTable;
         
         /// <summary>
-        /// inp_ID_Empleado control.
+        /// inp_ID_Empleado_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ID_Empleado;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ID_Empleado_ED;
         
         /// <summary>
-        /// inp_Cedula control.
+        /// inp_Cedula_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Cedula;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Cedula_ED;
         
         /// <summary>
-        /// inp_Nombre control.
+        /// inp_Nombre_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nombre_ED;
         
         /// <summary>
-        /// inp_Apellidos control.
+        /// inp_Apellidos_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apellidos;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apellidos_ED;
         
         /// <summary>
-        /// inp_Direccion control.
+        /// inp_Direccion_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Direccion;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Direccion_ED;
         
         /// <summary>
-        /// inp_Edad control.
+        /// inp_Edad_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Edad;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Edad_ED;
         
         /// <summary>
-        /// inp_TelCasa control.
+        /// inp_TelCasa_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelCasa;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelCasa_ED;
         
         /// <summary>
-        /// inp_TelReferencia control.
+        /// inp_TelReferencia_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelReferencia;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelReferencia_ED;
         
         /// <summary>
-        /// inp_Celular control.
+        /// inp_Celular_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Celular;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Celular_ED;
         
         /// <summary>
-        /// inp_Salario control.
+        /// inp_Salario_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Salario;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Salario_ED;
         
         /// <summary>
-        /// slc_ID_Tipo_Empleado control.
+        /// slc_ID_Tipo_Empleado_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_ID_Tipo_Empleado;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_ID_Tipo_Empleado_ED;
         
         /// <summary>
-        /// slc_ID_Aerolinea control.
+        /// slc_ID_Aerolinea_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_ID_Aerolinea;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_ID_Aerolinea_ED;
         
         /// <summary>
-        /// Slc_ID_Estado control.
+        /// slc_ID_Estado_ED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Slc_ID_Estado;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_ID_Estado_ED;
         
         /// <summary>
         /// btn_Editar control.
@@ -175,148 +175,148 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.Button btn_Editar;
         
         /// <summary>
-        /// inp_ID_Emp_Elim control.
+        /// inp_ID_Empleado_Elim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ID_Emp_Elim;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ID_Empleado_Elim;
         
         /// <summary>
-        /// inp_Nomb_Emp_Elim control.
+        /// inp_Nombre_Elim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nomb_Emp_Elim;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nombre_Elim;
         
         /// <summary>
-        /// inp_Apell_Elim control.
+        /// inp_Apellidos_Elim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apell_Elim;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apellidos_Elim;
         
         /// <summary>
-        /// btn_EliminarRegist control.
+        /// btn_Eliminar_Empleado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_EliminarRegist;
+        protected global::System.Web.UI.WebControls.Button btn_Eliminar_Empleado;
         
         /// <summary>
-        /// inp_IdEmpleadoAG control.
+        /// inp_IdEmpleado_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IdEmpleadoAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_IdEmpleado_AG;
         
         /// <summary>
-        /// inp_CedulaAG control.
+        /// inp_Cedula_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_CedulaAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Cedula_AG;
         
         /// <summary>
-        /// inp_NombreAG control.
+        /// inp_Nombre_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_NombreAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Nombre_AG;
         
         /// <summary>
-        /// inp_ApellidosAG control.
+        /// inp_Apellidos_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_ApellidosAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Apellidos_AG;
         
         /// <summary>
-        /// inp_DireccionAG control.
+        /// inp_Direccion_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_DireccionAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Direccion_AG;
         
         /// <summary>
-        /// inp_EdadAG control.
+        /// inp_Edad_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_EdadAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Edad_AG;
         
         /// <summary>
-        /// inp_TelCasaAG control.
+        /// inp_TelCasa_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelCasaAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelCasa_AG;
         
         /// <summary>
-        /// inp_TelRefAG control.
+        /// inp_TelRef_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelRefAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_TelRef_AG;
         
         /// <summary>
-        /// inp_CelularAG control.
+        /// inp_Celular_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_CelularAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Celular_AG;
         
         /// <summary>
-        /// inp_SalarioAG control.
+        /// inp_Salario_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_SalarioAG;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inp_Salario_AG;
         
         /// <summary>
-        /// Slc_IdTipoEmpleadoAG control.
+        /// slc_IdTipoEmpleado_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Slc_IdTipoEmpleadoAG;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_IdTipoEmpleado_AG;
         
         /// <summary>
-        /// Slc_IdAerolineaAG control.
+        /// slc_IdAerolinea_AG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Slc_IdAerolineaAG;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect slc_IdAerolinea_AG;
         
         /// <summary>
         /// slc_IdEstado_AG control.

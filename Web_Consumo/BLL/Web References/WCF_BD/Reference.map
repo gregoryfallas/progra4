@@ -3,8 +3,7 @@
   <Results>
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/BD_Aeropuerto.svc?xsd=xsd0" filename="BD_Aeropuerto.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/BD_Aeropuerto.svc?xsd=xsd1" filename="BD_Aeropuerto0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/BD_Aeropuerto.svc?xsd=xsd2" filename="BD_Aeropuerto1.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost/BD_Aeropuerto.svc?wsdl" filename="BD.wsdl" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://localhost/BD_Aeropuerto.svc?disco" filename="BD_Aeropuerto.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/BD_Aeropuerto.svc?xsd=xsd2" filename="BD_Aeropuerto1.xsd" />
   </Results>
 </DiscoveryClientResultsFile>

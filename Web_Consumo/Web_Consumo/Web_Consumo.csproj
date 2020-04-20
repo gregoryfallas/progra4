@@ -89,7 +89,6 @@
     <Content Include="css\theme-default.css" />
     <Content Include="css\themify-icons.css" />
     <Content Include="empleados.aspx" />
-    <Content Include="empleados.html" />
     <Content Include="elements.html" />
     <Content Include="Estados.aspx" />
     <Content Include="Estados.html" />
@@ -244,6 +243,7 @@
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
     <Content Include="js\Tablas\Empleados.js" />
+    <Content Include="js\Tablas\TablaDestinos.js" />
     <Content Include="js\Tablas\TiposEmpleados.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
@@ -253,6 +253,7 @@
     <Content Include="Paises.aspx" />
     <Content Include="readme.txt" />
     <Content Include="single-blog.html" />
+    <Content Include="tbl_Destinos.aspx" />
     <Content Include="TiposEmpleados.aspx" />
     <Content Include="travel doc\css\font-awesome.min.css" />
     <Content Include="travel doc\css\main.css" />
@@ -308,10 +309,6 @@
     <Content Include="travel doc\syntax-highlighter\styles\shThemeMidnight.css" />
     <Content Include="travel doc\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="travel_destination.html" />
-    <Content Include="ventanas\Aerolineas.aspx" />
-    <Content Include="ventanas\Aviones.aspx" />
-    <Content Include="ventanas\Empleados.aspx" />
-    <Content Include="ventanas\Tipos Aviones.aspx" />
     <Content Include="Vuelos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -349,40 +346,19 @@
       <DependentUpon>Paises.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tbl_Destinos.aspx.cs">
+      <DependentUpon>tbl_Destinos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tbl_Destinos.aspx.designer.cs">
+      <DependentUpon>tbl_Destinos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TiposEmpleados.aspx.cs">
       <DependentUpon>TiposEmpleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TiposEmpleados.aspx.designer.cs">
       <DependentUpon>TiposEmpleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Aerolineas.aspx.cs">
-      <DependentUpon>Aerolineas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Aerolineas.aspx.designer.cs">
-      <DependentUpon>Aerolineas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Aviones.aspx.cs">
-      <DependentUpon>Aviones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Aviones.aspx.designer.cs">
-      <DependentUpon>Aviones.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Empleados.aspx.cs">
-      <DependentUpon>Empleados.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Empleados.aspx.designer.cs">
-      <DependentUpon>Empleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Tipos Aviones.aspx.cs">
-      <DependentUpon>Tipos Aviones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Tipos Aviones.aspx.designer.cs">
-      <DependentUpon>Tipos Aviones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vuelos.aspx.cs">
       <DependentUpon>Vuelos.aspx</DependentUpon>
@@ -471,6 +447,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="ventanas\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

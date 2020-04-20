@@ -2,8 +2,6 @@
 using System.Data;
 using DAL.Catalogo_DAL;
 using BLL.WCF_BD;
-using BLL.Metodos;
-
 
 
 namespace BLL.Catalogo_BLL
@@ -13,12 +11,12 @@ namespace BLL.Catalogo_BLL
 
         public DataTable ListarFiltrar_Empleados(ref Cls_Empleados_DAL objDAL, char tipo)
         {
-            Cls_Metodos_BLL BLL_Met = new Cls_Metodos_BLL();
+     
             DataTable parametros = new DataTable();
             DataTable ds = new DataTable();
-            parametros = BLL_Met.CrearDtParametros();
+            parametros = CrearDtParametros();
             string sMsjError = objDAL.SMsjError;
-          
+
             BD Cliente = new BD();
 
             if (tipo == 'L')
@@ -55,9 +53,9 @@ namespace BLL.Catalogo_BLL
 
         public string EditarEmpleados(ref Cls_Empleados_DAL objDAL) {
 
-            Cls_Metodos_BLL BLL_Met = new Cls_Metodos_BLL();
+        
             DataTable parametros = new DataTable();
-            parametros = BLL_Met.CrearDtParametros();
+            parametros = CrearDtParametros();
             objDAL.SStoreProcedure = "SP_Modificar_Empleados";
             string sMsjError = objDAL.SMsjError;
             BD Cliente = new BD();
@@ -84,7 +82,7 @@ namespace BLL.Catalogo_BLL
                 parametros.Rows.Add("@idAerolinea", "2", objDAL.IIdAerolinea);
                 parametros.Rows.Add("@IdEstado", "3", objDAL.CIdEstado);
 
-                    Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure, false, false, parametros, ref sMsjError);
+                    Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure, false,false, parametros, ref sMsjError);
                     objDAL.SMsjError = "CAMPO MODIFICADO CORRECTAMENTE";
                 objDAL.SFiltro = "OK";
 
@@ -107,17 +105,17 @@ namespace BLL.Catalogo_BLL
         public string EliminarEmpleado(ref Cls_Empleados_DAL objDAL)
         {
             string sMsjError = objDAL.SMsjError;
-            Cls_Metodos_BLL BLL_Met = new Cls_Metodos_BLL();
+      
             DataTable parametros = new DataTable();
             DataTable ds = new DataTable();
-            parametros = BLL_Met.CrearDtParametros();
+            parametros = CrearDtParametros();
             objDAL.SStoreProcedure = "SP_Borrar_Empleados";
             BD Cliente = new BD();
 
             try
             {
                 parametros.Rows.Add("@IdEmpleado", "1", objDAL.SIdEmpleado);
-                objDAL.SMsjError = Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure, false, false, parametros, ref sMsjError);
+                objDAL.SMsjError = Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure,false,false, parametros, ref sMsjError);
             }
             catch(Exception Ex)
             {
@@ -136,9 +134,9 @@ namespace BLL.Catalogo_BLL
 
         public string AgregarEmpleado(ref Cls_Empleados_DAL objDAL)
         {
-            Cls_Metodos_BLL BLL_Met = new Cls_Metodos_BLL();
+          
             DataTable parametros = new DataTable();
-            parametros = BLL_Met.CrearDtParametros();
+            parametros = CrearDtParametros();
             objDAL.SStoreProcedure = "SP_Insertar_Empleados";
             string sMsjError = objDAL.SMsjError;
             BD Cliente = new BD();
@@ -165,7 +163,7 @@ namespace BLL.Catalogo_BLL
                 parametros.Rows.Add("@idAerolinea", "2", objDAL.IIdAerolinea);
                 parametros.Rows.Add("@IdEstado", "3", objDAL.CIdEstado);
 
-                Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure,false,false,parametros,ref sMsjError);
+                Cliente.Ins_Mod_Eli_Datos(objDAL.SStoreProcedure,false, false, parametros,ref sMsjError);
                 objDAL.SMsjError = "CAMPO AGREGADO CORRECTAMENTE";
                     objDAL.SFiltro = "OK";
 
@@ -238,7 +236,26 @@ namespace BLL.Catalogo_BLL
 
         }
 
+        public DataTable CrearDtParametros()
+        {
+            DataTable ds = new DataTable();
+
+            BD Cliente = new BD();
+
+            try
+            {
+                ds = Cliente.CrearDTParametros();
+            }
+            finally
+            {
+
+            }
 
 
+            return ds;
+
+        }
+
+       
     }
 }
