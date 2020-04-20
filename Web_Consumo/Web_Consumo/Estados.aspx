@@ -57,8 +57,14 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Vuelos</a></l/li>
+                                            <li>
+                                                <a href="#">Estados <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="Estados.aspx">Visualizar Estados</a></li>
+                                                    <li><a href="Estados-Eliminar1.aspx">Eliminar Estados</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="" href="travel_destination.html">Vuelos</a></li>
                                             <li>
                                                 <a href="#">Usuarios <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
@@ -107,29 +113,38 @@
                 </div>
                 <form id="form1" runat="server">
         <div>
-              <asp:Label ID="Label1" runat="server" Text="Filtro : "></asp:Label>
+              <asp:Label ID="Label1" runat="server" Text="Descripción : " Font-Bold="true"></asp:Label>
               <asp:TextBox ID="txt_filtroEstados" runat="server" Width="477px" OnTextChanged="txt_filtroEstados_TextChanged" CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
-              <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click"/><br><br />
-              <asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>
+              <asp:Button ID="btn_FiltrarEstados" runat="server" Text="Filtrar" OnClick="btn_FiltrarEstados_Click" class="boxed-btn4"/><br><br />
+
+              <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
-                   <br />
-                   <p></p>
-                   <asp:GridView ID="DGV_DATOS" runat="server"></asp:GridView>
-                   <p></p>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : "></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : "></asp:Label>
+                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : " Font-Bold="true"></asp:Label>
                    <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" /> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" /> &nbsp;
-                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click"/>&nbsp;
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click" class="boxed-btn4"/>&nbsp;
+                   <br />
+                   <br />
+                   <asp:GridView ID="DGV_DATOS" runat="server" display="block" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                       <AlternatingRowStyle BackColor="#DCDCDC" />
+                       <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+                       <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+                       <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                       <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+                       <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                       <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                       <SortedAscendingHeaderStyle BackColor="#0000A9" />
+                       <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                       <SortedDescendingHeaderStyle BackColor="#000065" />
+                   </asp:GridView>
                </div>        
         </div>
     </form>

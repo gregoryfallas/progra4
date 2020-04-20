@@ -59,7 +59,14 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="Vuelos.aspx">Vuelos</a></li>
+                                        </ul>
+                                        <ul class="submenu">
+                                            <li><a href="#">Vuelos<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                <li><a href="vuelos.aspx">Vuelos Diponibles</a></li>
+                                                <li><a href="vuelos-eliminar.aspx">Eliminar Vuelos</a></li>
+                                        </ul>
+                                        </li>
                                             <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="aerolineas.aspx">Aerolineas</a></li>
