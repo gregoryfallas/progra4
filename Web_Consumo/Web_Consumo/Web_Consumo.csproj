@@ -71,7 +71,13 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="blog.html" />
+    <Content Include="css\adminlte.min.css" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\btGrisNegrita.css" />
+    <Content Include="css\login.css" />
+    <Content Include="img\icons\config-icon.png" />
     <Content Include="Index.aspx" />
+    <Content Include="WebForm2.aspx" />
     <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
     <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
     <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
@@ -226,6 +232,9 @@
     <Content Include="img\works\3.png" />
     <Content Include="img\works\4.png" />
     <Content Include="index.html" />
+    <Content Include="js\AdminPanel\adminlte.js" />
+    <Content Include="js\AdminPanel\bootstrap.bundle.min.js" />
+    <Content Include="js\AdminPanel\jquery.min.js" />
     <Content Include="js\ajax-form.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
@@ -258,6 +267,7 @@
     <Content Include="Login.aspx" />
     <Content Include="main.html" />
     <Content Include="Paises.aspx" />
+    <Content Include="PanelAdmin.aspx" />
     <Content Include="readme.txt" />
     <Content Include="single-blog.html" />
     <Content Include="TiposAviones.aspx" />
@@ -317,6 +327,45 @@
     <Content Include="travel doc\syntax-highlighter\styles\shThemeMidnight.css" />
     <Content Include="travel doc\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="travel_destination.html" />
+    <Content Include="vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\js\npm.js" />
+    <Content Include="vendor\bootstrap\js\popper.min.js" />
+    <Content Include="vendor\chartist\css\chartist-custom.css" />
+    <Content Include="vendor\chartist\css\chartist.css" />
+    <Content Include="vendor\chartist\css\chartist.min.css" />
+    <Content Include="vendor\chartist\js\chartist.js" />
+    <Content Include="vendor\chartist\js\chartist.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.min.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.min.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.min.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\easypiechart.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\easypiechart.min.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
+    <Content Include="vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="vendor\linearicons\style.css" />
+    <Content Include="vendor\toastr\toastr.css" />
+    <Content Include="vendor\toastr\toastr.js" />
+    <Content Include="vendor\toastr\toastr.min.css" />
+    <Content Include="vendor\toastr\toastr.min.js" />
     <Content Include="ventanas\Aerolineas.aspx" />
     <Content Include="ventanas\Aviones.aspx" />
     <Content Include="ventanas\Empleados.aspx" />
@@ -362,6 +411,13 @@
     <Compile Include="Paises.aspx.designer.cs">
       <DependentUpon>Paises.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PanelAdmin.aspx.cs">
+      <DependentUpon>PanelAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin.aspx.designer.cs">
+      <DependentUpon>PanelAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -369,6 +425,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
     <Compile Include="TiposAviones.aspx.cs">
       <DependentUpon>TiposAviones.aspx</DependentUpon>
@@ -432,6 +495,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -521,6 +591,25 @@
     <Content Include="travel doc\fonts\FontAwesome.otf" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <Content Include="Site.Master" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="vendor\chartist\css\chartist-custom.css.map" />
+    <Content Include="vendor\chartist\map\chartist.css.map" />
+    <Content Include="vendor\chartist\map\chartist.min.js.map" />
+    <Content Include="vendor\chartist\scss\chartist.scss" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="vendor\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="vendor\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="vendor\linearicons\fonts\Linearicons-Free.woff2" />
+    <Content Include="Dashboard.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
