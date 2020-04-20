@@ -266,12 +266,10 @@ input,
 optgroup,
 select,
 textarea {
+    margin: 0;
     font-family: inherit;
     font-size: inherit;
-    line-height: inherit;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
+    line-height: inherit
 }
 
 button,
@@ -824,9 +822,7 @@ pre code {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
-    top: 0px;
-    left: 0px;
+    max-width: 100%
 }
 
 .order-first {
@@ -1427,9 +1423,7 @@ pre code {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-        align-content:center;
-        
+        max-width: 66.666667%
     }
     .col-lg-9 {
         -webkit-box-flex: 0;
@@ -1770,9 +1764,8 @@ pre code {
 }
 
 .table {
-    width: 65%;
-    max-width: 90%;
-    overflow-x:scroll;
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent
 }
@@ -9255,7 +9248,7 @@ a.text-dark:hover {
         min-width: 992px!important
     }
     .container {
-        min-width: 592px!important
+        min-width: 992px!important
     }
     .navbar {
         display: none

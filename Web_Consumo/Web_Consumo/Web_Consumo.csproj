@@ -70,15 +70,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="Aerolinea.aspx" />
+    <Content Include="Aviones.aspx" />
     <Content Include="blog.html" />
-    <Content Include="css\adminlte.min.css" />
-    <Content Include="css\all.min.css" />
-    <Content Include="css\btGrisNegrita.css" />
-    <Content Include="css\login.css" />
-    <Content Include="img\icons\config-icon.png" />
-    <Content Include="Index.aspx" />
-    <Content Include="WebForm2.aspx" />
-    <None Include="Connected Services\WCF_BD\BD_Aeropuerto.disco" />
+    <None Include="Connected Services\WCF\BD.wsdl" />
+    <None Include="Connected Services\WCF\BD_Aeropuerto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF\BD_Aeropuerto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF\BD_Aeropuerto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WCF\Web_Consumo.WCF.Ins_Mod_Eli_DatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WCF\Web_Consumo.WCF.ListarFiltrarDatosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WCF\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF\configuration.svcinfo" />
+    <None Include="Connected Services\WCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
     <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
     <None Include="Connected Services\WCF_BD\Reference.svcmap">
@@ -93,6 +109,7 @@
     <Content Include="css\flaticon.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\gijgo.css" />
+    <Content Include="css\gridViewPaginacion.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\nice-select.css" />
@@ -103,8 +120,9 @@
     <Content Include="css\theme-default.css" />
     <Content Include="css\themify-icons.css" />
     <Content Include="empleados.aspx" />
-    <Content Include="empleados.html" />
     <Content Include="elements.html" />
+    <Content Include="Estados-Eliminar.aspx" />
+    <Content Include="Estados-Eliminar1.aspx" />
     <Content Include="Estados.aspx" />
     <Content Include="Estados.html" />
     <Content Include="fonts\fa-brands-400.svg" />
@@ -117,6 +135,7 @@
     <Content Include="fonts\themify.svg" />
     <Content Include="img\about\1.png" />
     <Content Include="img\about\2.png" />
+    <Content Include="img\actualizar.png" />
     <Content Include="img\banner\banner.png" />
     <Content Include="img\banner\banner2.png" />
     <Content Include="img\banner\banner3.png" />
@@ -140,6 +159,10 @@
     <Content Include="img\blog\single_blog_4.png" />
     <Content Include="img\blog\single_blog_5.png" />
     <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\calendar.ico" />
+    <Content Include="img\calendar.png" />
+    <Content Include="img\Calendario.png" />
+    <Content Include="img\Calendario1.png" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />
@@ -231,10 +254,8 @@
     <Content Include="img\works\2.png" />
     <Content Include="img\works\3.png" />
     <Content Include="img\works\4.png" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
-    <Content Include="js\AdminPanel\adminlte.js" />
-    <Content Include="js\AdminPanel\bootstrap.bundle.min.js" />
-    <Content Include="js\AdminPanel\jquery.min.js" />
     <Content Include="js\ajax-form.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\contact.js" />
@@ -259,6 +280,11 @@
     <Content Include="js\range.js" />
     <Content Include="js\scrollIt.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="js\Tablas\Aviones.js" />
+    <Content Include="js\Tablas\Empleados.js" />
+    <Content Include="js\Tablas\General.js" />
+    <Content Include="js\Tablas\Paises.js" />
+    <Content Include="js\Tablas\TablaDestinos.js" />
     <Content Include="js\Tablas\TiposEmpleados.js" />
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.5.0.min.js" />
@@ -267,15 +293,18 @@
     <Content Include="Login.aspx" />
     <Content Include="main.html" />
     <Content Include="Paises.aspx" />
-    <Content Include="PanelAdmin.aspx" />
     <Content Include="readme.txt" />
     <Content Include="single-blog.html" />
+    <Content Include="tbl_Destinos.aspx" />
     <Content Include="TiposAviones.aspx" />
     <Content Include="TiposCliente.aspx" />
+    <Content Include="TiposClientes.aspx" />
     <Content Include="TiposEmpleados.aspx" />
     <Content Include="travel doc\css\font-awesome.min.css" />
     <Content Include="travel doc\css\main.css" />
+    <Content Include="travel doc\css\MiLabel.css" />
     <Content Include="travel doc\css\normalize.min.css" />
+    <Content Include="travel doc\css\txtbox.css" />
     <Content Include="travel doc\fonts\fontawesome-webfont.svg" />
     <Content Include="travel doc\img\logo.png" />
     <Content Include="travel doc\index.html" />
@@ -327,53 +356,31 @@
     <Content Include="travel doc\syntax-highlighter\styles\shThemeMidnight.css" />
     <Content Include="travel doc\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="travel_destination.html" />
-    <Content Include="vendor\bootstrap\css\bootstrap-theme.css" />
-    <Content Include="vendor\bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="vendor\bootstrap\css\bootstrap.css" />
-    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
-    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="vendor\bootstrap\js\bootstrap.js" />
-    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
-    <Content Include="vendor\bootstrap\js\npm.js" />
-    <Content Include="vendor\bootstrap\js\popper.min.js" />
-    <Content Include="vendor\chartist\css\chartist-custom.css" />
-    <Content Include="vendor\chartist\css\chartist.css" />
-    <Content Include="vendor\chartist\css\chartist.min.css" />
-    <Content Include="vendor\chartist\js\chartist.js" />
-    <Content Include="vendor\chartist\js\chartist.min.js" />
-    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
-    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
-    <Content Include="vendor\datatables\dataTables.bootstrap4.min.css" />
-    <Content Include="vendor\datatables\dataTables.bootstrap4.min.js" />
-    <Content Include="vendor\datatables\jquery.dataTables.js" />
-    <Content Include="vendor\datatables\jquery.dataTables.min.js" />
-    <Content Include="vendor\font-awesome\css\font-awesome.css" />
-    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
-    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="vendor\jquery-slimscroll\jquery.slimscroll.js" />
-    <Content Include="vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\easypiechart.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\easypiechart.min.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
-    <Content Include="vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
-    <Content Include="vendor\jquery\jquery.js" />
-    <Content Include="vendor\jquery\jquery.min.js" />
-    <Content Include="vendor\linearicons\fonts\Linearicons-Free.svg" />
-    <Content Include="vendor\linearicons\style.css" />
-    <Content Include="vendor\toastr\toastr.css" />
-    <Content Include="vendor\toastr\toastr.js" />
-    <Content Include="vendor\toastr\toastr.min.css" />
-    <Content Include="vendor\toastr\toastr.min.js" />
-    <Content Include="ventanas\Aerolineas.aspx" />
-    <Content Include="ventanas\Aviones.aspx" />
-    <Content Include="ventanas\Empleados.aspx" />
-    <Content Include="ventanas\Tipos Aviones.aspx" />
+    <Content Include="Usuarios.aspx" />
+    <Content Include="Vuelos-Eliminar.aspx" />
     <Content Include="Vuelos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aerolinea.aspx.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aerolinea.aspx.designer.cs">
+      <DependentUpon>Aerolinea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aviones.aspx.cs">
+      <DependentUpon>Aviones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aviones.aspx.designer.cs">
+      <DependentUpon>Aviones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WCF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WCF_BD\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -386,6 +393,20 @@
     <Compile Include="empleados.aspx.designer.cs">
       <DependentUpon>empleados.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Estados-Eliminar.aspx.cs">
+      <DependentUpon>Estados-Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estados-Eliminar.aspx.designer.cs">
+      <DependentUpon>Estados-Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estados-Eliminar1.aspx.cs">
+      <DependentUpon>Estados-Eliminar1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estados-Eliminar1.aspx.designer.cs">
+      <DependentUpon>Estados-Eliminar1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Estados.aspx.cs">
       <DependentUpon>Estados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -393,7 +414,13 @@
     <Compile Include="Estados.aspx.designer.cs">
       <DependentUpon>Estados.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -411,13 +438,6 @@
     <Compile Include="Paises.aspx.designer.cs">
       <DependentUpon>Paises.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PanelAdmin.aspx.cs">
-      <DependentUpon>PanelAdmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PanelAdmin.aspx.designer.cs">
-      <DependentUpon>PanelAdmin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -426,12 +446,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.Master.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
+    <Compile Include="tbl_Destinos.aspx.cs">
+      <DependentUpon>tbl_Destinos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.Master.designer.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
+    <Compile Include="tbl_Destinos.aspx.designer.cs">
+      <DependentUpon>tbl_Destinos.aspx</DependentUpon>
     </Compile>
     <Compile Include="TiposAviones.aspx.cs">
       <DependentUpon>TiposAviones.aspx</DependentUpon>
@@ -447,6 +467,13 @@
     <Compile Include="TiposCliente.aspx.designer.cs">
       <DependentUpon>TiposCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TiposClientes.aspx.cs">
+      <DependentUpon>TiposClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TiposClientes.aspx.designer.cs">
+      <DependentUpon>TiposClientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TiposEmpleados.aspx.cs">
       <DependentUpon>TiposEmpleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -454,33 +481,19 @@
     <Compile Include="TiposEmpleados.aspx.designer.cs">
       <DependentUpon>TiposEmpleados.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\Aerolineas.aspx.cs">
-      <DependentUpon>Aerolineas.aspx</DependentUpon>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ventanas\Aerolineas.aspx.designer.cs">
-      <DependentUpon>Aerolineas.aspx</DependentUpon>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\Aviones.aspx.cs">
-      <DependentUpon>Aviones.aspx</DependentUpon>
+    <Compile Include="Vuelos-Eliminar.aspx.cs">
+      <DependentUpon>Vuelos-Eliminar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ventanas\Aviones.aspx.designer.cs">
-      <DependentUpon>Aviones.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Empleados.aspx.cs">
-      <DependentUpon>Empleados.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Empleados.aspx.designer.cs">
-      <DependentUpon>Empleados.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ventanas\Tipos Aviones.aspx.cs">
-      <DependentUpon>Tipos Aviones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ventanas\Tipos Aviones.aspx.designer.cs">
-      <DependentUpon>Tipos Aviones.aspx</DependentUpon>
+    <Compile Include="Vuelos-Eliminar.aspx.designer.cs">
+      <DependentUpon>Vuelos-Eliminar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vuelos.aspx.cs">
       <DependentUpon>Vuelos.aspx</DependentUpon>
@@ -488,20 +501,6 @@
     </Compile>
     <Compile Include="Vuelos.aspx.designer.cs">
       <DependentUpon>Vuelos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -591,25 +590,6 @@
     <Content Include="travel doc\fonts\FontAwesome.otf" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <Content Include="Site.Master" />
-    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="vendor\chartist\css\chartist-custom.css.map" />
-    <Content Include="vendor\chartist\map\chartist.css.map" />
-    <Content Include="vendor\chartist\map\chartist.min.js.map" />
-    <Content Include="vendor\chartist\scss\chartist.scss" />
-    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="vendor\jquery\jquery.min.map" />
-    <Content Include="vendor\linearicons\fonts\Linearicons-Free.eot" />
-    <Content Include="vendor\linearicons\fonts\Linearicons-Free.ttf" />
-    <Content Include="vendor\linearicons\fonts\Linearicons-Free.woff" />
-    <Content Include="vendor\linearicons\fonts\Linearicons-Free.woff2" />
-    <Content Include="Dashboard.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -634,6 +614,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WCF\" />
     <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
   </ItemGroup>
   <PropertyGroup>
