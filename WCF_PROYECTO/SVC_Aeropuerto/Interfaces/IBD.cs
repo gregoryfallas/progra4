@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Data;
 
-namespace WCF_Proyecto_SVC.Interface
+namespace SVC_Aeropuerto.Interfaces
 {        
     [ServiceContract]
     public interface IBD
@@ -20,7 +20,7 @@ namespace WCF_Proyecto_SVC.Interface
 
 
         [OperationContract]
-        string Ins_Mod_Del_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError);
+        string Ins_Mod_Eli_Datos(string sNombreSP, bool bBandera, DataTable DT_Parametros, ref string sMsjError);
               
     }
 }

@@ -61,7 +61,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdEstado", "5", txtEstado.Text.Trim());
             sNomSP = "dbo.SP_Insertar_Tiposclientes";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNomSP, true, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNomSP, true, dtParametros, ref sError);
 
             txtFiltro.Text = string.Empty;
 
@@ -90,7 +90,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdEstado", "5", txtEstado.Text.Trim());
             sNomSP = "dbo.SP_Modificar_TiposClientes";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNomSP, false, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNomSP, false, dtParametros, ref sError);
 
             txtFiltro.Text = string.Empty;
 
@@ -122,7 +122,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdTipoCliente", "1", txtFiltro.Text.Trim());
             sNombSP = "dbo.SP_Borrar_TiposClientes";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNombSP, false, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sError);
 
             txtFiltro.Text = string.Empty;
             CargarDatos();

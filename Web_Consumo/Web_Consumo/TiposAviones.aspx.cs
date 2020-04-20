@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using Web_Consumo.WCF_BD;
 
 namespace Web_Consumo
 {
@@ -64,7 +65,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdEstado", "5", txtEstado.Text.Trim());
             sNomSP = "dbo.SP_Insertar_TiposAviones";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNomSP, false, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNomSP, false, dtParametros, ref sError);
             
             txtFiltro.Text = string.Empty;
 
@@ -98,7 +99,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdEstado", "5", txtEstado.Text.Trim());
             sNomSP = "dbo.SP_Modificar_TiposAviones";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNomSP, false, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNomSP, false, dtParametros, ref sError);
 
             txtFiltro.Text = string.Empty;
 
@@ -135,7 +136,7 @@ namespace Web_Consumo
             dtParametros.Rows.Add("@IdtipoAvion", "1", txtFiltro.Text.Trim());
             sNombSP = "dbo.SP_Borrar_TiposAviones";
 
-            Obj_WCF_BD.Ins_Mod_Del_Datos(sNombSP, false, dtParametros, ref sError);
+            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sError);
 
             txtFiltro.Text = string.Empty;
             CargarDatos();
