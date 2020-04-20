@@ -31,15 +31,6 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.TextBox txt_filtroVuelos;
         
         /// <summary>
-        /// DGV_DATOS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView DGV_DATOS;
-        
-        /// <summary>
         /// lb_ID_Vuelos control.
         /// </summary>
         /// <remarks>
@@ -65,5 +56,14 @@ namespace Web_Consumo {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_Eliminar;
+        
+        /// <summary>
+        /// DGV_DATOS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView DGV_DATOS;
     }
 }

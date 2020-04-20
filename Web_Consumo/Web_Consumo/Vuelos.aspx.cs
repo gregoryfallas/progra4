@@ -33,13 +33,13 @@ namespace Web_Consumo
             if (txt_filtroVuelos.Text == string.Empty)
             {//ESTE LISTA LA INFORMACION DE LA TABLA
                 dtParametros = null;
-                sNombSP = "SP_Listar_Estados";
+                sNombSP = "SP_Listar_Vuelos";
             }
             else
             {   //ESTE PROCESO  REALIZA EL FILTRADO
                 dtParametros = Obj_WCF_BD.CrearDTParametros();
                 dtParametros.Rows.Add("@filtro", "1", txt_filtroVuelos.Text.Trim());
-                sNombSP = "SP_Filtrar_Estados";
+                sNombSP = "SP_Filtrar_Vuelos";
 
             }
 
@@ -69,45 +69,50 @@ namespace Web_Consumo
 
         protected void btn_Insertar_Click(object sender, EventArgs e)
         {
-            //
             #region VARIABLES LOCALES
+            if (txt_ID_Vuelos != null && txt_ID_Destinos != null && txt_ID_Aerolinea != null && txt_ID_Avion != null && txt_FechaHoraSalida != null && txt_FechaHoraLlegada != null && txt_ID_Estado != null)
+            {
+                DataTable dtParametros = new DataTable();
+                WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
 
-            DataTable dtParametros = new DataTable();
-            WCF_BD.BDClient Obj_WCF_BD = new WCF_BD.BDClient();
+                string sNombSP = string.Empty;
+                string sMsjError = string.Empty;
 
-            string sNombSP = string.Empty;
-            string sMsjError = string.Empty;
+                #endregion
+           
+                dtParametros = Obj_WCF_BD.CrearDTParametros();
+                dtParametros.Rows.Add("@IdVuelo", "1", txt_ID_Vuelos.Text.Trim());
+                dtParametros.Rows.Add("@IdDestino", "1", txt_ID_Destinos.Text.Trim());
+                dtParametros.Rows.Add("@IdAerolinea", "2", txt_ID_Aerolinea.Text.Trim());
+                dtParametros.Rows.Add("@IdAvion", "1", txt_ID_Avion.Text.Trim());
+                dtParametros.Rows.Add("@FechaHoraSalida", "5", txt_FechaHoraSalida.Text.Trim()); //= ((DateTime).Rows[2]["FechaHoraSalida"]).ToString("dd/MM/yyyy H:MM:ss").ToString());
+                dtParametros.Rows.Add("@FechaHoraLlegada", "5", txt_FechaHoraLlegada.Text.Trim()); //= ((DateTime)dtParametros.Rows[2]["FechaHoraLlegada"]).ToString("dd/MM/yyyy H:MM:ss").ToString());
+                dtParametros.Rows.Add("@IdEstado", "3", txt_ID_Estado.Text.Trim());
+                sNombSP = "SP_Insertar_Vuelos";
 
-            #endregion
+                Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
 
-            dtParametros = Obj_WCF_BD.CrearDTParametros();
-            dtParametros.Rows.Add("@IdVuelo", "1", txt_ID_Vuelos.Text.Trim());
-            dtParametros.Rows.Add("@IdDestino", "1", txt_ID_Destinos.Text.Trim());
-            dtParametros.Rows.Add("@IdAerolinea", "2", txt_ID_Aerolinea.Text.Trim());
-            dtParametros.Rows.Add("@IdAvion", "1", txt_ID_Avion.Text.Trim());
-            dtParametros.Rows.Add("@FechaHoraSalida", "5", txt_FechaHoraSalida.Text.Trim());
-            dtParametros.Rows.Add("FechaHoraLlegada", "5", txt_FechaHoraLlegada.Text.Trim());
-            dtParametros.Rows.Add("@IdEstado", "3", txt_ID_Estado.Text.Trim());
-            sNombSP = "SP_Insertar_Vuelos";
+                //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
+                if (sMsjError != string.Empty)
+                {   //DEFINE EL MENSAJE A MOSTRAR
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Se presento un error a la hora de insertar el estado.');" + sMsjError, true);
+                }
 
-            Obj_WCF_BD.Ins_Mod_Eli_Datos(sNombSP, false, dtParametros, ref sMsjError);
+                txt_filtroVuelos.Text = string.Empty;
+                txt_ID_Vuelos.Text = string.Empty;
+                txt_ID_Destinos.Text = string.Empty;
+                txt_ID_Aerolinea.Text = string.Empty;
+                txt_ID_Avion.Text = string.Empty;
+                txt_FechaHoraSalida.Text = string.Empty;
+                txt_FechaHoraLlegada.Text = string.Empty;
+                txt_ID_Estado.Text = string.Empty;
 
-            //ESTO MUESTRA UN ERROR EN PANTALLA AL USUARIO
-            if (sMsjError != string.Empty)
-            {   //DEFINE EL MENSAJE A MOSTRAR
-                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Se presento un error a la hora de insertar el estado.');"+sMsjError, true);
+                CargarDatos();
             }
-
-            txt_filtroVuelos.Text = string.Empty;
-            txt_ID_Vuelos.Text = string.Empty;
-            txt_ID_Destinos.Text = string.Empty;
-            txt_ID_Aerolinea.Text = string.Empty;
-            txt_ID_Avion.Text = string.Empty;
-            txt_FechaHoraSalida.Text = string.Empty;
-            txt_FechaHoraLlegada.Text = string.Empty;
-            txt_ID_Estado.Text = string.Empty;
-
-            CargarDatos();
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('No pueden quedar campos vacios');", true);
+            }
         }
 
         protected void btn_Modificar_Click(object sender, EventArgs e)
@@ -196,6 +201,11 @@ namespace Web_Consumo
         protected void btn_FiltrarVuelos_Click1(object sender, EventArgs e)
         {
 
+        }
+
+        protected void txt_ID_Vuelos_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

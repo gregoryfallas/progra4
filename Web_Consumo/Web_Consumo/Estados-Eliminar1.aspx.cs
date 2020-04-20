@@ -34,13 +34,13 @@ namespace Web_Consumo
             if (txt_filtroVuelos.Text == string.Empty)
             {//ESTE LISTA LA INFORMACION DE LA TABLA
                 dtParametros = null;
-                sNombSP = "SP_Listar_Vuelos";
+                sNombSP = "SP_Listar_Estados";
             }
             else
             {   //ESTE PROCESO  REALIZA EL FILTRADO
                 dtParametros = Obj_WCF_BD.CrearDTParametros();
                 dtParametros.Rows.Add("@filtro", "1", txt_filtroVuelos.Text.Trim());
-                sNombSP = "SP_Filtrar_Vuelos";
+                sNombSP = "SP_Filtrar_Estados";
 
             }
 

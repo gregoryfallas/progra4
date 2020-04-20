@@ -120,8 +120,19 @@
               <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
-                   <p></p>
+                   <br />
+                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : " Font-Bold="true"></asp:Label>
+                   <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" class="boxed-btn4"/> &nbsp;
+                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click" class="boxed-btn4"/>&nbsp;
+                   <br />
+                   <br />
                    <asp:GridView ID="DGV_DATOS" runat="server" display="block" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                        <AlternatingRowStyle BackColor="#DCDCDC" />
                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
@@ -134,20 +145,6 @@
                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
                        <SortedDescendingHeaderStyle BackColor="#000065" />
                    </asp:GridView>
-                   <p></p>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_Nombre_Estado" runat="server" Text="NOMBRE ESTADO : " Font-Bold="true"></asp:Label>
-                   <asp:TextBox ID="txt_Nombre_Estado" runat="server" Width="180px"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR" OnClick="btn_Insertar_Click" class="boxed-btn4"/> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR" OnClick="btn_Modificar_Click" class="boxed-btn4"/> &nbsp;
-                   <asp:Button ID="btn_EliminarEstados" runat="server" Text="ELIMINAR" OnClick="btn_EliminarEstados_Click" class="boxed-btn4"/>&nbsp;
                </div>        
         </div>
     </form>

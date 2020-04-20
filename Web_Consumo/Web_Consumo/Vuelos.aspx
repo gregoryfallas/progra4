@@ -118,9 +118,47 @@
               <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="477px"  CssClass="btGrisNegrita"></asp:TextBox>  <br><br />
               <asp:Button ID="btn_FiltrarVuelos" runat="server" Text="Buscar" class="boxed-btn4" OnClick="btn_FiltrarVuelos_Click"/><br><br />
                <div>
+                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID Vuelos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range" MaxLength="4" OnTextChanged="txt_ID_Vuelos_TextChanged"></asp:TextBox>
                    <br />
                    <br />
-                   <p></p>
+                   <asp:Label ID="lb_ID_Destinos" runat="server" Text="ID Destinos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Destinos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" MaxLength="4"></asp:TextBox>
+                   &nbsp;&nbsp;&nbsp;&nbsp;
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Aerolinea" runat="server" Text="ID Aerolinea :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Aerolinea" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" MaxLength="4"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Avion" runat="server" Text="ID Avion :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Avion" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" MaxLength="4"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;<br />
+                   <br />
+                   <asp:Label ID="lb_FechaHoraSalida" runat="server" Text="Fecha-Hora de Salida :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_FechaHoraSalida" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_FechaHoraLlegada" runat="server" Text="Fecha-Hora de Llegada :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_FechaHoraLlegada" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
+                   <br />
+                   <br />
+                   <asp:Label ID="lb_ID_Estado" runat="server" Text="ID Estado :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Estado" runat="server" Width="180px" BorderStyle="Solid"></asp:TextBox>
+                   &nbsp;<br />
+                   <br />
+                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR"  class="boxed-btn4" OnClick="btn_Insertar_Click"/> &nbsp;
+                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR"  class="boxed-btn4" OnClick="btn_Modificar_Click"/> &nbsp;
+                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
+                  
+                   <br />
+                   <br />
                    <asp:GridView ID="DGV_DATOSV" runat="server" CssClass="align-items-sm-center" style="text-align:center" BorderStyle="None" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                        <AlternatingRowStyle BackColor="#DCDCDC" />
                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
@@ -134,45 +172,6 @@
                        <SortedDescendingHeaderStyle BackColor="#000065" />
                    </asp:GridView>
                    <p></p>
-                   <br />
-                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID_Vuelos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Destinos" runat="server" Text="ID_Destinos :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Destinos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   &nbsp;&nbsp;&nbsp;&nbsp;
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Aerolinea" runat="server" Text="ID_Aerolinea :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Aerolinea" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Avion" runat="server" Text="ID_Avion :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Avion" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_FechaHoraSalida" runat="server" Text="Fecha-Hora de Salida :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_FechaHoraSalida" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_FechaHoraLlegada" runat="server" Text="Fecha-Hora de Llegada :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_FechaHoraLlegada" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid"></asp:TextBox>
-                   <br />
-                   <br />
-                   <asp:Label ID="lb_ID_Estado" runat="server" Text="ID_Estado :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txt_ID_Estado" runat="server" Width="180px" BorderStyle="Solid"></asp:TextBox>
-                   &nbsp;<br />
-                   <br />
-                   <asp:Button ID="btn_Insertar" runat="server" Text="INSERTAR"  class="boxed-btn4" OnClick="btn_Insertar_Click"/> &nbsp;
-                   <asp:Button ID="btn_Modificar" runat="server" Text="MODIFICAR"  class="boxed-btn4" OnClick="btn_Modificar_Click"/> &nbsp;
-                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
                </div>        
         </div>
     </form>

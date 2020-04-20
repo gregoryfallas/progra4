@@ -121,7 +121,17 @@
                    <br />
                    <p></p>
                    <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
-                   <asp:GridView ID="DGV_DATOS" runat="server" CssClass="align-items-sm-center" style="text-align:center" BorderStyle="None" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                   <br />
+                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID VUELO :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
+                   <br />
+                   <br />
+                   <br />
+                   <br />
+                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
+                   <br />
+                   <br />
+                      <asp:GridView ID="DGV_DATOS" runat="server" CssClass="align-items-sm-center" style="text-align:center" BorderStyle="None" BackColor="White" BorderColor="#999999" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                        <AlternatingRowStyle BackColor="#DCDCDC" />
                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                        <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
@@ -134,14 +144,6 @@
                        <SortedDescendingHeaderStyle BackColor="#000065" />
                    </asp:GridView>
                    <p></p>
-                   <br />
-                   <asp:Label ID="lb_ID_Vuelos" runat="server" Text="ID VUELO :" Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="txt_ID_Vuelos" runat="server" Width="180px" style="text-align:center" BorderStyle="Solid" CssClass="range"></asp:TextBox>
-                   <br />
-                   <br />
-                   <br />
-                   <br />
-                   <asp:Button ID="btn_Eliminar" runat="server" Text="ELIMINAR"  class="boxed-btn4" OnClick="btn_Eliminar_Click"/>&nbsp;
                </div>        
         </div>
     </form>
