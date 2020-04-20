@@ -41,65 +41,76 @@
     <form id="MyForm" method="post" runat="server">
         <!-- header-start -->
         <header>
-            <div class="header-area ">
-                <div id="sticky-header" class="main-header-area">
-                    <div class="container-fluid">
-                        <div class="header_bottom_border">
-                            <div class="row align-items-center">
-                                <div class="col-xl-2 col-lg-2">
-                                    <div class="logo">
-                                        <a href="index.html">
-                                            <img src="img/logo.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6">
-                                    <div class="main-menu  d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">
-                                                <li><a class="active" href="index.aspx">home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a class="" href="travel_destination.html">Vuelos</a></li>
-                                                <li>
-                                                    <a href="#">Tablas <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="destination_details.html">Empleados</a></li>
-                                                        <li><a href="elements.html">Clientes</a></li>
-                                                        <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">blog <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">blog</a></li>
-                                                        <li><a href="single-blog.html">single-blog</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                                    <div class="social_wrap d-flex align-items-center justify-content-end">
-                                        <div class="main-menu  d-none d-lg-block">
-                                            <input type="text" name="search" placeholder="Search..">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="seach_icon">
-                                    <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
-                                        <i class="fa fa-search"></i>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.aspx">
+                                        <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
-                                <div class="col-12">
-                                    <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a class="active" href="index.aspx">home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a class="" href="Vuelos.aspx">Vuelos</a></li>
+                                            <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                        <li><a href="aerolineas.aspx">Aerolineas</a></li>
+                                                        <li><a href="destinos.html">Destinos</a></li>
+                                                        <li><a href="Paises.aspx">Paises</a></li>
+                                                        <li><a href="CategoriasVuelos.aspx">Categorias Vuelos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Administracion <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                        <li><a href="empleados.aspx">Empleados</a></li>
+                                                        <li><a href="tiposAviones.html">Tipos Aviones</a></li>
+                                                        <li><a href="categoriasVuelos.html">Categorias Vuelos</a></li>
+                                                        <li><a href="tiposClientes.aspx">Tipos Clientes</a></li>
+                                                        <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
+                                                        <li><a href="Usuarios.aspx">Usuarios</a></li>
+                                                        <li><a href="Estados.aspx">Estados</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+<%--                                <div class="social_wrap d-flex align-items-center justify-content-end">
+                                    <div  class="main-menu  d-none d-lg-block">
+                                        <a class="active" href="index.html">Iniciar Sesion</a>
+                                    </div>
+                                </div>--%>
+                            </div>
+                            <div class="seach_icon">
+                                <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+        </div>
         </header>
         <!-- header-end -->
 
@@ -306,7 +317,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/Tablas/TiposEmpleados.js"></script>
+    <script src="js/Tablas/General.js"></script>
 
     <!--contact js-->
     <script src="js/contact.js"></script>
@@ -315,7 +326,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
     
-    <script src="js/main.js"></script>
+<%--    <script src="js/main.js"></script>--%>
     <script src="js/custom.js"></script>
     
     <script>
@@ -330,4 +341,5 @@
 </body>
 
 </html>
+
 

@@ -20,6 +20,8 @@ namespace DAL.Catalogo_DAL
         private char _cIdEstado;
 
         private string _sStoreProcedure;
+        private string _sMsjError;
+        private string _sFiltro;
        
 
         public Cls_Empleados_DAL()
@@ -39,7 +41,8 @@ namespace DAL.Catalogo_DAL
         public int IIdTipoEmpleado { get => _iIdTipoEmpleado; set => _iIdTipoEmpleado = value; }
         public int IIdAerolinea { get => _iIdAerolinea; set => _iIdAerolinea = value; }
         public char CIdEstado { get => _cIdEstado; set => _cIdEstado = value; }
+        public string SMsjError { get => _sMsjError; set => _sMsjError = value; }
+        public string SFiltro { get => _sFiltro; set => _sFiltro = value; }
         public string SStoreProcedure { get => _sStoreProcedure; set => _sStoreProcedure = value; }
-     
     }
 }
