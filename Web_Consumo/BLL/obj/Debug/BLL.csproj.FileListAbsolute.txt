@@ -38,3 +38,13 @@ C:\Users\Miguel - Development\Source\Repos\gregoryfallas\progra4\Web_Consumo\BLL
 C:\Users\Miguel - Development\Source\Repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Miguel - Development\Source\Repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.dll
 C:\Users\Miguel - Development\Source\Repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.pdb
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\bin\Debug\BLL.dll.config
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\bin\Debug\BLL.dll
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\bin\Debug\BLL.pdb
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\bin\Debug\ClassLibrary2.dll
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\bin\Debug\ClassLibrary2.pdb
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.dll
+C:\Users\Daniel\source\repos\gregoryfallas\progra4\Web_Consumo\BLL\obj\Debug\BLL.pdb
