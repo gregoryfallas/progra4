@@ -121,6 +121,15 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.TextBox txt_ID_Avion;
         
         /// <summary>
+        /// Calendar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        
+        /// <summary>
         /// lb_FechaHoraSalida control.
         /// </summary>
         /// <remarks>
@@ -139,6 +148,24 @@ namespace Web_Consumo {
         protected global::System.Web.UI.WebControls.TextBox txt_FechaHoraSalida;
         
         /// <summary>
+        /// ImageButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        
+        /// <summary>
+        /// Calendar2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        
+        /// <summary>
         /// lb_FechaHoraLlegada control.
         /// </summary>
         /// <remarks>
@@ -155,6 +182,15 @@ namespace Web_Consumo {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_FechaHoraLlegada;
+        
+        /// <summary>
+        /// ImageButton2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
         
         /// <summary>
         /// lb_ID_Estado control.

@@ -13,6 +13,18 @@ namespace Web_Consumo
         protected void Page_Load(object sender, EventArgs e)
         {
             CargarDatos();
+            //validadacion del calendario salida
+            if (!IsPostBack)
+            {
+                Calendar1.Visible = false;
+          
+            }
+
+            if (!IsPostBack)
+            {
+                Calendar2.Visible = false;
+
+            }
         }
 
         private void CargarDatos()
@@ -85,7 +97,7 @@ namespace Web_Consumo
                 dtParametros.Rows.Add("@IdDestino", "1", txt_ID_Destinos.Text.Trim());
                 dtParametros.Rows.Add("@IdAerolinea", "2", txt_ID_Aerolinea.Text.Trim());
                 dtParametros.Rows.Add("@IdAvion", "1", txt_ID_Avion.Text.Trim());
-                dtParametros.Rows.Add("@FechaHoraSalida", "5", txt_FechaHoraSalida.Text.Trim()); //= ((DateTime).Rows[2]["FechaHoraSalida"]).ToString("dd/MM/yyyy H:MM:ss").ToString());
+                dtParametros.Rows.Add("@FechaHoraSalida", "5", txt_FechaHoraSalida.Text = DateTime.Now.ToLongTimeString());//String.Format("DD/MM/YY hh:mm:ss"));//Text.Trim()); //= ((DateTime).Rows[2]["FechaHoraSalida"]).ToString("dd/MM/yyyy H:MM:ss").ToString());
                 dtParametros.Rows.Add("@FechaHoraLlegada", "5", txt_FechaHoraLlegada.Text.Trim()); //= ((DateTime)dtParametros.Rows[2]["FechaHoraLlegada"]).ToString("dd/MM/yyyy H:MM:ss").ToString());
                 dtParametros.Rows.Add("@IdEstado", "3", txt_ID_Estado.Text.Trim());
                 sNombSP = "SP_Insertar_Vuelos";
@@ -207,5 +219,44 @@ namespace Web_Consumo
         {
            
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            if(Calendar1.Visible)
+            {
+                Calendar1.Visible = false;
+            }
+            else
+            {
+                Calendar1.Visible = true;
+            }
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            if (Calendar2.Visible)
+            {
+                Calendar2.Visible = false;
+            }
+            else
+            {
+                Calendar2.Visible = true;
+            }
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            txt_FechaHoraSalida.Text = Calendar1.SelectedDate.ToLongDateString();
+            Calendar1.Visible = false;
+            
+        }
+
+        protected void Calendar2_SelectionChanged1(object sender, EventArgs e)
+        {
+            txt_FechaHoraLlegada.Text = Calendar2.SelectedDate.ToLongDateString();
+            Calendar2.Visible = false;
+
+        }
+
     }
 }

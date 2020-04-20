@@ -120,7 +120,7 @@
               <!--<asp:Button ID="btn_Refrescar" runat="server" Text="Refrescar" Width="180px" OnClick="btn_Refrescar_Click"/>-->
                <div>
                    <br />
-                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID ESTADOS : " Font-Bold="true"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />

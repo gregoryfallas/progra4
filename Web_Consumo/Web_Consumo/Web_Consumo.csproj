@@ -137,6 +137,10 @@
     <Content Include="img\blog\single_blog_4.png" />
     <Content Include="img\blog\single_blog_5.png" />
     <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\calendar.ico" />
+    <Content Include="img\calendar.png" />
+    <Content Include="img\Calendario.png" />
+    <Content Include="img\Calendario1.png" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />

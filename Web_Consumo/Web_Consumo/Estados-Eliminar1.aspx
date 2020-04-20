@@ -120,7 +120,7 @@
                    <asp:TextBox ID="txt_filtroVuelos" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
-                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID_ESTADOS : " Font-Bold="true"></asp:Label>
+                   <asp:Label ID="lb_ID_Estados" runat="server" Text="ID ESTADOS : " Font-Bold="true"></asp:Label>
                    <asp:TextBox ID="txt_ID_Estados" runat="server" Width="180px"></asp:TextBox>
                    <br />
                    <br />
