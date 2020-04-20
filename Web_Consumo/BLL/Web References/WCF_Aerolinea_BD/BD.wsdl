@@ -13,11 +13,11 @@
   <wsdl:message name="IBD_CrearDTParametros_OutputMessage">
     <wsdl:part name="parameters" element="tns:CrearDTParametrosResponse" />
   </wsdl:message>
-  <wsdl:message name="IBD_ListarDatos_InputMessage">
-    <wsdl:part name="parameters" element="tns:ListarDatos" />
+  <wsdl:message name="IBD_ListarFiltrarDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFiltrarDatos" />
   </wsdl:message>
-  <wsdl:message name="IBD_ListarDatos_OutputMessage">
-    <wsdl:part name="parameters" element="tns:ListarDatosResponse" />
+  <wsdl:message name="IBD_ListarFiltrarDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFiltrarDatosResponse" />
   </wsdl:message>
   <wsdl:message name="IBD_Ins_Mod_Del_Datos_InputMessage">
     <wsdl:part name="parameters" element="tns:Ins_Mod_Del_Datos" />
@@ -30,9 +30,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IBD/CrearDTParametros" message="tns:IBD_CrearDTParametros_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBD/CrearDTParametrosResponse" message="tns:IBD_CrearDTParametros_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="ListarDatos">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBD/ListarDatos" message="tns:IBD_ListarDatos_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBD/ListarDatosResponse" message="tns:IBD_ListarDatos_OutputMessage" />
+    <wsdl:operation name="ListarFiltrarDatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBD/ListarFiltrarDatos" message="tns:IBD_ListarFiltrarDatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBD/ListarFiltrarDatosResponse" message="tns:IBD_ListarFiltrarDatos_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Ins_Mod_Del_Datos">
       <wsdl:input wsaw:Action="http://tempuri.org/IBD/Ins_Mod_Del_Datos" message="tns:IBD_Ins_Mod_Del_Datos_InputMessage" />
@@ -50,8 +50,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="ListarDatos">
-      <soap:operation soapAction="http://tempuri.org/IBD/ListarDatos" style="document" />
+    <wsdl:operation name="ListarFiltrarDatos">
+      <soap:operation soapAction="http://tempuri.org/IBD/ListarFiltrarDatos" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

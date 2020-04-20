@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TiposAviones.aspx.cs" Inherits="Web_Consumo.TiposAviones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TiposClientes.aspx.cs" Inherits="Web_Consumo.TiposClientes" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Tipos de Aviones</title>
+    <title>Tipos de Clientes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
-<body>   
+<body>
 
     <!-- header-start -->
     <header>
@@ -105,7 +105,7 @@
     <!-- Page content-start -->
     <form id="frmData" runat="server">
         <div id="divTitle" runat="server">
-            <b><h1 id="title" style=" text-align:center; padding:5px; background-color:midnightblue; color:white">TIPOS DE AVIONES</h1></b>
+            <b><h1 id="title" style=" text-align:center; padding:5px; background-color:midnightblue; color:white">TIPOS DE CLIENTES</h1></b>
         </div>
         <div id="divSubTitle" runat="server" style="padding:5px">
             <h2></h2>
@@ -125,20 +125,20 @@
                     <div class="col-6">
                     </div>
                     <div class="col-6">
-                        <asp:Button ID="btnBuscar" CssClass="myactionButton" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" ToolTip="Buscar un tipo de Avión" />
-                        <asp:Button ID="bntEliminar" CssClass="myactionButton" runat="server" Text="ELIMINAR" OnClick="bntEliminar_Click" ToolTip="Eliminar un tipo de Avión" />
+                        <asp:Button ID="btnBuscar" CssClass="myactionButton" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" ToolTip="Buscar un tipo de Cliente" />
+                        <asp:Button ID="bntEliminar" CssClass="myactionButton" runat="server" Text="ELIMINAR" OnClick="bntEliminar_Click" ToolTip="Eliminar un tipo de Cliente" />
                     </div>
                 </div>
                 <div id="divCargar" style="padding:5px" class="row">
                     <div class="col-6">
                     </div>
                     <div class="col-6">
-                        <asp:Button ID="btnCargar" CssClass="myactionButton_lg" runat="server" Text="CARGAR ID DATA" OnClick="btnCargar_Click" ToolTip="Carga los valores de un ID de tipo de Avión" />
+                        <asp:Button ID="btnCargar" CssClass="myactionButton_lg" runat="server" Text="CARGAR ID DATA" OnClick="btnCargar_Click"  ToolTip="Carga los valores de un ID de tipo de Cliente" />
                     </div>
                 </div><br />
                 <div id="divID" style="padding:5px" class="row">
                     <div class="col-6">
-                        <p class="myparr_right"><asp:Label ID="lblID" runat="server" Text="ID Tipo" CssClass="mylabel"></asp:Label></p>
+                        <p class="myparr_right"><asp:Label ID="lblID" runat="server" Text="ID" CssClass="mylabel"></asp:Label></p>
                     </div>
                     <div class="col-6">
                         <p class="myparr_left"><asp:TextBox ID="txtID" runat="server"></asp:TextBox></p>
@@ -146,10 +146,10 @@
                 </div>
                 <div id="divNombre" style="padding:5px" class="row">
                     <div class="col-6">
-                        <p class="myparr_right"><asp:Label ID="lblNombre" runat="server" Text="Nombre" CssClass="mylabel"></asp:Label></p>
+                        <p class="myparr_right"><asp:Label ID="lblTipo" runat="server" Text="Tipo" CssClass="mylabel"></asp:Label></p>
                     </div>
                     <div class="col-6">
-                        <p class="myparr_left"><asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></p>
+                        <p class="myparr_left"><asp:TextBox ID="txtTipo" runat="server"></asp:TextBox></p>
                     </div>
                 </div>
                 <div id="divDesc" style="padding:5px" class="row">
@@ -158,22 +158,6 @@
                     </div>
                     <div class="col-6">
                         <p class="myparr_left"><asp:TextBox ID="txtDesc" runat="server"></asp:TextBox></p>
-                    </div>
-                </div>
-                <div id="divPasaj" style="padding:5px" class="row">
-                    <div class="col-6">
-                        <p class="myparr_right"><asp:Label ID="lblPasaj" runat="server" Text="Pasajeros" CssClass="mylabel"></asp:Label></p>
-                    </div>
-                    <div class="col-6">
-                        <p class="myparr_left"><asp:TextBox ID="txtPasaj" runat="server"></asp:TextBox></p>
-                    </div>
-                </div>
-                <div id="divPeso" style="padding:5px" class="row">
-                    <div class="col-6">
-                        <p class="myparr_right"><asp:Label ID="lblPeso" runat="server" Text="Peso" CssClass="mylabel"></asp:Label></p>
-                    </div>
-                    <div class="col-6">
-                        <p class="myparr_left"><asp:TextBox ID="TxtPeso" runat="server"></asp:TextBox></p>
                     </div>
                 </div>
                 <div id="divEstado" style="padding:5px" class="row">
@@ -188,15 +172,15 @@
                     <div class="col-6">                  
                     </div>
                     <div class="col-6">
-                        <asp:Button ID="btnAgr" CssClass="myactionButton" runat="server" Text="AGREGAR" OnClick="btnAgr_Click" ToolTip="Agregar tipo de Avión" />
-                        <asp:Button ID="btnMod" CssClass="myactionButton" runat="server" Text="MODIFICAR" OnClick="btnMod_Click" ToolTip="Modificar tipo de Avión" />
+                        <asp:Button ID="btnAgr" CssClass="myactionButton" runat="server" Text="AGREGAR" OnClick="btnAgr_Click" ToolTip="Agregar tipo de Cliente" />
+                        <asp:Button ID="btnMod" CssClass="myactionButton" runat="server" Text="MODIFICAR" OnClick="btnMod_Click" ToolTip="Modificar tipo de Cliente" />
                     </div>
                 </div>
             </div>
             <!-- Controls-end -->
             <!-- Table-start -->
             <div id="divTabla" class="col-lg-8" style="padding:5px">
-                <asp:GridView ID="dgvTiposAviones" runat="server" CellPadding="4" ForeColor="#333333" GridLines="Horizontal" HorizontalAlign="Left" BorderStyle="Groove">
+                <asp:GridView ID="dgvTiposClientes" runat="server" CellPadding="4" ForeColor="#333333" GridLines="Horizontal" HorizontalAlign="Left" BorderStyle="Groove">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" HorizontalAlign="Center" VerticalAlign="Middle" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -217,7 +201,7 @@
         </div>
     </form>
     <!-- Page content-end -->
-    
+
     <!-- footer-start -->
     <footer class="footer">
         <div class="footer_top">
@@ -239,6 +223,5 @@
         </div>
     </footer>
     <!-- header-end -->
-
 </body>
 </html>

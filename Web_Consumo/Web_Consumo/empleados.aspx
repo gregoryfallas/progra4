@@ -75,6 +75,12 @@
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="#">Administrador <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                        <li><a href="TiposAviones.aspx">Tipos de Aviones</a></li>
+                                                        <li><a href="TiposClientes.aspx">Tipos de Clientes</a></li>                                                        
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
