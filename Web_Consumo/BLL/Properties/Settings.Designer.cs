@@ -22,5 +22,15 @@ namespace BLL.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:58339/BD_Aeropuerto.svc")]
+        public string BLL_WCF_BD {
+            get {
+                return ((string)(this["BLL_WCF_BD"]));
+            }
+        }
     }
 }

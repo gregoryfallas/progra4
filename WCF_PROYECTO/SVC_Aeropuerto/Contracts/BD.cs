@@ -9,7 +9,7 @@ using DAL_Aeropuerto;
 
 namespace SVC_Aeropuerto.Contracts
 {
-    class BD : Interfaces.IBD
+    class BD : Interfaces.IBD 
     {
         /// <summary>
         /// Metodo para crear Datatable con parametros con 3 columnas

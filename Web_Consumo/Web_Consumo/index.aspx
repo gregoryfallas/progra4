@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Web_Consumo.index1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Web_Consumo.index" %>
 
 <!DOCTYPE html>
 
@@ -48,7 +48,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index.aspx">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -59,7 +59,14 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="index.aspx">home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="Vuelos.aspx">Vuelos</a></li>
+                                        </ul>
+                                        <ul class="submenu">
+                                            <li><a href="#">Vuelos<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                <li><a href="vuelos.aspx">Vuelos Diponibles</a></li>
+                                                <li><a href="vuelos-eliminar.aspx">Eliminar Vuelos</a></li>
+                                        </ul>
+                                        </li>
                                             <li><a href="#">Aerolinea<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="aerolineas.aspx">Aerolineas</a></li>
@@ -75,7 +82,7 @@
                                                         <li><a href="categoriasVuelos.html">Categorias Vuelos</a></li>
                                                         <li><a href="tiposClientes.aspx">Tipos Clientes</a></li>
                                                         <li><a href="TiposEmpleados.aspx">Tipos Empleados</a></li>
-                                                        <li><a href="usuarios.aspx">Usuarios</a></li>
+                                                        <li><a href="Usuarios.aspx">Usuarios</a></li>
                                                         <li><a href="Estados.aspx">Estados</a></li>
                                                 </ul>
                                             </li>

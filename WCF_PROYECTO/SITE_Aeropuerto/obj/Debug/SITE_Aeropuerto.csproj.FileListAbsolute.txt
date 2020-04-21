@@ -69,7 +69,6 @@ C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\b
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\DAL_Aeropuerto.dll
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\BLL_Aeropuerto.dll
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\SVC_Aeropuerto.pdb
-C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\SVC_Aeropuerto.dll.config
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\DAL_Aeropuerto.pdb
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\BLL_Aeropuerto.pdb
 C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\BLL_Aeropuerto.dll.config
@@ -94,3 +93,4 @@ C:\Users\Moises Coto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropu
 C:\Users\Moises Coto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\obj\Debug\SITE_Aeropuerto.csproj.CopyComplete
 C:\Users\Moises Coto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\obj\Debug\SITE_Aeropuerto.dll
 C:\Users\Moises Coto\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\obj\Debug\SITE_Aeropuerto.pdb
+C:\Users\falla\Source\Repos\gregoryfallas\progra4\WCF_PROYECTO\SITE_Aeropuerto\bin\SVC_Aeropuerto.dll.config
